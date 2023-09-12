@@ -5,11 +5,12 @@
     "App": 1,
     "Host": 3,
     "Label1": 5,
+    "Label2": 6,
     "Screen1": 4
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/12/2023 18:42:18",
+  "HeaderLastSavedDateTimeUTC": "09/12/2023 18:43:47",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -28,6 +29,7 @@
     "App": {},
     "Host": {},
     "Label1": {},
+    "Label2": {},
     "Screen1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
@@ -36,14 +38,19 @@
     "App": 0,
     "Host": 0,
     "Label1": 0,
+    "Label2": 0,
     "Screen1": 0
   },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0228048,
-    "ControlCount": {}
+    "AnalysisLoadTime": 0.0532003,
+    "ControlCount": {
+      "label": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.1846858
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
