@@ -110,7 +110,7 @@
     "Id": "b30a9eba-bd8c-432b-a902-14d9542e80fe",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": "",
+    "ManualOfflineProfileId": null,
     "Name": "LeaveManagementSystem",
     "OriginatingVersion": "1.334",
     "ParserErrorCount": 0,

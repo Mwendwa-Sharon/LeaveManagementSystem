@@ -1,75 +1,26 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {
-    "App": 1,
-    "Button1": 10,
-    "Button1_1": 12,
-    "Container1": 7,
-    "Host": 3,
-    "Label1": 9,
-    "Label1_1": 11,
-    "Screen1": 4
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/14/2023 19:10:03",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {
-    "LMS": "ad225db3-da32-4457-89a9-7549d26235f3.png"
-  },
-  "LocalResourceRootPaths": {
-    "LMS": "https://docserverpwaprodeus.blob.core.windows.net/73626de2-4ada-4f2e-baae-4bc630160fb6-1/resource/546493ed-2fc7-40e2-ba5b-2f84c539576a.png?sv=2018-03-28&sr=b&sig=gRHydwcSNdn81OzjI0MOKLP7ohDGVwHYWw8xGsZPxxA%3D&spr=https&se=2023-09-15T19%3A06%3A04Z&sp=r"
-  },
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "button": 2,
-    "groupContainer": 0,
-    "label": 1
-  },
-  "OverridablePropertiesEntry": {
-    "App": {},
-    "Button1": {},
-    "Button1_1": {},
-    "Container1": {},
-    "Host": {},
-    "Label1": {},
-    "Label1_1": {},
-    "Screen1": {}
-  },
+  "OrderXMLTemplate": {},
+  "OverridablePropertiesEntry": {},
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {
-    "App": 0,
-    "Button1": 2,
-    "Button1_1": 4,
-    "Container1": 0,
-    "Host": 0,
-    "Label1": 1,
-    "Label1_1": 3,
-    "Screen1": 3
-  },
-  "ResourcesJsonIndices": {
-    "Image-LMS": 0,
-    "Image-SampleImage": 1
-  },
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.051169,
-    "ControlCount": {
-      "button": 1,
-      "label": 3,
-      "screen": 1
-    },
-    "DeserializationLoadTime": 1.1012924
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
