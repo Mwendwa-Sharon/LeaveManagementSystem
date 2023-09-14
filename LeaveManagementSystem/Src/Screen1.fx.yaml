@@ -1,7 +1,14 @@
 Screen1 As screen:
 
     Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
         Height: =766
+        LayoutDirection: =LayoutDirection.Manual
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Width: =873
         ZIndex: =1
 

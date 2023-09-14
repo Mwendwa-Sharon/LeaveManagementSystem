@@ -94,7 +94,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 1,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -110,7 +110,7 @@
     "Id": "b30a9eba-bd8c-432b-a902-14d9542e80fe",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "LeaveManagementSystem",
     "OriginatingVersion": "1.334",
     "ParserErrorCount": 0,
