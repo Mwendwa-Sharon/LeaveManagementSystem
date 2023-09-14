@@ -39,25 +39,15 @@ Screen1 As screen:
         ZIndex: =5
 
     Container1 As groupContainer.manualLayoutContainer:
+        ContentLanguage: =
         DropShadow: =DropShadow.None
-        Height: =758
+        Height: =768
         LayoutDirection: =LayoutDirection.Manual
         LayoutMode: =LayoutMode.Auto
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =822
-        X: =8
-        Y: =10
+        Width: =902
         ZIndex: =6
-
-        Image2 As image:
-            Height: =534
-            Image: =homepageimage
-            ImagePosition: =ImagePosition.Fill
-            Width: =810
-            X: =12
-            Y: =195
-            ZIndex: =1
 
