@@ -1,26 +1,83 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Button1": 7,
+    "Button1_1": 9,
+    "Container1": 11,
+    "Host": 3,
+    "Image2": 12,
+    "Label1": 6,
+    "Label1_1": 8,
+    "Screen1": 4
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "09/14/2023 19:17:32",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
+  "LocalResourceFileNames": {
+    "homepageimage": "52801384-01cc-454a-acbb-bc43ddd13482.png",
+    "LMS": "0001.png"
+  },
+  "LocalResourceRootPaths": {
+    "homepageimage": "https://docserverpwaprodeus.blob.core.windows.net/7ab829d8-4009-4ba0-80ea-54247be87cc0-1/resource/cfa50fdd-c5aa-42f2-a77b-4a7e8b29c102.png?sv=2018-03-28&sr=b&sig=93hNR030d%2FFC0D6dMF9z1tc8cXM%2BwxdR6tOztcFYFgE%3D&spr=https&se=2023-09-15T19%3A29%3A51Z&sp=r",
+    "LMS": "https://docserverpwaprodeus.blob.core.windows.net/7ab829d8-4009-4ba0-80ea-54247be87cc0-1/resource/Assets0Images00001.png?sv=2018-03-28&sr=b&sig=DMAMzRrdP3H2LdLrWjMPBi4YydN1Jz%2F1be8S%2FDKR4%2Fo%3D&spr=https&se=2023-09-15T19%3A25%3A18Z&sp=r"
+  },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "OverridablePropertiesEntry": {},
+  "OrderXMLTemplate": {
+    "button": 3,
+    "groupContainer": 0,
+    "image": 1,
+    "label": 2
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Button1": {},
+    "Button1_1": {},
+    "Container1": {},
+    "Host": {},
+    "Image2": {},
+    "Label1": {},
+    "Label1_1": {},
+    "Screen1": {}
+  },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {},
-  "ResourcesJsonIndices": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "Button1": 3,
+    "Button1_1": 5,
+    "Container1": 0,
+    "Host": 0,
+    "Image2": 1,
+    "Label1": 2,
+    "Label1_1": 4,
+    "Screen1": 3
+  },
+  "ResourcesJsonIndices": {
+    "Image-homepageimage": 2,
+    "Image-LMS": 1,
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0274082,
+    "ControlCount": {
+      "button": 2,
+      "groupContainer": 1,
+      "label": 2,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.1169878
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }

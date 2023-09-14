@@ -1,10 +1,5 @@
 Screen1 As screen:
 
-    Container1 As groupContainer.manualLayoutContainer:
-        Height: =766
-        Width: =873
-        ZIndex: =1
-
     Label1 As label:
         Height: =38
         Size: =11
@@ -42,4 +37,20 @@ Screen1 As screen:
         X: =987
         Y: =439
         ZIndex: =5
+
+    Container1 As groupContainer.manualLayoutContainer:
+        Height: =758
+        Width: =822
+        X: =8
+        Y: =10
+        ZIndex: =6
+
+        Image2 As image:
+            Height: =534
+            Image: =homepageimage
+            ImagePosition: =ImagePosition.Fill
+            Width: =810
+            X: =12
+            Y: =195
+            ZIndex: =1
 
