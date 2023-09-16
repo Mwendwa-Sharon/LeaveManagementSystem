@@ -5,3 +5,6 @@
         Y: =96
         ZIndex: =2
 
+    HeaderComponent_1 As HeaderComponent:
+        ZIndex: =3
+

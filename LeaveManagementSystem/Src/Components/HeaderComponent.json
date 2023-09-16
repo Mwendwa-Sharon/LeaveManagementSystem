@@ -92,7 +92,7 @@
             "Name": "Label2",
             "Parent": "Container2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 5,
+            "PublishOrderIndex": 6,
             "Rules": [
               {
                 "Category": "Data",
@@ -234,7 +234,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "40",
+                "InvariantScript": "37",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
@@ -421,7 +421,7 @@
             "Name": "Icon1",
             "Parent": "Container2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 6,
+            "PublishOrderIndex": 7,
             "Rules": [
               {
                 "Category": "Design",
@@ -491,19 +491,19 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "42",
+                "InvariantScript": "40",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "20",
+                "InvariantScript": "35",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "32",
+                "InvariantScript": "31",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -663,7 +663,7 @@
             "Name": "Label2_1",
             "Parent": "Container2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 7,
+            "PublishOrderIndex": 8,
             "Rules": [
               {
                 "Category": "Data",
@@ -799,13 +799,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "161",
+                "InvariantScript": "179",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "40",
+                "InvariantScript": "35",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
@@ -1001,7 +1001,7 @@
             "Name": "Label2_2",
             "Parent": "Container2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 8,
+            "PublishOrderIndex": 9,
             "Rules": [
               {
                 "Category": "Data",
@@ -1137,25 +1137,25 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "1191",
+                "InvariantScript": "1206",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "42",
+                "InvariantScript": "40",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "167",
+                "InvariantScript": "140",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "38",
+                "InvariantScript": "35",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -1320,7 +1320,7 @@
         "Name": "Container2",
         "Parent": "HeaderComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 2,
+        "PublishOrderIndex": 3,
         "Rules": [
           {
             "Category": "Design",
@@ -1524,7 +1524,7 @@
         "Name": "Circle1",
         "Parent": "HeaderComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 3,
+        "PublishOrderIndex": 4,
         "Rules": [
           {
             "Category": "Design",
@@ -1576,13 +1576,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "1154",
+            "InvariantScript": "1148",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "34",
+            "InvariantScript": "38",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1696,7 +1696,7 @@
         "Name": "Icon2",
         "Parent": "HeaderComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 4,
+        "PublishOrderIndex": 5,
         "Rules": [
           {
             "Category": "Design",
@@ -1760,13 +1760,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "1160",
+            "InvariantScript": "1153",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "43",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1876,7 +1876,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638304748731495045",
+    "LastModifiedTimestamp": "638304779480061983",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -1935,7 +1935,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638304748731495045",
+  "LastModifiedTimestamp": "638304779480061983",
   "Name": "d3e5decdf0ed4f0d9f50e253692a4634",
   "OverridableProperties": {},
   "Version": "638304700947327287"
