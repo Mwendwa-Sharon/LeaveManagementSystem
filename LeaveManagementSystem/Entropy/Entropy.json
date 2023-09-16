@@ -1,140 +1,26 @@
 {
-  "ComponentIndexes": {
-    "HeaderComponent": 2,
-    "HeaderComponent_1": 2,
-    "Navigation_Component": 3
-  },
+  "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {
-    "App": 1,
-    "Button1": 7,
-    "Button1_1": 9,
-    "Circle1": 52,
-    "Container1": 5,
-    "Container2": 48,
-    "Gallery1": 61,
-    "galleryTemplate1": 62,
-    "HeaderComponent": 47,
-    "HeaderComponent_1": 56,
-    "Host": 3,
-    "Icon1": 50,
-    "Icon2": 53,
-    "Label1": 6,
-    "Label1_1": 8,
-    "Label2": 49,
-    "Label2_1": 51,
-    "Label2_2": 55,
-    "Navigation_Component": 57,
-    "Screen1": 4,
-    "Screen2": 10
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/16/2023 15:27:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {
-    "2d959689-d9ce-4fdb-8406-ffd6f5c72d57": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/bb0db7aed4f34824afc6e3e638b8ff5f\""
-  },
+  "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {
-    "LMS": "0001.png"
-  },
-  "LocalResourceRootPaths": {
-    "LMS": "https://docserverpwaprodwus.blob.core.windows.net/cf751295-e3af-4262-a9c7-0ce6453822e7-1/resource/Assets0Images00001.png?sv=2018-03-28&sr=b&sig=KqtMKOisA%2F9Flnj9dBlZmmgFIVnzUoTb%2F7%2FC05cVZ8U%3D&spr=https&se=2023-09-17T13%3A24%3A32Z&sp=r"
-  },
-  "OrderComponentMetadata": {
-    "4e8e16ee70724d719d67843aa908008b": 1,
-    "d3e5decdf0ed4f0d9f50e253692a4634": 0
-  },
-  "OrderComponentTemplate": {
-    "4e8e16ee70724d719d67843aa908008b": 1,
-    "d3e5decdf0ed4f0d9f50e253692a4634": 0
-  },
-  "OrderDataSource": {
-    "ComboBoxSample": 5,
-    "CustomGallerySample": 6,
-    "EmployeeList": 4,
-    "FeedbackList": 3,
-    "LeaveApprovalHistoryList": 2,
-    "LeaveBalancesList": 1,
-    "LeaveRequestsList": 0
-  },
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "button": 2,
-    "circle": 4,
-    "gallery": 5,
-    "groupContainer": 0,
-    "icon": 3,
-    "label": 1
-  },
-  "OverridablePropertiesEntry": {
-    "App": {},
-    "Button1": {},
-    "Button1_1": {},
-    "Circle1": {},
-    "Container1": {},
-    "Container2": {},
-    "Gallery1": {},
-    "galleryTemplate1": {},
-    "HeaderComponent": {},
-    "HeaderComponent_1": {},
-    "Host": {},
-    "Icon1": {},
-    "Icon2": {},
-    "Label1": {},
-    "Label1_1": {},
-    "Label2": {},
-    "Label2_1": {},
-    "Label2_2": {},
-    "Navigation_Component": {},
-    "Screen1": {},
-    "Screen2": {}
-  },
+  "OrderXMLTemplate": {},
+  "OverridablePropertiesEntry": {},
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {
-    "App": 0,
-    "Button1": 6,
-    "Button1_1": 8,
-    "Circle1": 0,
-    "Container1": 4,
-    "Container2": 0,
-    "Gallery1": 0,
-    "galleryTemplate1": 0,
-    "HeaderComponent": 0,
-    "HeaderComponent_1": 0,
-    "Host": 0,
-    "Icon1": 0,
-    "Icon2": 0,
-    "Label1": 5,
-    "Label1_1": 7,
-    "Label2": 0,
-    "Label2_1": 0,
-    "Label2_2": 0,
-    "Navigation_Component": 0,
-    "Screen1": 3,
-    "Screen2": 9
-  },
-  "ResourcesJsonIndices": {
-    "Image-LMS": 1,
-    "Image-SampleImage": 0
-  },
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.0195256,
-    "ControlCount": {
-      "403f915748554d1bb664403bbaa37134": 1,
-      "button": 2,
-      "d3e5decdf0ed4f0d9f50e253692a4634": 1,
-      "groupContainer": 1,
-      "label": 6,
-      "screen": 2
-    },
-    "DeserializationLoadTime": 0.0839005
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
