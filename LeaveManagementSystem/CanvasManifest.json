@@ -130,6 +130,10 @@
   "ScreenOrder": [
     "Screen1",
     "Screen2",
-    "CompanyHolidaysScreen"
+    "CompanyHolidaysScreen",
+    "About",
+    "Company Holidays",
+    "My Leave Balance",
+    "My Leave Requests"
   ]
 }

@@ -1,0 +1,7 @@
+"'My Leave Requests' As screen":
+
+    Navigation_Component_1 As Navigation_Component:
+        Fill: =RGBA(167, 182, 203, 1)
+        Y: =96
+        ZIndex: =2
+
