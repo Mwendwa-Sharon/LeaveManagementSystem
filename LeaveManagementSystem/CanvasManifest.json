@@ -128,10 +128,10 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "About",
-    "CompanyHolidaysScreen",
     "My Leave Requests",
     "My Leave Balance",
+    "CompanyHolidaysScreen",
+    "About",
     "Login screen"
   ]
 }

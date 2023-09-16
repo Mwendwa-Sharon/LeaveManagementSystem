@@ -31,3 +31,10 @@ CompanyHolidaysScreen As screen:
             Y: =5
             ZIndex: =8
 
+    HeaderComponent_3 As HeaderComponent:
+        ZIndex: =2
+
+    Navigation_Component_3 As Navigation_Component:
+        Y: =96
+        ZIndex: =3
+
