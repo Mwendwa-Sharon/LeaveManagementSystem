@@ -1876,7 +1876,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638304716211519992",
+    "LastModifiedTimestamp": "638304729753030764",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -1905,7 +1905,7 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "Max(App.Height, App.MinScreenHeight)/7",
+        "InvariantScript": "Max(App.Height, App.MinScreenHeight)/8",
         "Property": "Height",
         "RuleProviderType": "System"
       },
@@ -1935,7 +1935,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638304716211519992",
+  "LastModifiedTimestamp": "638304729753030764",
   "Name": "d3e5decdf0ed4f0d9f50e253692a4634",
   "OverridableProperties": {},
   "Version": "638304700947327287"

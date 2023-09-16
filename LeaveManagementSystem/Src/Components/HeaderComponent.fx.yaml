@@ -1,6 +1,6 @@
 HeaderComponent As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =Max(App.Height, App.MinScreenHeight)/7
+    Height: =Max(App.Height, App.MinScreenHeight)/8
     Width: =Max(App.Width, App.MinScreenWidth)
     X: =0
     Y: =0
