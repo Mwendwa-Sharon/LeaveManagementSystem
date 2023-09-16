@@ -128,12 +128,11 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1",
-    "Screen2",
-    "CompanyHolidaysScreen",
     "About",
     "Company Holidays",
+    "CompanyHolidaysScreen",
     "My Leave Balance",
-    "My Leave Requests"
+    "My Leave Requests",
+    "Screen1"
   ]
 }
