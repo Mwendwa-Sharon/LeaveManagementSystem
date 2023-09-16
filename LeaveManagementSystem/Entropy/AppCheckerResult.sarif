@@ -424,19 +424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompanyHolidaysScreen.Gallery2.AccessibleLabel"
+                  "fullyQualifiedName": "'Company Holidays'.Gallery2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompanyHolidaysScreen.Gallery2.AccessibleLabel",
+                  "fullyQualifiedName": "'Company Holidays'.Gallery2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "CompanyHolidaysScreen",
-                "type": "CompanyHolidaysScreen.Gallery2"
+                "module": "Company Holidays",
+                "type": "'Company Holidays'.Gallery2"
               }
             }
           ],
@@ -454,19 +454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "CompanyHolidaysScreen.Gallery2.TabIndex"
+                  "fullyQualifiedName": "'Company Holidays'.Gallery2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "CompanyHolidaysScreen.Gallery2.TabIndex",
+                  "fullyQualifiedName": "'Company Holidays'.Gallery2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "CompanyHolidaysScreen",
-                "type": "CompanyHolidaysScreen.Gallery2"
+                "module": "Company Holidays",
+                "type": "'Company Holidays'.Gallery2"
               }
             }
           ],

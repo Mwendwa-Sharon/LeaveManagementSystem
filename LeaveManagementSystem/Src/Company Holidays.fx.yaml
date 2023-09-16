@@ -1,4 +1,4 @@
-CompanyHolidaysScreen As screen:
+"'Company Holidays' As screen":
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
@@ -35,6 +35,7 @@ CompanyHolidaysScreen As screen:
         ZIndex: =2
 
     Navigation_Component_3 As Navigation_Component:
+        CurrentScreen: ="CompanyHolidaysScreen"
         Y: =96
         ZIndex: =3
 

@@ -181,6 +181,14 @@
           "InvariantPropertyName": "NavItem",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"Text\"",
+          "InvariantPropertyName": "CurrentScreen",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -205,6 +213,11 @@
           "Category": "Data",
           "PropertyName": "NavItem",
           "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "CurrentScreen",
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
