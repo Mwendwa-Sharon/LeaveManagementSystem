@@ -1,0 +1,22 @@
+HeaderComponent As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =Max(App.Height, App.MinScreenHeight)/7
+    Width: =Max(App.Width, App.MinScreenWidth)
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container2 As groupContainer.manualLayoutContainer:
+        Height: =HeaderComponent.Height
+        Width: =HeaderComponent.Width
+        ZIndex: =1
+
+        Label2 As label:
+            FontWeight: =FontWeight.Bold
+            Size: =12
+            Text: ="REQUEST"
+            Width: =100
+            X: =40
+            Y: =40
+            ZIndex: =1
+
