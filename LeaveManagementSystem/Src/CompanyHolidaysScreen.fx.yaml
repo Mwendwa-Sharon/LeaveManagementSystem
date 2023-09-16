@@ -25,7 +25,7 @@ CompanyHolidaysScreen As screen:
             Height: =33
             OnSelect: =Select(Parent)
             Size: =11
-            Text: =Text(DateAdd(ThisItem.StartDate, TimeZoneOffset(ThisItem.StartDate), TimeUnit.Minutes),"[$-en-US]dddd, mmmm dd")
+            Text: =ThisItem.StartDate
             Width: =178
             X: =351
             Y: =5
