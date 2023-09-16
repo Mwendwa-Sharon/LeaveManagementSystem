@@ -1,13 +1,29 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
+    OnStart: |
         =//Collection used for company holidays collection
-        ClearCollect(CompanyHolidays, 
-             {HolidayName: "Jamhuri day", StartDate: DateValue("12/12/2023")}, 
-             {HolidayName: "Mashujaa day", StartDate: DateValue("10/20/2023")}, 
-             {HolidayName: "Christmas", StartDate: DateValue("12/25/2023")}, 
-             {HolidayName: "Boxing day", StartDate: DateValue("12/26/2023")}, 
-             {HolidayName: "New Year's day", StartDate: DateValue("1/1/2024")})
+        ClearCollect(
+            CompanyHolidays,
+            {
+                HolidayName: "Jamhuri day",
+                StartDate: DateValue("12/12/2023")
+            },
+            {
+                HolidayName: "Mashujaa day",
+                StartDate: DateValue("10/20/2023")
+            },
+            {
+                HolidayName: "Christmas",
+                StartDate: DateValue("12/25/2023")
+            },
+            {
+                HolidayName: "Boxing day",
+                StartDate: DateValue("12/26/2023")
+            },
+            {
+                HolidayName: "New Year's day",
+                StartDate: DateValue("1/1/2024")
+            }
         );
     Theme: =PowerAppsTheme
 

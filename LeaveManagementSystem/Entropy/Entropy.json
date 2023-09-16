@@ -1,26 +1,172 @@
 {
-  "ComponentIndexes": {},
+  "ComponentIndexes": {
+    "Component1": 5,
+    "HeaderComponent": 3,
+    "Navigation_Component": 4
+  },
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "approver login group": 33,
+    "Circle1": 10,
+    "CompanyHolidaysScreen": 21,
+    "Component1": 22,
+    "Container1": 14,
+    "Container2": 5,
+    "employee login group": 34,
+    "Gallery2": 35,
+    "galleryTemplate2": 36,
+    "HeaderComponent": 4,
+    "HeaderComponent_1": 20,
+    "Host": 3,
+    "Icon1": 7,
+    "Icon2": 11,
+    "Label2": 6,
+    "Label2_1": 8,
+    "Label2_2": 9,
+    "Label5": 43,
+    "Label5_1": 44,
+    "login as an approver button": 18,
+    "login as an approver label": 17,
+    "login as an employee button": 16,
+    "login as an employee label": 15,
+    "Navigation_Component": 12,
+    "Screen1": 13,
+    "Screen2": 19
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "09/16/2023 16:09:26",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "2d959689-d9ce-4fdb-8406-ffd6f5c72d57": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/3e40f634419046819320b9dc99286f12\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
-  "OrderComponentMetadata": {},
-  "OrderComponentTemplate": {},
-  "OrderDataSource": {},
-  "OrderGroupControls": {},
+  "LocalResourceFileNames": {
+    "LMS": "0001.png"
+  },
+  "LocalResourceRootPaths": {
+    "LMS": "https://docserverpwaprodwus.blob.core.windows.net/a9ab7ed7-280b-4007-b486-09cf581e5af6-1/resource/Assets0Images00001.png?sv=2018-03-28&sr=b&sig=QzueNGuk1F72h5SfmL%2F2iN2xTXgMX%2BSNjOdcBATSlbo%3D&spr=https&se=2023-09-17T15%3A24%3A39Z&sp=r"
+  },
+  "OrderComponentMetadata": {
+    "4e8e16ee70724d719d67843aa908008b": 1,
+    "9c778db04d854105b4af47ae39f6462e": 2,
+    "d3e5decdf0ed4f0d9f50e253692a4634": 0
+  },
+  "OrderComponentTemplate": {
+    "4e8e16ee70724d719d67843aa908008b": 1,
+    "9c778db04d854105b4af47ae39f6462e": 2,
+    "d3e5decdf0ed4f0d9f50e253692a4634": 0
+  },
+  "OrderDataSource": {
+    "ComboBoxSample": 0,
+    "CompanyHolidays": 7,
+    "CustomGallerySample": 6,
+    "EmployeeList": 1,
+    "FeedbackList": 2,
+    "LeaveApprovalHistoryList": 3,
+    "LeaveBalancesList": 4,
+    "LeaveRequestsList": 5
+  },
+  "OrderGroupControls": {
+    "approver login group": {
+      "login as an approver button": 0,
+      "login as an approver label": 1
+    },
+    "employee login group": {
+      "login as an employee button": 0,
+      "login as an employee label": 1
+    }
+  },
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "OverridablePropertiesEntry": {},
+  "OrderXMLTemplate": {
+    "button": 2,
+    "circle": 4,
+    "gallery": 5,
+    "groupContainer": 0,
+    "icon": 3,
+    "label": 1
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "approver login group": {},
+    "Circle1": {},
+    "CompanyHolidaysScreen": {},
+    "Component1": {},
+    "Container1": {},
+    "Container2": {},
+    "employee login group": {},
+    "Gallery2": {},
+    "galleryTemplate2": {},
+    "HeaderComponent": {},
+    "HeaderComponent_1": {},
+    "Host": {},
+    "Icon1": {},
+    "Icon2": {},
+    "Label2": {},
+    "Label2_1": {},
+    "Label2_2": {},
+    "Label5": {},
+    "Label5_1": {},
+    "login as an approver button": {},
+    "login as an approver label": {},
+    "login as an employee button": {},
+    "login as an employee label": {},
+    "Navigation_Component": {},
+    "Screen1": {},
+    "Screen2": {}
+  },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {},
-  "ResourcesJsonIndices": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "approver login group": 5,
+    "Circle1": 17,
+    "CompanyHolidaysScreen": 0,
+    "Component1": 0,
+    "Container1": 0,
+    "Container2": 12,
+    "employee login group": 2,
+    "Gallery2": 8,
+    "galleryTemplate2": 9,
+    "HeaderComponent": 1,
+    "HeaderComponent_1": 7,
+    "Host": 0,
+    "Icon1": 15,
+    "Icon2": 18,
+    "Label2": 14,
+    "Label2_1": 13,
+    "Label2_2": 16,
+    "Label5": 10,
+    "Label5_1": 11,
+    "login as an approver button": 6,
+    "login as an approver label": 4,
+    "login as an employee button": 3,
+    "login as an employee label": 1,
+    "Navigation_Component": 9,
+    "Screen1": 12,
+    "Screen2": 18
+  },
+  "ResourcesJsonIndices": {
+    "Image-LMS": 1,
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0494017,
+    "ControlCount": {
+      "4e8e16ee70724d719d67843aa908008b": 1,
+      "button": 2,
+      "circle": 1,
+      "d3e5decdf0ed4f0d9f50e253692a4634": 2,
+      "groupContainer": 2,
+      "icon": 2,
+      "label": 6,
+      "screen": 2
+    },
+    "DeserializationLoadTime": 0.3291449
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }
