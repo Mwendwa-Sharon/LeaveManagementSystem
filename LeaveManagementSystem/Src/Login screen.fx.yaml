@@ -1,4 +1,4 @@
-Screen1 As screen:
+"'Login screen' As screen":
 
     Container1 As groupContainer.manualLayoutContainer:
         ContentLanguage: =
