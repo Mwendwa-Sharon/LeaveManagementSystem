@@ -16,7 +16,7 @@ Navigation_Component As CanvasComponent:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
-        TemplateFill: =If(ThisItem.IsSelected,White, RGBA(241, 244, 249, 1))
+        TemplateFill: =If(ThisItem.IsSelected,RGBA(102,113,116,1), RGBA(241, 244, 249, 1))
         TemplateSize: =76
         Width: =273
         ZIndex: =1
