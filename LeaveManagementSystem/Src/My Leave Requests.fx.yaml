@@ -1,0 +1,8 @@
+"'My Leave Requests' As screen":
+
+    HeaderComponent_1 As HeaderComponent:
+
+    Navigation_Component_1 As Navigation_Component:
+        Y: =96
+        ZIndex: =2
+
