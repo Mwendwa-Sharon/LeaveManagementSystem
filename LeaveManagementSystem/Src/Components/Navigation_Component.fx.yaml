@@ -6,3 +6,13 @@ Navigation_Component As CanvasComponent:
     Y: =0
     ZIndex: =1
 
+    Gallery1 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =Navigation_Component.Height
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =Navigation_Component.Width
+        ZIndex: =1
+
