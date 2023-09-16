@@ -1,0 +1,33 @@
+CompanyHolidaysScreen As screen:
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =332
+        Items: =CompanyHolidays
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =44
+        X: =375
+        Y: =126
+        ZIndex: =1
+
+        Label5 As label:
+            Height: =33
+            OnSelect: =Select(Parent)
+            Size: =11
+            Text: =ThisItem.HolidayName
+            X: =40
+            Y: =5
+            ZIndex: =7
+
+        Label5_1 As label:
+            Height: =33
+            OnSelect: =Select(Parent)
+            Size: =11
+            Text: =Text(DateAdd(ThisItem.StartDate, TimeZoneOffset(ThisItem.StartDate), TimeUnit.Minutes),"[$-en-US]dddd, mmmm dd")
+            Width: =178
+            X: =351
+            Y: =5
+            ZIndex: =8
+
