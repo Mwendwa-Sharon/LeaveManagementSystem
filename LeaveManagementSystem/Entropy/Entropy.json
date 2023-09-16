@@ -1,79 +1,26 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {
-    "App": 1,
-    "Button1": 7,
-    "Button1_1": 9,
-    "Container1": 5,
-    "Host": 3,
-    "Label1": 6,
-    "Label1_1": 8,
-    "Screen1": 4,
-    "Screen2": 10
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/16/2023 15:09:37",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {
-    "LMS": "0001.png"
-  },
-  "LocalResourceRootPaths": {
-    "LMS": "https://docserverpwaprodwus.blob.core.windows.net/a9ab7ed7-280b-4007-b486-09cf581e5af6-1/resource/Assets0Images00001.png?sv=2018-03-28&sr=b&sig=7Tkq0nrNFrf0c%2B%2FLEVUqUBoETAYEjLpMyuVm6JuAMoc%3D&spr=https&se=2023-09-17T13%3A04%3A39Z&sp=r"
-  },
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "button": 2,
-    "groupContainer": 0,
-    "label": 1
-  },
-  "OverridablePropertiesEntry": {
-    "App": {},
-    "Button1": {},
-    "Button1_1": {},
-    "Container1": {},
-    "Host": {},
-    "Label1": {},
-    "Label1_1": {},
-    "Screen1": {},
-    "Screen2": {}
-  },
+  "OrderXMLTemplate": {},
+  "OverridablePropertiesEntry": {},
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {
-    "App": 0,
-    "Button1": 2,
-    "Button1_1": 4,
-    "Container1": 0,
-    "Host": 0,
-    "Label1": 1,
-    "Label1_1": 3,
-    "Screen1": 3,
-    "Screen2": 9
-  },
-  "ResourcesJsonIndices": {
-    "Image-LMS": 1,
-    "Image-SampleImage": 0
-  },
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.029433,
-    "ControlCount": {
-      "button": 2,
-      "groupContainer": 1,
-      "label": 2,
-      "screen": 2
-    },
-    "DeserializationLoadTime": 0.0812197
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }

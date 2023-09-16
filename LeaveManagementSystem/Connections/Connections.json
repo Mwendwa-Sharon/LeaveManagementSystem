@@ -1,1 +1,40 @@
-{}
+{
+  "2d959689-d9ce-4fdb-8406-ffd6f5c72d57": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/henryorsborn/partial-builds/asev3migrations-with-resourceTemplate/1.0.1653.3403/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS": {
+        "dataSources": {
+          "EmployeeList": {
+            "tableName": "045b3187-354b-497f-9ac1-1987a0b0a7d0"
+          },
+          "FeedbackList": {
+            "tableName": "86e924b3-a9eb-4588-af15-20fcae43f8cf"
+          },
+          "LeaveApprovalHistoryList": {
+            "tableName": "11a23450-992d-4ff0-81a8-635764cecf2a"
+          },
+          "LeaveBalancesList": {
+            "tableName": "dd87a20c-f215-440f-829a-1b47be2e35ea"
+          },
+          "LeaveRequestsList": {
+            "tableName": "209da888-a4e8-479c-a129-177b684c796a"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "LeaveRequestsList",
+      "LeaveBalancesList",
+      "LeaveApprovalHistoryList",
+      "FeedbackList",
+      "EmployeeList"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2d959689-d9ce-4fdb-8406-ffd6f5c72d57"
+  }
+}
