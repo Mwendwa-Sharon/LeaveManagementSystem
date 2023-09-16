@@ -130,8 +130,8 @@
   "ScreenOrder": [
     "About",
     "CompanyHolidaysScreen",
-    "My Leave Balance",
     "My Leave Requests",
+    "My Leave Balance",
     "Login screen"
   ]
 }
