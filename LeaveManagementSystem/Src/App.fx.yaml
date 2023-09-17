@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |
+    OnStart: |-
         =//Collection used for company holidays collection
         ClearCollect(
             CompanyHolidays,
@@ -25,6 +25,18 @@ App As appinfo:
                 StartDate: DateValue("1/1/2024")
             }
         );
+        //collection used in the left nav menu employee
+        
+            
+        ClearCollect(EmployeeNavigation,
+        {MenuItem: "My Leave Requests"},
+        {MenuItem: "My Leave Balance"},
+        {MenuItem: "Company Holidays"},
+        {MenuItem: "About"},
+        {MenuItem: "Log out"}
+        )
+        
+           
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

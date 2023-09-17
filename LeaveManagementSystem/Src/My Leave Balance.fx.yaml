@@ -1,9 +1,2 @@
 "'My Leave Balance' As screen":
 
-    HeaderComponent_2 As HeaderComponent:
-
-    Navigation_Component_2 As Navigation_Component:
-        CurrentScreen: ="
-        Y: =96
-        ZIndex: =2
-

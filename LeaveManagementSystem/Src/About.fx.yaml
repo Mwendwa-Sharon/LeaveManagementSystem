@@ -1,8 +1,2 @@
 About As screen:
 
-    HeaderComponent_4 As HeaderComponent:
-
-    Navigation_Component_4 As Navigation_Component:
-        Y: =96
-        ZIndex: =2
-

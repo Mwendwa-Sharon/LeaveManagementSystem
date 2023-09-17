@@ -258,102 +258,6 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 4
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 4
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 4
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 4
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 4
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 4
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 4
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 4
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
             }
           ]
         }
@@ -364,26 +268,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'My Leave Balance'.Navigation_Component_2.CurrentScreen"
+                  "fullyQualifiedName": "'My Leave Requests'.Gallery1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'My Leave Balance'.Navigation_Component_2.CurrentScreen",
+                  "fullyQualifiedName": "'My Leave Requests'.Gallery1.TabIndex",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "\""
-                  }
                 }
               },
               "properties": {
-                "member": "CurrentScreen",
-                "module": "My Leave Balance",
-                "type": "'My Leave Balance'.Navigation_Component_2"
+                "member": "TabIndex",
+                "module": "My Leave Requests",
+                "type": "'My Leave Requests'.Gallery1"
               }
             }
           ],
@@ -391,9 +288,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrBadToken",
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 0
         },
         {
@@ -401,19 +298,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Navigation_Component.Gallery1.AccessibleLabel"
+                  "fullyQualifiedName": "'My Leave Requests'.Gallery1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Navigation_Component.Gallery1.AccessibleLabel",
+                  "fullyQualifiedName": "'My Leave Requests'.Gallery1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Navigation_Component",
-                "type": "Navigation_Component.Gallery1"
+                "module": "My Leave Requests",
+                "type": "'My Leave Requests'.Gallery1"
               }
             }
           ],
@@ -425,36 +322,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Navigation_Component.Gallery1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Navigation_Component.Gallery1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Navigation_Component",
-                "type": "Navigation_Component.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
         },
         {
           "locations": [
@@ -514,6 +381,66 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App._navMenuSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App._navMenuSelect",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "_navMenuSelect",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App._selectedLeaveType"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App._selectedLeaveType",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "_selectedLeaveType",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
           "ruleIndex": 2
         },
         {
@@ -553,20 +480,20 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrBadToken",
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
               "messageStrings": {
                 "issue": {
-                  "text": "Unexpected characters. Characters are used in the formula in an unexpected way."
+                  "text": "Missing tab stop"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove or replace the unexpected characters."
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
                 ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
               }
             },
             {
@@ -587,20 +514,20 @@
               }
             },
             {
-              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+              "id": "app-UnusedVariables",
               "messageStrings": {
                 "issue": {
-                  "text": "Missing tab stop"
+                  "text": "Unused variable"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
+                  "Remove the unused variable."
                 ],
                 "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             },
             {
