@@ -15,11 +15,3 @@ MyLeaveBalance As screen:
         Y: =94
         ZIndex: =1
 
-        Label1_1 As label:
-            DisplayMode: =DisplayMode.View
-            Height: =Gallery3_1.TemplateHeight
-            OnSelect: =Navigate(ThisItem.TargetScreen);
-            Text: =ThisItem.Title
-            Width: =Gallery3_1.TemplateWidth
-            ZIndex: =1
-
