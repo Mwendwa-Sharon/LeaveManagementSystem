@@ -124,8 +124,15 @@ MyLeaveRequests As screen:
         OnSelect: =Navigate(ThisItem.TargetScreen);
         ShowScrollbar: =false
         TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
-        TemplateSize: =70
+        TemplateSize: =75
         Width: =273
         Y: =96
         ZIndex: =6
+
+        Label9 As label:
+            Height: =Gallery3.TemplateHeight
+            OnSelect: =Navigate(ThisItem.TargetScreen);
+            Text: =ThisItem.Title
+            Width: =Gallery3.TemplateWidth
+            ZIndex: =1
 
