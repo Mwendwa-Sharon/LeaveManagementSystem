@@ -25,7 +25,6 @@
       "{VersionNumber}": "Version number",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
-      "Balance": "Balance",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
       "Editor": "Modified By",
@@ -34,9 +33,14 @@
       "EmployeeID#Id": "EmployeeID Id",
       "ID": "ID",
       "LastUpdated": "LastUpdated",
+      "LeaveBalance": "LeaveType",
+      "LeaveBalance#Id": "LeaveType Id",
+      "LeaveBalance0": "LeaveBalance (LeaveBalance0)",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
-      "Title": "Title"
+      "Title": "Title",
+      "TotalLeaveDays": "TotalLeaveDays",
+      "UsedLeaveDays": "UsedLeaveDays"
     },
     "DatasetName": "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS",
     "EncodeDataset": true,
