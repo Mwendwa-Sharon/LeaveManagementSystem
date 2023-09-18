@@ -133,6 +133,7 @@
     "CompanyHolidaysScreen",
     "LoginScreen",
     "AboutScreen",
-    "NewRequests"
+    "NewRequests",
+    "Screen1"
   ]
 }

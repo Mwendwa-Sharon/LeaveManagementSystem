@@ -27,33 +27,26 @@ App As appinfo:
         );
         //collection used in the left nav menu employee
         
-            
-        ClearCollect(EmployeeNavigation,
-        {MenuItem: "My Leave Requests"},
-        {MenuItem: "My Leave Balance"},
-        {MenuItem: "Company Holidays"},
-        {MenuItem: "About"},
-        {MenuItem: "Log out"}
-        );
-        
         ClearCollect(
             EmployeeNav,
             {
                 Title: "My Leave Requests", 
-                TargetScreen: MyLeaveRequests
+                TargetScreen: MyLeaveRequests 
             },
             {
                 Title: "My Leave Balance",
                 TargetScreen: MyLeaveBalance
-                },
+            },
             {
                 Title: "Company Holidays", 
-                TargetScreen: CompanyHolidaysScreen
-                },
+                TargetScreen: CompanyHolidaysScreen 
+            },
             {
                 Title: "About", 
-                TargetScreen: AboutScreen}
+                TargetScreen: AboutScreen 
+            }
         );
+        
         ///About
         ClearCollect(
             LeaveTypeCollection, 
@@ -75,7 +68,7 @@ App As appinfo:
                         }
                             ,
                         {
-                            type:"Paternity leabe", 
+                            type:"Paternity leave", 
                             description:"Paternity leave is a workplace benefit designed to support male employees when they become fathers or adopt children. It allows fathers to take time off from work to bond with their newborn or adopted child, provide support to their partner or spouse, and participate in the early stages of their child's life. Here's an explanation of paternity leave for an employee:."
                         }
                             ,

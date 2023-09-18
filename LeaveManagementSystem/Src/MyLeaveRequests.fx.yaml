@@ -121,7 +121,7 @@ MyLeaveRequests As screen:
         Items: =EmployeeNav
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =true;Navigate(ThisItem.TargetScreen)
+        OnSelect: =Navigate(ThisItem.TargetScreen);
         ShowScrollbar: =false
         TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
         TemplateSize: =70

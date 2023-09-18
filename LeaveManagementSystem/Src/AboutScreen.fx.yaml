@@ -99,38 +99,6 @@ AboutScreen As screen:
             Y: =8
             ZIndex: =4
 
-    Gallery1_1 As gallery.galleryVertical:
-        BorderColor: =RGBA(41,172,96,1)
-        BorderThickness: =1
-        Height: =Max(App.Height, App.MinScreenHeight)-Max(App.Height, App.MinScreenHeight)/8
-        Items: =EmployeeNavigation
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: |-
-            =///Set(_navMenuSelect, ThisItem.MenuItem);
-            If(
-                "Requests" in ThisItem.MenuItem, Navigate(AboutScreen, BorderStyle.None),
-                "Balance" in ThisItem.MenuItem, Navigate(MyLeaveBalance, BorderStyle.None),
-                "Holidays" in ThisItem.MenuItem, Navigate(CompanyHolidaysScreen, BorderStyle.None),
-                ThisItem.MenuItem = "About", Navigate(AboutScreen, BorderStyle.None),
-                ThisItem.MenuItem = "Log out", Navigate(LoginScreen, BorderStyle.None)
-            )
-            ///Set(_selectedLeaveType, Blank())
-        TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
-        TemplateSize: =58
-        Width: =273
-        Y: =96
-        ZIndex: =2
-
-        Label1_1 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =Gallery1_1.TemplateHeight
-            Size: =11
-            Text: =ThisItem.MenuItem
-            Width: =Gallery1_1.TemplateWidth
-            X: =Gallery1_1.X
-            ZIndex: =1
-
     Circle1_1 As circle:
         Fill: =RGBA(41,172,96,1)
         Height: =70
