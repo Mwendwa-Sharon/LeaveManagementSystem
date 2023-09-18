@@ -80,7 +80,7 @@ MyLeaveRequests As screen:
             FocusedBorderThickness: =02
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
-            Height: =80
+            Height: =42
             HoverBorderColor: =LblHeaderCreateNew.BorderColor
             HoverColor: =LblHeaderCreateNew.Color
             HoverFill: =LblHeaderCreateNew.Fill
@@ -92,11 +92,10 @@ MyLeaveRequests As screen:
             PressedBorderColor: =LblHeaderCreateNew.BorderColor
             PressedColor: =LblHeaderCreateNew.Color
             PressedFill: =LblHeaderCreateNew.Fill
-            Size: =18
             Text: ="Create Request"
             Width: =192
             X: =1115
-            Y: =8
+            Y: =24
             ZIndex: =4
 
     Gallery1 As gallery.galleryVertical:
@@ -133,19 +132,19 @@ MyLeaveRequests As screen:
 
     Circle1 As circle:
         Fill: =RGBA(41,172,96,1)
-        Height: =70
-        Width: =70
-        X: =1030
-        Y: =7
+        Height: =40
+        Width: =40
+        X: =1062
+        Y: =28
         ZIndex: =3
 
     Icon2 As icon.Add:
         Color: =RGBA(0, 0, 0, 1)
-        Height: =40
+        Height: =35
         Icon: =Icon.Add
-        Width: =40
-        X: =1045
-        Y: =22
+        Width: =35
+        X: =1064
+        Y: =30
         ZIndex: =4
 
     Label2 As label:
