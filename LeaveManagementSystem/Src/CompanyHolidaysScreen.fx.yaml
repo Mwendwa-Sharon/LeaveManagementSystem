@@ -8,8 +8,8 @@ CompanyHolidaysScreen As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =44
-        X: =375
-        Y: =126
+        X: =350
+        Y: =157
         ZIndex: =1
 
         Label5 As label:
@@ -30,4 +30,13 @@ CompanyHolidaysScreen As screen:
             X: =351
             Y: =5
             ZIndex: =8
+
+    Label3 As label:
+        Height: =30
+        Size: =11
+        Text: ="The following are the company's paid holidays during which the offices will be closed"
+        Width: =590
+        X: =350
+        Y: =94
+        ZIndex: =2
 

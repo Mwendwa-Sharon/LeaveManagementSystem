@@ -1,0 +1,103 @@
+NewRequests As screen:
+
+    Label4 As label:
+        Height: =32
+        Size: =11
+        Text: |-
+            ="Select the type of leave:"
+        Width: =226
+        X: =632
+        Y: =153
+        ZIndex: =1
+
+    Label6 As label:
+        Size: =11
+        Text: ="Enter your ID"
+        X: =280
+        Y: =145
+        ZIndex: =2
+
+    TextInput1 As text:
+        Align: =Align.Center
+        Default: =""
+        Height: =35
+        HintText: ="ID"
+        Size: =11
+        Width: =180
+        X: =283
+        Y: =185
+        ZIndex: =3
+
+    Dropdown1 As dropdown:
+        BorderColor: =
+        Height: =35
+        Items: =Choices(LeaveRequestsList.LeaveType)
+        Size: =11
+        Width: =180
+        X: =632
+        Y: =185
+        ZIndex: =4
+
+    Label7 As label:
+        Size: =11
+        Text: ="Start Date"
+        X: =283
+        Y: =243
+        ZIndex: =5
+
+    Label7_1 As label:
+        Size: =11
+        Text: ="End Date"
+        X: =647
+        Y: =243
+        ZIndex: =6
+
+    DatePicker1 As datepicker:
+        Height: =35
+        Size: =11
+        Width: =180
+        X: =280
+        Y: =283
+        ZIndex: =7
+
+    DatePicker1_1 As datepicker:
+        Height: =35
+        Size: =11
+        Width: =180
+        X: =632
+        Y: =283
+        ZIndex: =8
+
+    Label8 As label:
+        Height: =37
+        Size: =11
+        Text: ="Describe your leave reason"
+        Width: =200
+        X: =280
+        Y: =350
+        ZIndex: =9
+
+    TextInput2 As text:
+        Default: =""
+        HintText: ="Description"
+        Size: =11
+        X: =280
+        Y: =407
+        ZIndex: =10
+
+    Button1 As button:
+        AutoDisableOnSelect: =false
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        PaddingBottom: =6
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =13
+        Text: ="Submit request"
+        Width: =180
+        X: =500
+        Y: =515
+        ZIndex: =11
+
