@@ -1,0 +1,8 @@
+MyLeaveBalance As screen:
+
+    "Icon3 As icon.'3DPrinting'":
+        Icon: =Icon.Printing3D
+        X: =40
+        Y: =40
+        ZIndex: =1
+
