@@ -22,7 +22,7 @@ MyLeaveRequests As screen:
             FocusedBorderThickness: =02
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
-            Height: =42
+            Height: =38
             HoverBorderColor: =LblHeaderCreateNew.BorderColor
             HoverColor: =LblHeaderCreateNew.Color
             HoverFill: =LblHeaderCreateNew.Fill
@@ -37,8 +37,8 @@ MyLeaveRequests As screen:
             Size: =14
             Text: ="Create Request"
             Width: =192
-            X: =1090
-            Y: =24
+            X: =1100
+            Y: =30
             ZIndex: =4
 
         Group2 As group:
