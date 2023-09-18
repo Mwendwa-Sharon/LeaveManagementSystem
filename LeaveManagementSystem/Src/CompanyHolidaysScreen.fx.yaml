@@ -1,4 +1,5 @@
 CompanyHolidaysScreen As screen:
+    Fill: =
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
@@ -39,4 +40,160 @@ CompanyHolidaysScreen As screen:
         X: =350
         Y: =94
         ZIndex: =2
+
+    Gallery3_2 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =672
+        Items: =EmployeeNav
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(ThisItem.TargetScreen);
+        ShowScrollbar: =false
+        TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
+        TemplateSize: =75
+        Width: =273
+        Y: =96
+        ZIndex: =3
+
+        Label9_2 As label:
+            Height: =Gallery3_2.TemplateHeight
+            OnSelect: =Navigate(ThisItem.TargetScreen);
+            Text: =ThisItem.Title
+            Width: =Gallery3_2.TemplateWidth
+            ZIndex: =1
+
+    Container1_3 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(41,172,96,1)
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Fill: =RGBA(29,24,57,1)
+        Height: =Max(App.Height, App.MinScreenHeight)/8
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =Max(App.Width, App.MinScreenWidth)
+        ZIndex: =4
+
+        LblHeaderCreateNew_3 As label:
+            BorderColor: =RGBA(101, 128, 187, 1)
+            Color: =Color.White
+            DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+            FocusedBorderColor: =LblHeaderCreateNew_3.BorderColor
+            FocusedBorderThickness: =02
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =38
+            HoverBorderColor: =LblHeaderCreateNew_3.BorderColor
+            HoverColor: =LblHeaderCreateNew_3.Color
+            HoverFill: =LblHeaderCreateNew_3.Fill
+            OnSelect: =
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =LblHeaderCreateNew_3.BorderColor
+            PressedColor: =LblHeaderCreateNew_3.Color
+            PressedFill: =LblHeaderCreateNew_3.Fill
+            Size: =14
+            Text: ="Create Request"
+            Width: =192
+            X: =1100
+            Y: =30
+            ZIndex: =4
+
+        Group2_2 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =5
+
+            LblHeaderTItle1_6 As label:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                Color: =Color.White
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                Fill: =RGBA(29,24,57,1)
+                FocusedBorderColor: =LblHeaderTItle1_6.BorderColor
+                Font: =Font.Lato
+                Height: =80
+                HoverBorderColor: =LblHeaderTItle1_6.BorderColor
+                HoverColor: =LblHeaderTItle1_6.Color
+                HoverFill: =LblHeaderTItle1_6.Fill
+                PressedBorderColor: =LblHeaderTItle1_6.BorderColor
+                PressedColor: =LblHeaderTItle1_6.Color
+                PressedFill: =LblHeaderTItle1_6.Fill
+                Size: =15
+                Text: =Upper("Request")
+                Width: =117
+                X: =40
+                Y: =16
+                ZIndex: =1
+
+            icon2_3 As icon.ArrowRight:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                DisabledColor: =RGBA(193, 193, 193, 0.95)
+                DisabledFill: =icon2_3.Fill
+                FocusedBorderColor: =icon2_3.BorderColor
+                Height: =38
+                HoverBorderColor: =ColorFade(icon2_3.BorderColor, 20%)
+                HoverColor: =ColorFade(icon2_3.Color, 20%)
+                HoverFill: =icon2_3.Fill
+                Icon: =Icon.ArrowRight
+                PressedBorderColor: =ColorFade(icon2_3.BorderColor, -20%)
+                PressedColor: =ColorFade(icon2_3.Color, -20%)
+                PressedFill: =icon2_3.Fill
+                Width: =107
+                X: =129
+                Y: =37
+                ZIndex: =2
+
+            LblHeaderTItle1_7 As label:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                Color: =Color.White
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                Fill: =RGBA(29,24,57,1)
+                FocusedBorderColor: =LblHeaderTItle1_7.BorderColor
+                Font: =Font.Lato
+                Height: =80
+                HoverBorderColor: =LblHeaderTItle1_7.BorderColor
+                HoverColor: =LblHeaderTItle1_7.Color
+                HoverFill: =LblHeaderTItle1_7.Fill
+                PressedBorderColor: =LblHeaderTItle1_7.BorderColor
+                PressedColor: =LblHeaderTItle1_7.Color
+                PressedFill: =LblHeaderTItle1_7.Fill
+                Size: =15
+                Text: ="LEAVE"
+                Width: =117
+                X: =224
+                Y: =16
+                ZIndex: =3
+
+    Group1_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =7
+
+        Circle1_1 As circle:
+            Fill: =Color.White
+            Height: =40
+            OnSelect: =Navigate(NewRequests, BorderStyle.None)
+            Width: =40
+            X: =1026
+            Y: =28
+            ZIndex: =5
+
+        Icon2_1 As icon.Add:
+            Color: =RGBA(29,24,57,1)
+            Height: =35
+            Icon: =Icon.Add
+            OnSelect: =Navigate(NewRequests, BorderStyle.None)
+            Width: =35
+            X: =1028
+            Y: =30
+            ZIndex: =6
 
