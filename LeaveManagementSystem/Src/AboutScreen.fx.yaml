@@ -1,6 +1,27 @@
 AboutScreen As screen:
     Fill: =RGBA(243,242,250,1)
 
+    Gallery3_3 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =672
+        Items: =EmployeeNav
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(ThisItem.TargetScreen);
+        ShowScrollbar: =false
+        TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
+        TemplateSize: =75
+        Width: =273
+        Y: =96
+        ZIndex: =10
+
+        Label9_3 As label:
+            Height: =Gallery3_3.TemplateHeight
+            OnSelect: =Navigate(ThisItem.TargetScreen);
+            Text: =ThisItem.Title
+            Width: =Gallery3_3.TemplateWidth
+            ZIndex: =1
+
     AboutLeaveMiddle As group:
         Height: =5
         Width: =5
@@ -73,6 +94,7 @@ AboutScreen As screen:
                 ZIndex: =1
 
             AboutLeaveTypeButton As button:
+                AutoDisableOnSelect: =false
                 BorderColor: =RGBA(29,24,57,1)
                 DisabledBorderColor: =ColorFade(AboutLeaveTypeButton.BorderColor, 70%)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
@@ -89,12 +111,13 @@ AboutScreen As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 PressedBorderColor: =AboutLeaveTypeButton.Fill
-                PressedColor: =AboutLeaveTypeButton.Fill
+                PressedColor: =
                 PressedFill: =AboutLeaveTypeButton.Color
                 RadiusBottomLeft: =15
                 RadiusBottomRight: =15
                 RadiusTopLeft: =15
                 RadiusTopRight: =15
+                Size: =11
                 Text: =""
                 Width: =206
                 ZIndex: =2
@@ -190,27 +213,6 @@ AboutScreen As screen:
             X: =310
             Y: =499
             ZIndex: =9
-
-    Gallery3_3 As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Height: =672
-        Items: =EmployeeNav
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =Navigate(ThisItem.TargetScreen);
-        ShowScrollbar: =false
-        TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
-        TemplateSize: =75
-        Width: =273
-        Y: =96
-        ZIndex: =10
-
-        Label9_3 As label:
-            Height: =Gallery3_3.TemplateHeight
-            OnSelect: =Navigate(ThisItem.TargetScreen);
-            Text: =ThisItem.Title
-            Width: =Gallery3_3.TemplateWidth
-            ZIndex: =1
 
     Container1_1 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(41,172,96,1)
