@@ -19,6 +19,7 @@ NewRequests As screen:
 
     IDInput As text:
         Align: =Align.Center
+        BorderColor: =RGBA(29,24,57,1)
         Default: =""
         Height: =35
         HintText: ="ID"
@@ -43,7 +44,10 @@ NewRequests As screen:
         ZIndex: =6
 
     From As datepicker:
+        BorderColor: =RGBA(29,24,57,1)
+        Fill: =Color.White
         Height: =35
+        IconBackground: =RGBA(29,24,57,1)
         Size: =11
         Width: =180
         X: =280
@@ -51,7 +55,9 @@ NewRequests As screen:
         ZIndex: =7
 
     To As datepicker:
+        BorderColor: =RGBA(29,24,57,1)
         Height: =35
+        IconBackground: =RGBA(29,24,57,1)
         Size: =11
         Width: =180
         X: =632
@@ -68,15 +74,19 @@ NewRequests As screen:
         ZIndex: =9
 
     DescriptionInput As text:
+        BorderColor: =RGBA(29,24,57,1)
         Default: =""
+        Height: =35
         HintText: ="Description"
         Size: =11
+        Width: =280
         X: =280
         Y: =407
         ZIndex: =10
 
     Button1 As button:
         AutoDisableOnSelect: =false
+        Fill: =RGBA(29,24,57,1)
         FontWeight: =FontWeight.Bold
         Height: =35
         OnSelect: |+
@@ -100,11 +110,13 @@ NewRequests As screen:
         Size: =13
         Text: ="Submit request"
         Width: =180
-        X: =500
-        Y: =515
+        X: =513
+        Y: =489
         ZIndex: =11
 
     LeaveTypeDropdown As dropdown:
+        BorderColor: =RGBA(29,24,57,1)
+        ChevronBackground: =RGBA(29,24,57,1)
         Height: =35
         Items: =Choices(LeaveRequestsList.LeaveType)
         Size: =11
