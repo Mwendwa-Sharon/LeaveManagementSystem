@@ -94,7 +94,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 18,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -133,6 +133,7 @@
     "CompanyHolidaysScreen",
     "LoginScreen",
     "AboutScreen",
-    "NewRequests"
+    "NewRequests",
+    "Screen1"
   ]
 }
