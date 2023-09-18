@@ -98,38 +98,6 @@ MyLeaveRequests As screen:
             Y: =24
             ZIndex: =4
 
-    Gallery1 As gallery.galleryVertical:
-        BorderColor: =RGBA(41,172,96,1)
-        BorderThickness: =1
-        Height: =Max(App.Height, App.MinScreenHeight)-Max(App.Height, App.MinScreenHeight)/8
-        Items: =EmployeeNavigation
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: |-
-            =///Set(_navMenuSelect, ThisItem.MenuItem);
-            If(
-                "Requests" in ThisItem.MenuItem, Navigate(MyLeaveRequests, BorderStyle.None),
-                "Balance" in ThisItem.MenuItem, Navigate(MyLeaveBalance, BorderStyle.None),
-                "Holidays" in ThisItem.MenuItem, Navigate(CompanyHolidaysScreen, BorderStyle.None),
-                ThisItem.MenuItem = "About", Navigate(AboutScreen, BorderStyle.None),
-                ThisItem.MenuItem = "Log out", Navigate(LoginScreen, BorderStyle.None)
-            )
-            ///Set(_selectedLeaveType, Blank())
-        TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
-        TemplateSize: =58
-        Width: =273
-        Y: =96
-        ZIndex: =2
-
-        Label1 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =Gallery1.TemplateHeight
-            Size: =11
-            Text: =ThisItem.MenuItem
-            Width: =Gallery1.TemplateWidth
-            X: =Gallery1.X
-            ZIndex: =1
-
     Circle1 As circle:
         Fill: =RGBA(41,172,96,1)
         Height: =40
@@ -147,9 +115,25 @@ MyLeaveRequests As screen:
         Y: =30
         ZIndex: =4
 
-    Label2 As label:
-        Text: ="hiii"
-        X: =768
-        Y: =280
-        ZIndex: =5
+    Gallery3 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =672
+        Items: =EmployeeNav
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =true;Navigate(ThisItem.TargetScreen)
+        ShowScrollbar: =false
+        TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
+        TemplateSize: =70
+        Width: =273
+        Y: =96
+        ZIndex: =6
+
+        Label1 As label:
+            DisplayMode: =DisplayMode.View
+            Height: =Gallery3.TemplateHeight
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Title
+            Width: =Gallery3.TemplateWidth
+            ZIndex: =1
 

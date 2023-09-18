@@ -35,6 +35,26 @@ App As appinfo:
         {MenuItem: "About"},
         {MenuItem: "Log out"}
         );
+        
+        ClearCollect(
+            EmployeeNav,
+            {
+                Title: "My Leave Requests", 
+                TargetScreen: MyLeaveRequests
+            },
+            {
+                Title: "My Leave Balance",
+                TargetScreen: MyLeaveBalance
+                },
+            {
+                Title: "Company Holidays", 
+                TargetScreen: CompanyHolidaysScreen
+                },
+            {
+                Title: "About", 
+                TargetScreen: AboutScreen}
+        );
+        ///About
         ClearCollect(
             LeaveTypeCollection, 
                 Table(
