@@ -3,3 +3,68 @@ LoginScreen As screen:
         =//RGBA(27,24,52, 0.8)
         RGBA(29,24,57,1)
 
+    Container2 As groupContainer.manualLayoutContainer:
+        Fill: =Color.White
+        Height: =768
+        Width: =535
+        X: =831
+        ZIndex: =1
+
+        Container3 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
+            Height: =139
+            Width: =532
+            Y: =150
+            ZIndex: =1
+
+            Label1 As label:
+                Height: =36
+                Size: =11
+                Text: ="TO SUBMIT A LEAVE REQUEST"
+                Width: =240
+                X: =135
+                Y: =18
+                ZIndex: =1
+
+            Button2 As button:
+                Color: =Color.White
+                Fill: =RGBA(29,24,57,1)
+                FontWeight: =FontWeight.Bold
+                Height: =35
+                Size: =11
+                Text: ="Log in as an employee"
+                Width: =298
+                X: =135
+                Y: =65
+                ZIndex: =2
+
+        Container3_1 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
+            Height: =139
+            Width: =532
+            X: =3
+            Y: =289
+            ZIndex: =2
+
+            Label1_1 As label:
+                Height: =42
+                Size: =11
+                Text: ="TO APPROVE OR  REJECT A LEAVE REQUEST"
+                Width: =311
+                X: =135
+                Y: =18
+                ZIndex: =1
+
+            Button2_1 As button:
+                Fill: =RGBA(29,24,57,1)
+                FontWeight: =FontWeight.Bold
+                Height: =35
+                Size: =11
+                Text: ="Log in as an approver"
+                Width: =298
+                X: =135
+                Y: =60
+                ZIndex: =2
+
