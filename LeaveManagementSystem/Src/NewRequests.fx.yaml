@@ -84,7 +84,7 @@ NewRequests As screen:
             Patch(LeaveRequestsList, Defaults(LeaveRequestsList),
             {
                 EmployeeID: IDInput.Text,
-                LeaveType: LeaveTypeDropdown.Selected.Value,
+                LeaveType: LeaveTypeDropdown.Selected,
                 StartDate: From.SelectedDate,
                 EndDate: To.SelectedDate,
                 LeaveDescription: DescriptionInput.Text

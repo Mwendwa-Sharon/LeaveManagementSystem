@@ -116,6 +116,14 @@
           "InvariantPropertyName": "AutoDisableOnSelect",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\nPatch(LeaveRequestsList, Defaults(LeaveRequestsList),\n{\n    EmployeeID: IDInput.Text,\n    LeaveType: LeaveTypeDropdown.Selected.Value,\n    StartDate: From.SelectedDate,\n    EndDate: To.SelectedDate,\n    LeaveDescription: DescriptionInput.Text\n}\n);\n\n\n",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -314,6 +322,11 @@
         {
           "Category": "Design",
           "PropertyName": "AutoDisableOnSelect",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
         }
       ],
