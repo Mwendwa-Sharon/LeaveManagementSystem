@@ -37,7 +37,7 @@
       "LeaveType#Id": "LeaveType Id",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
-      "Reason": "Reason",
+      "Reason": "Description",
       "StartDate": "StartDate",
       "Title": "Title"
     },
