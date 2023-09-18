@@ -32,6 +32,7 @@ LoginScreen As screen:
                 Fill: =RGBA(29,24,57,1)
                 FontWeight: =FontWeight.Bold
                 Height: =35
+                OnSelect: =Navigate(MyLeaveRequests,BorderStyle.None)
                 Size: =11
                 Text: ="Log in as an employee"
                 Width: =298
@@ -67,4 +68,11 @@ LoginScreen As screen:
                 X: =135
                 Y: =60
                 ZIndex: =2
+
+    Image1 As image:
+        Height: =768
+        Image: =IMAGE1
+        ImagePosition: =ImagePosition.Fill
+        Width: =831
+        ZIndex: =2
 
