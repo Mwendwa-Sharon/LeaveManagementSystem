@@ -47,7 +47,7 @@ App As appinfo:
             },
             {
                 Title: "Log out", 
-                TargetScreen: LogOutScreen 
+                TargetScreen: LoginScreen 
             }
         );
         
