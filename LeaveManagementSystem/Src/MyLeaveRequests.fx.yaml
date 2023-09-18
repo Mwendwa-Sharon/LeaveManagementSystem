@@ -129,11 +129,3 @@ MyLeaveRequests As screen:
         Y: =96
         ZIndex: =6
 
-        Label1 As label:
-            DisplayMode: =DisplayMode.View
-            Height: =Gallery3.TemplateHeight
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Title
-            Width: =Gallery3.TemplateWidth
-            ZIndex: =1
-
