@@ -235,7 +235,7 @@ AboutScreen As screen:
                 PressedFill: |-
                     =
                     RGBA(41,172,96,1)
-                Size: =14
+                Size: =11
                 Text: =ThisItem.type
                 Width: =193
                 X: =13
