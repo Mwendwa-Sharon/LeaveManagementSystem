@@ -98,7 +98,7 @@ AboutScreen As screen:
                 DisabledBorderColor: =ColorFade(AboutLeaveTypeButton.BorderColor, 70%)
                 DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
                 DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
-                Fill: =If(_aboutSelectedLeaveType = ThisItem.type, RGBA(0, 71, 144, 1),Color.White)
+                Fill: =If(_aboutSelectedLeaveType = ThisItem.type, RGBA(29,24,57, 1),Color.White)
                 FocusedBorderColor: =AboutLeaveTypeButton.BorderColor
                 FocusedBorderThickness: =0
                 HoverBorderColor: =ColorFade(AboutLeaveTypeButton.BorderColor, 20%)
@@ -138,9 +138,7 @@ AboutScreen As screen:
                 PaddingTop: =0.00
                 PressedBorderColor: =AboutLeaveTypeLabel.BorderColor
                 PressedColor: =AboutLeaveTypeLabel.Color
-                PressedFill: |-
-                    =
-                    RGBA(41,172,96,1)
+                PressedFill: =Color.White
                 Size: =11
                 Text: =ThisItem.type
                 Width: =193
