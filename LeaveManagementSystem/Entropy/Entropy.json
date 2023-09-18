@@ -1,6 +1,6 @@
 {
   "ComponentIndexes": {
-    "Component1": 7
+    "Component1": 6
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -39,7 +39,6 @@
     "Group1": 35,
     "Group2": 29,
     "Host": 3,
-    "Icon1": 67,
     "icon2": 28,
     "Icon2": 34,
     "icon2_1": 41,
@@ -68,12 +67,11 @@
     "MyLeaveBalance": 20,
     "MyLeaveRequests": 23,
     "NewRequests": 54,
-    "Screen1": 66,
     "To": 62
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/18/2023 16:35:43",
+  "HeaderLastSavedDateTimeUTC": "09/18/2023 17:06:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2d959689-d9ce-4fdb-8406-ffd6f5c72d57": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/3e40f634419046819320b9dc99286f12\""
@@ -99,12 +97,12 @@
     "CustomGallerySample": 1,
     "DropDownSample": 2,
     "EmployeeList": 3,
-    "EmployeeNav": 9,
+    "EmployeeNav": 10,
     "FeedbackList": 4,
     "LeaveApprovalHistoryList": 5,
     "LeaveBalancesList": 6,
     "LeaveRequestsList": 7,
-    "LeaveTypeCollection": 10
+    "LeaveTypeCollection": 9
   },
   "OrderGroupControls": {
     "AboutLeaveMiddle": {
@@ -175,7 +173,6 @@
     "Group1": {},
     "Group2": {},
     "Host": {},
-    "Icon1": {},
     "icon2": {},
     "Icon2": {},
     "icon2_1": {},
@@ -204,7 +201,6 @@
     "MyLeaveBalance": {},
     "MyLeaveRequests": {},
     "NewRequests": {},
-    "Screen1": {},
     "To": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
@@ -245,7 +241,6 @@
     "Group1": 7,
     "Group2": 2,
     "Host": 0,
-    "Icon1": 55,
     "icon2": 5,
     "Icon2": 8,
     "icon2_1": 32,
@@ -274,7 +269,6 @@
     "MyLeaveBalance": 37,
     "MyLeaveRequests": 40,
     "NewRequests": 51,
-    "Screen1": 63,
     "To": 51
   },
   "ResourcesJsonIndices": {

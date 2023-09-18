@@ -44,6 +44,10 @@ App As appinfo:
             {
                 Title: "About", 
                 TargetScreen: AboutScreen 
+            },
+            {
+                Title: "Log out", 
+                TargetScreen: LogOutScreen 
             }
         );
         
