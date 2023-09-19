@@ -131,6 +131,44 @@ MyLeaveRequests As screen:
             Width: =Gallery3.TemplateWidth
             ZIndex: =1
 
+    Container4 As groupContainer.manualLayoutContainer:
+        Height: =133
+        Width: =1093
+        X: =273
+        Y: =96
+        ZIndex: =7
+
+        Image2 As image:
+            Height: =128
+            Image: =image2
+            ImagePosition: =ImagePosition.Fill
+            Width: =322
+            X: =6
+            ZIndex: =2
+
+        Label12 As label:
+            Align: =Align.Center
+            DisabledColor: =Color.Black
+            DisplayMode: =DisplayMode.Disabled
+            FontWeight: =FontWeight.Bold
+            Height: =49
+            Size: =18
+            Text: ="Welcome back ,"
+            Width: =249
+            X: =328
+            Y: =12
+            ZIndex: =3
+
+        Label13 As label:
+            DisabledColor: =Color.Black
+            DisplayMode: =DisplayMode.Disabled
+            FontWeight: =FontWeight.Semibold
+            Text: |
+                =User().FullName
+            X: =366
+            Y: =61
+            ZIndex: =4
+
     Group1 As group:
         Height: =5
         Width: =5
