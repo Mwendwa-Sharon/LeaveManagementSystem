@@ -222,6 +222,7 @@ MyLeaveRequests As screen:
         ZIndex: =8
 
         Button4 As button:
+            Fill: =RGBA(29,24,57,1)
             OnSelect: =Select(Parent)
             Text: =ThisItem.Filter
             X: =32
@@ -232,7 +233,7 @@ MyLeaveRequests As screen:
         DelayItemLoading: =true
         Height: =410
         Items: |
-            =Filter('LeaveRequestsList', 'Created By'.DisplayName = VarUser.FullName)
+            =Filter(LeaveRequestsList, 'Created By'.DisplayName = VarUser.FullName)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =137
@@ -271,6 +272,7 @@ MyLeaveRequests As screen:
             ZIndex: =3
 
         Button5 As button:
+            Fill: =RGBA(29,24,57,1)
             OnSelect: =Select(Parent)
             Text: =ThisItem.LeaveStatus
             X: =847
