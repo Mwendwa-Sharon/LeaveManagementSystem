@@ -19,6 +19,7 @@
     "Button2": 51,
     "Button2_1": 54,
     "Button4": 102,
+    "Button5": 108,
     "Circle1": 75,
     "Circle1_1": 35,
     "Circle1_2": 62,
@@ -111,7 +112,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/20/2023 17:35:28",
+  "HeaderLastSavedDateTimeUTC": "09/20/2023 18:01:14",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2d959689-d9ce-4fdb-8406-ffd6f5c72d57": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/bb0db7aed4f34824afc6e3e638b8ff5f\""
@@ -135,7 +136,7 @@
   },
   "OrderDataSource": {
     "ComboBoxSample": 0,
-    "CompanyHolidays": 8,
+    "CompanyHolidays": 10,
     "CustomGallerySample": 1,
     "DropDownSample": 2,
     "EmployeeList": 3,
@@ -144,7 +145,7 @@
     "LeaveApprovalHistoryList": 5,
     "LeaveBalancesList": 6,
     "LeaveRequestsList": 7,
-    "LeaveTypeCollection": 10
+    "LeaveTypeCollection": 8
   },
   "OrderGroupControls": {
     "AboutLeaveMiddle": {
@@ -222,6 +223,7 @@
     "Button2": {},
     "Button2_1": {},
     "Button4": {},
+    "Button5": {},
     "Circle1": {},
     "Circle1_1": {},
     "Circle1_2": {},
@@ -330,6 +332,7 @@
     "Button2": 51,
     "Button2_1": 53,
     "Button4": 0,
+    "Button5": 0,
     "Circle1": 69,
     "Circle1_1": 29,
     "Circle1_2": 56,

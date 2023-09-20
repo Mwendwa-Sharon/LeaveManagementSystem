@@ -231,7 +231,8 @@ MyLeaveRequests As screen:
     Gallery4 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =410
-        Items: =LeaveRequestsList
+        Items: |
+            =Filter('LeaveRequestsList', 'Created By'.DisplayName = VarUser.FullName)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =137
@@ -241,11 +242,10 @@ MyLeaveRequests As screen:
         ZIndex: =9
 
         Label10 As label:
-            Height: =37
             OnSelect: =Select(Parent)
             Size: =11
             Text: =ThisItem.LeaveType.Value
-            Width: =985
+            Width: =792
             X: =22
             Y: =12
             ZIndex: =1
@@ -269,4 +269,11 @@ MyLeaveRequests As screen:
             X: =22
             Y: =86
             ZIndex: =3
+
+        Button5 As button:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.LeaveStatus
+            X: =847
+            Y: =12
+            ZIndex: =4
 

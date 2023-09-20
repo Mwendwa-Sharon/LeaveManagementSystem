@@ -1,7 +1,8 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =//Collection used for company holidays collection
+        =Set(VarUser,User());
+        //Collection used for company holidays collection
         ClearCollect(
             CompanyHolidays,
             {
