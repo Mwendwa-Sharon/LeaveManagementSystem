@@ -208,3 +208,72 @@ MyLeaveRequests As screen:
             Y: =30
             ZIndex: =4
 
+    Gallery1 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Height: =87
+        Items: |-
+            =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Accepted"}, {Filter: "Rejected"})
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplateSize: =229
+        Width: =951
+        X: =308
+        Y: =244
+        ZIndex: =8
+
+        Button4 As button:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Filter
+            X: =32
+            Y: =18
+            ZIndex: =1
+
+    Gallery4 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =410
+        Items: |
+            =Filter('LeaveRequestsList', 'Created By'.DisplayName = VarUser.FullName)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =137
+        Width: =1076
+        X: =290
+        Y: =358
+        ZIndex: =9
+
+        Label10 As label:
+            OnSelect: =Select(Parent)
+            Size: =11
+            Text: =ThisItem.LeaveType.Value
+            Width: =792
+            X: =22
+            Y: =12
+            ZIndex: =1
+
+        Label10_1 As label:
+            Height: =37
+            OnSelect: =Select(Parent)
+            Size: =11
+            Text: =Text(ThisItem.StartDate,"[$-en-US]dddd, mmm. dd, yyyy") & If(DateDiff(ThisItem.StartDate, ThisItem.EndDate, TimeUnit.Days) <> 0, " - " & Text(ThisItem.EndDate,"[$-en-US]dddd, mmm. dd, yyyy"))
+            Width: =985
+            X: =22
+            Y: =49
+            ZIndex: =2
+
+        Label10_2 As label:
+            Height: =37
+            OnSelect: =Select(Parent)
+            Size: =11
+            Text: =ThisItem.LeaveDescription
+            Width: =985
+            X: =22
+            Y: =86
+            ZIndex: =3
+
+        Button5 As button:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.LeaveStatus
+            X: =847
+            Y: =12
+            ZIndex: =4
+
