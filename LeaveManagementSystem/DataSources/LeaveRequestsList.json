@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-09-06T21:41:49.4930000Z",
+      "LastChangedTimeString": "2023-09-19T16:29:14.0420000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -27,12 +27,14 @@
       "Author#Claims": "Created By Claims",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
+      "DaysOff": "DaysOff",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
       "EmployeeID": "EmployeeID",
       "EndDate": "EndDate",
       "ID": "ID",
       "LeaveDescription": "LeaveDescription",
+      "LeaveStatus": "LeaveStatus",
       "LeaveType": "LeaveType",
       "LeaveType#Id": "LeaveType Id",
       "Modified": "Modified",
