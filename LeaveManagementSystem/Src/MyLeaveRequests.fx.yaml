@@ -163,11 +163,24 @@ MyLeaveRequests As screen:
             DisabledColor: =Color.Black
             DisplayMode: =DisplayMode.Disabled
             FontWeight: =FontWeight.Semibold
+            Height: =41
             Text: |
                 =User().FullName
+            Width: =183
             X: =366
             Y: =61
             ZIndex: =4
+
+        Label13_1 As label:
+            DisabledColor: =Color.Black
+            DisplayMode: =DisplayMode.Disabled
+            FontWeight: =FontWeight.Semibold
+            Height: =41
+            Text: =
+            Width: =183
+            X: =577
+            Y: =61
+            ZIndex: =5
 
     Group1 As group:
         Height: =5
