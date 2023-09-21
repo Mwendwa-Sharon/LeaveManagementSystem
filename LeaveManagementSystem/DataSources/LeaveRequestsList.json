@@ -36,6 +36,7 @@
       "ID": "ID",
       "LeaveDescription": "LeaveDescription",
       "LeaveStatus": "LeaveStatus",
+      "LeaveStatus#Id": "LeaveStatus Id",
       "LeaveType": "LeaveType",
       "LeaveType#Id": "LeaveType Id",
       "Modified": "Modified",
