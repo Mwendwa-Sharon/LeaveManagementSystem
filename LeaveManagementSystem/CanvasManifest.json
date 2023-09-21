@@ -137,6 +137,8 @@
     "MyLeaveBalance",
     "CompanyHolidaysScreen",
     "AboutScreen",
-    "NewRequests"
+    "NewRequests",
+    "Screen1",
+    "Screen2"
   ]
 }
