@@ -40,10 +40,11 @@ Screen1 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
                 Items: =Choices([@LeaveRequestsList].EmployeeNumber)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(LeaveRequestsList.EmployeeNumber,DataCardValue19.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -217,6 +218,7 @@ Screen1 As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue7.Selected
+            Visible: =false
             Width: =623
             X: =1
             Y: =1
@@ -237,10 +239,11 @@ Screen1 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
                 Items: =Choices([@LeaveRequestsList].LeaveStatus)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(LeaveRequestsList.LeaveStatus,DataCardValue7.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60

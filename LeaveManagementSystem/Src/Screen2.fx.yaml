@@ -286,10 +286,11 @@ Screen2 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
                 Items: =Choices([@LeaveRequestsList].LeaveStatus)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(LeaveRequestsList.LeaveStatus,DataCardValue16.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Width: =Parent.Width - 60
                 X: =30
@@ -351,10 +352,11 @@ Screen2 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
                 Items: =Choices([@LeaveRequestsList].EmployeeNumber)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(LeaveRequestsList.EmployeeNumber,DataCardValue17.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Width: =Parent.Width - 60
                 X: =30
