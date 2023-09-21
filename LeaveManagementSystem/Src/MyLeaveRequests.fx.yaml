@@ -271,11 +271,3 @@ MyLeaveRequests As screen:
             Y: =86
             ZIndex: =3
 
-        Button5 As button:
-            Fill: =RGBA(29,24,57,1)
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.LeaveStatus
-            X: =847
-            Y: =12
-            ZIndex: =4
-
