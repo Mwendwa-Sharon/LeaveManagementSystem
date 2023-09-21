@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-09-19T16:29:14.0420000Z",
+      "LastChangedTimeString": "2023-09-06T21:41:49.4930000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -29,11 +29,18 @@
       "Created": "Created",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
+      "EmployeeID": "EmployeeID",
+      "EmployeeID#Id": "EmployeeID Id",
       "ID": "ID",
       "LastUpdated": "LastUpdated",
+      "LeaveBalance": "LeaveType",
+      "LeaveBalance#Id": "LeaveType Id",
+      "LeaveBalance0": "LeaveBalance (LeaveBalance0)",
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
-      "Title": "Title"
+      "Title": "Title",
+      "TotalLeaveDays": "TotalLeaveDays",
+      "UsedLeaveDays": "UsedLeaveDays"
     },
     "DatasetName": "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS",
     "EncodeDataset": true,
