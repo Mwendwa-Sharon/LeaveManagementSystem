@@ -95,7 +95,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DescriptionInput",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -397,7 +397,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "From",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -714,14 +714,6 @@
           "InvariantPropertyName": "HintText",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "true",
-          "InvariantPropertyName": "Visible",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -734,7 +726,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IDInput",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -931,11 +923,6 @@
           "Category": "Design",
           "PropertyName": "FocusedBorderColor",
           "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Visible",
-          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultTextStyle",
@@ -1008,7 +995,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label4",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1277,7 +1264,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1546,7 +1533,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label7",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1815,7 +1802,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label7_1",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2084,7 +2071,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2383,7 +2370,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LeaveTypeDropdown",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3026,7 +3013,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "To",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
