@@ -1,6 +1,7 @@
 Screen1 As screen:
 
     Rectangle1 As rectangle:
+        Fill: =RGBA(29,24,57,1)
         Height: =85
         Width: =1364
         Y: =1
@@ -26,8 +27,17 @@ Screen1 As screen:
         ZIndex: =4
 
     Button3 As button:
+        DisabledColor: |-
+            =
+            //RGBA(169, 169, 169, 1)
+            RGBA(66, 66, 66, 1)
+        DisplayMode: |-
+            =//Makes the submit button disabled until a user enters all the required fields
+            If(Form2.Valid, DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =RGBA(29,24,57,1)
         Height: =45
         OnSelect: =SubmitForm(Form2)
+        Size: =13
         Text: ="Submit Request"
         Width: =248
         X: =563
@@ -65,6 +75,7 @@ Screen1 As screen:
             DataCardKey2 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -74,6 +85,7 @@ Screen1 As screen:
 
             DataCardValue2 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(29, 24, 57, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
@@ -82,6 +94,7 @@ Screen1 As screen:
                 SearchFields: =["Value"]
                 SearchItems: =Choices(LeaveRequestsList.LeaveType,DataCardValue2.SearchText)
                 SelectMultiple: =false
+                Size: =11
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -131,6 +144,7 @@ Screen1 As screen:
             DataCardKey3 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -143,9 +157,11 @@ Screen1 As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(29, 24, 57, 1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =11
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -196,6 +212,7 @@ Screen1 As screen:
             DataCardKey4 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -208,9 +225,11 @@ Screen1 As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(29, 24, 57, 1)
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =11
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -262,6 +281,7 @@ Screen1 As screen:
             DataCardKey5 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -280,6 +300,7 @@ Screen1 As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =11
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -329,6 +350,7 @@ Screen1 As screen:
             DataCardKey10 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -338,6 +360,7 @@ Screen1 As screen:
 
             DataCardValue10 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(29, 24, 57, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
@@ -346,6 +369,7 @@ Screen1 As screen:
                 SearchFields: =["Value"]
                 SearchItems: =Choices(LeaveRequestsList.Department,DataCardValue10.SearchText)
                 SelectMultiple: =false
+                Size: =11
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -395,6 +419,7 @@ Screen1 As screen:
             DataCardKey11 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =11
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -411,6 +436,7 @@ Screen1 As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
                 PaddingTop: =5
+                Size: =11
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
