@@ -24,9 +24,16 @@ NewRequests As screen:
         DefaultMode: =FormMode.New
         Height: =568
         NumberOfColumns: =2
-        OnSuccess: |-
-            =ResetForm(Self);
-            //NewForm(Self);
+        OnFailure: =
+        OnSuccess: |
+            =//Reset the form
+            ResetForm(Self);
+            //Send email to the the person who sends the leave request
+            Office365Outlook.SendEmail(
+                User().Email,
+                "Your Leave Request",
+                "Your leave request was successfully sent. Please wait for approval."
+            );
         Width: =985
         X: =197
         Y: =82
@@ -524,6 +531,7 @@ NewRequests As screen:
             Height: =81
             Icon: =Icon.ArrowLeft
             OnSelect: =Navigate(MyLeaveBalance)
+            Width: =45
             X: =41
             Y: =1
             ZIndex: =4

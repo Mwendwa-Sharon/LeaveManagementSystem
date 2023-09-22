@@ -223,8 +223,10 @@ MyLeaveRequests As screen:
 
         Button4 As button:
             Fill: =RGBA(29,24,57,1)
+            Height: =30
             OnSelect: =Select(Parent)
             Text: =ThisItem.Filter
+            Width: =108
             X: =32
             Y: =18
             ZIndex: =1
@@ -243,10 +245,11 @@ MyLeaveRequests As screen:
         ZIndex: =9
 
         Label10 As label:
+            Height: =37
             OnSelect: =Select(Parent)
             Size: =11
             Text: =ThisItem.LeaveType.Value
-            Width: =792
+            Width: =351
             X: =22
             Y: =12
             ZIndex: =1
@@ -270,4 +273,13 @@ MyLeaveRequests As screen:
             X: =22
             Y: =86
             ZIndex: =3
+
+        Label4 As label:
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =ThisItem.LeaveStatus.Value
+            X: =555
+            Y: =10
+            ZIndex: =4
 
