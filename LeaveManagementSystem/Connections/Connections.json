@@ -22,9 +22,6 @@
           },
           "LeaveRequestsList": {
             "tableName": "209da888-a4e8-479c-a129-177b684c796a"
-          },
-          "Requests": {
-            "tableName": "8b1bd26c-85b8-43be-8e0b-c22caa2faaaa"
           }
         }
       }
@@ -34,8 +31,7 @@
       "LeaveBalancesList",
       "LeaveApprovalHistoryList",
       "FeedbackList",
-      "EmployeeList",
-      "Requests"
+      "EmployeeList"
     ],
     "dependencies": {},
     "dependents": [],
