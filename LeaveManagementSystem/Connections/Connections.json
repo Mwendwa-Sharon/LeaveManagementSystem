@@ -36,5 +36,19 @@
     "dependencies": {},
     "dependents": [],
     "id": "2d959689-d9ce-4fdb-8406-ffd6f5c72d57"
+  },
+  "7d0d7931-4e22-473e-8751-3541255a0e62": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/henryorsborn/partial-builds/asev3migrations-with-resourceTemplate/1.0.1653.3403/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
   }
 }
