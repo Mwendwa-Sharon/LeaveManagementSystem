@@ -32,7 +32,7 @@ NewRequests As screen:
             Office365Outlook.SendEmail(
                 User().Email,
                 "Your Leave Request",
-                "Your" & DataCardValue2.Selected.Value & "leave request was successfully sent. Please wait for approval."
+                "Your" & DataCardValue2.Selected.Value & " leave request was successfully sent. Please wait for approval."
             );
         Width: =985
         X: =197
