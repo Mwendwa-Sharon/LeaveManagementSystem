@@ -15,8 +15,8 @@ NewRequests As screen:
         Size: =13
         Text: ="Submit Request"
         Width: =193
-        X: =486
-        Y: =681
+        X: =547
+        Y: =674
         ZIndex: =5
 
     Form2 As form:
@@ -314,75 +314,6 @@ NewRequests As screen:
                 Y: =DataCardKey5.Y
                 ZIndex: =4
 
-        Department_DataCard1 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Department"
-            Default: =ThisItem.Department
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@LeaveRequestsList],DataSourceInfo.DisplayName,"Department")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =true
-            Update: =DataCardValue10.Selected
-            Width: =492
-            X: =0
-            Y: =2
-            ZIndex: =7
-
-            DataCardKey10 As label:
-                AutoHeight: =true
-                Height: =34
-                Size: =11
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue10 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(29, 24, 57, 1)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@LeaveRequestsList].Department)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices(LeaveRequestsList.Department,DataCardValue10.SearchText)
-                SelectMultiple: =false
-                Size: =11
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
-                ZIndex: =2
-
-            ErrorMessage9 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue10.Y + DataCardValue10.Height
-                ZIndex: =3
-
-            StarVisible9 As label:
-                Align: =Align.Center
-                Height: =DataCardKey10.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey10.Y
-                ZIndex: =4
-
         Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
@@ -394,7 +325,7 @@ NewRequests As screen:
             Required: =false
             Update: =DataCardValue11.Attachments
             Width: =492
-            X: =1
+            X: =50
             Y: =2
             ZIndex: =7
 
@@ -456,50 +387,57 @@ NewRequests As screen:
         Width: =Parent.Width
         ZIndex: =7
 
-        Rectangle2 As rectangle:
-            Fill: =RGBA(116, 116, 116, 1)
-            Height: =227
-            Width: =404
-            X: =294
-            Y: =384
-            ZIndex: =1
+        "'popup rectangle' As group":
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =5
 
-        Label2 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            FontWeight: =FontWeight.Semibold
-            Height: =75
-            Size: =12
-            Text: ="Are you sure you want to submit the request?"
-            Width: =215
-            X: =351
-            Y: =405
-            ZIndex: =2
+            Rectangle2 As rectangle:
+                Fill: =RGBA(116, 116, 116, 1)
+                Height: =227
+                Width: =404
+                X: =700
+                Y: =384
+                ZIndex: =1
 
-        SubmitForm As button:
-            Fill: =RGBA(29, 24, 57, 1)
-            Height: =35
-            OnSelect: |-
-                =SubmitForm(Form2);
-                Navigate(MyLeaveRequests)
-            Size: =11
-            Text: ="Submit"
-            Width: =108
-            X: =341
-            Y: =516
-            ZIndex: =3
+            Label2 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =75
+                Size: =12
+                Text: ="Are you sure you want to submit the request?"
+                Width: =215
+                X: =794
+                Y: =415
+                ZIndex: =2
 
-        Cancel As button:
-            Fill: =RGBA(255, 0, 0, 1)
-            Height: =35
-            OnSelect: |
-                =Set(ConfirmationPopup, false);
-                ResetForm(Form2)
-            Size: =11
-            Text: ="Cancel"
-            Width: =108
-            X: =526
-            Y: =516
-            ZIndex: =4
+            SubmitForm As button:
+                Fill: =RGBA(29, 24, 57, 1)
+                Height: =35
+                OnSelect: |-
+                    =SubmitForm(Form2);
+                    Navigate(MyLeaveRequests)
+                Size: =11
+                Text: ="Submit"
+                Width: =108
+                X: =757
+                Y: =516
+                ZIndex: =3
+
+            Cancel As button:
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =35
+                OnSelect: |
+                    =Set(ConfirmationPopup, false);
+                    ResetForm(Form2)
+                Size: =11
+                Text: ="Cancel"
+                Width: =108
+                X: =964
+                Y: =516
+                ZIndex: =4
 
     Header As group:
         Height: =5

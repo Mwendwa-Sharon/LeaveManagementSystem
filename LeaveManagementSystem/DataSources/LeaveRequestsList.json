@@ -28,8 +28,6 @@
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
       "DaysOff": "DaysOff",
-      "Department": "Department",
-      "Department#Id": "Department Id",
       "Editor": "Modified By",
       "Editor#Claims": "Modified By Claims",
       "EndDate": "EndDate",
