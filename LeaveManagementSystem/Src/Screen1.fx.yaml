@@ -36,8 +36,12 @@ Screen1 As screen:
 
     Form2 As form:
         DataSource: =LeaveRequestsList
+        DefaultMode: =FormMode.New
         Height: =568
         NumberOfColumns: =2
+        OnSuccess: |-
+            =ResetForm(Self);
+            NewForm(Self);
         Width: =985
         X: =197
         Y: =82
