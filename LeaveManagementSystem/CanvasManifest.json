@@ -132,12 +132,13 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "LoginScreen",
-    "MyLeaveRequests",
-    "MyLeaveBalance",
-    "CompanyHolidaysScreen",
     "AboutScreen",
+    "CompanyHolidaysScreen",
+    "LoginScreen",
+    "MyLeaveBalance",
+    "MyLeaveRequests",
     "NewRequests",
-    "Screen1"
+    "Screen1",
+    "Screen3"
   ]
 }
