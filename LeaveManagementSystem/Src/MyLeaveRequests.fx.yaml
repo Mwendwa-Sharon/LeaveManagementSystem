@@ -234,8 +234,7 @@ MyLeaveRequests As screen:
     Gallery4 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =410
-        Items: |
-            =Filter(LeaveRequestsList, 'Created By'.DisplayName = VarUser.FullName)
+        Items: =LeaveRequestsList
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =137
@@ -273,4 +272,19 @@ MyLeaveRequests As screen:
             X: =22
             Y: =86
             ZIndex: =3
+
+        Icon3 As icon.ChevronRight:
+            Icon: =Icon.ChevronRight
+            OnSelect: =Set(varFormMode,FormMode.View);Set(varItem,ThisItem);Navigate(NewRequests_1)
+            X: =970
+            Y: =35
+            ZIndex: =4
+
+    Icon5 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Add
+        OnSelect: =Set(varFormMode,FormMode.New);Set(varItem,Blank());Navigate(NewRequests_1)
+        X: =917
+        Y: =16
+        ZIndex: =10
 
