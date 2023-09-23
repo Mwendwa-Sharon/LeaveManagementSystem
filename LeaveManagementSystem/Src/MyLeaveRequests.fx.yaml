@@ -259,7 +259,7 @@ MyLeaveRequests As screen:
             OnSelect: =Select(Parent)
             Size: =11
             Text: =Text(ThisItem.StartDate,"[$-en-US]dddd, mmm. dd, yyyy") & If(DateDiff(ThisItem.StartDate, ThisItem.EndDate, TimeUnit.Days) <> 0, " - " & Text(ThisItem.EndDate,"[$-en-US]dddd, mmm. dd, yyyy"))
-            Width: =985
+            Width: =582
             X: =22
             Y: =49
             ZIndex: =2
@@ -273,13 +273,4 @@ MyLeaveRequests As screen:
             X: =22
             Y: =86
             ZIndex: =3
-
-        Label4 As label:
-            FontWeight: =FontWeight.Semibold
-            OnSelect: =Select(Parent)
-            Size: =12
-            Text: =ThisItem.LeaveStatus.Value
-            X: =555
-            Y: =10
-            ZIndex: =4
 
