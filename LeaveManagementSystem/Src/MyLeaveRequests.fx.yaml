@@ -142,8 +142,8 @@ MyLeaveRequests As screen:
             Height: =128
             Image: =image2
             ImagePosition: =ImagePosition.Fill
-            Width: =322
-            X: =6
+            Width: =401
+            X: =8
             ZIndex: =2
 
         Label12 As label:
@@ -155,8 +155,7 @@ MyLeaveRequests As screen:
             Size: =18
             Text: ="Welcome back ,"
             Width: =249
-            X: =328
-            Y: =12
+            X: =435
             ZIndex: =3
 
         Label13 As label:
@@ -167,20 +166,9 @@ MyLeaveRequests As screen:
             Text: |
                 =User().FullName
             Width: =183
-            X: =366
+            X: =468
             Y: =61
             ZIndex: =4
-
-        Label13_1 As label:
-            DisabledColor: =Color.Black
-            DisplayMode: =DisplayMode.Disabled
-            FontWeight: =FontWeight.Semibold
-            Height: =41
-            Text: =
-            Width: =183
-            X: =577
-            Y: =61
-            ZIndex: =5
 
     Group1 As group:
         Height: =5
@@ -246,53 +234,45 @@ MyLeaveRequests As screen:
         Label10 As label:
             Height: =37
             OnSelect: =Select(Parent)
-            Size: =11
+            Size: =10
             Text: =ThisItem.LeaveType.Value
             Width: =351
-            X: =22
+            X: =60
             Y: =12
             ZIndex: =1
 
         Label10_1 As label:
             Height: =37
             OnSelect: =Select(Parent)
-            Size: =11
+            Size: =10
             Text: =Text(ThisItem.StartDate,"[$-en-US]dddd, mmm. dd, yyyy") & If(DateDiff(ThisItem.StartDate, ThisItem.EndDate, TimeUnit.Days) <> 0, " - " & Text(ThisItem.EndDate,"[$-en-US]dddd, mmm. dd, yyyy"))
             Width: =582
-            X: =22
+            X: =60
             Y: =49
             ZIndex: =2
 
         Label10_2 As label:
             Height: =37
             OnSelect: =Select(Parent)
-            Size: =11
+            Size: =10
             Text: =ThisItem.LeaveDescription
             Width: =985
-            X: =22
+            X: =60
             Y: =86
             ZIndex: =3
 
-        Icon3 As icon.ChevronRight:
-            Icon: =Icon.ChevronRight
-            OnSelect: =Set(varFormMode,FormMode.View);Set(varItem,ThisItem);Navigate(NewRequests_1)
-            X: =970
-            Y: =35
-            ZIndex: =4
-
         Button1 As button:
+            BorderColor: =RGBA(29,24,57,1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =Color.White
+            FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
+            Size: =12
             Text: =ThisItem.LeaveStatus.Value
-            X: =737
-            Y: =59
+            X: =696
+            Y: =49
             ZIndex: =5
-
-        Label4 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.'Created By'.DisplayName
-            X: =353
-            Y: =10
-            ZIndex: =6
 
     Icon5 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
