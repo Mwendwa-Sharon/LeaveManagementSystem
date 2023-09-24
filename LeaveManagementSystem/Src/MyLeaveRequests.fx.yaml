@@ -231,7 +231,16 @@ MyLeaveRequests As screen:
     Gallery4 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =410
-        Items: =Filter(LeaveRequestsList, User().FullName = 'Created By'.DisplayName)
+        Items: |+
+            =
+            
+            If(
+                Gallery1.Selected.Filter = "All",
+                Filter(LeaveRequestsList, User().FullName = 'Created By'.DisplayName),
+                Filter(LeaveRequestsList, LeaveStatus.Value = Gallery1.Selected.Filter)
+            )
+            
+            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =137
