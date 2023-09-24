@@ -280,6 +280,13 @@ MyLeaveRequests As screen:
             Y: =35
             ZIndex: =4
 
+        Button1 As button:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.LeaveStatus.Value
+            X: =737
+            Y: =59
+            ZIndex: =5
+
     Icon5 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Add
