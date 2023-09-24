@@ -33,6 +33,53 @@
     "dependents": [],
     "id": "2d959689-d9ce-4fdb-8406-ffd6f5c72d57"
   },
+  "407774a3-a4b9-40a4-b480-f2da5e7b5270": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1654/1.0.1654.3414/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "679e23ba-baa9-4a91-abfc-7712bdb867cc"
+    ],
+    "id": "407774a3-a4b9-40a4-b480-f2da5e7b5270"
+  },
+  "679e23ba-baa9-4a91-abfc-7712bdb867cc": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {
+          "value": "9e47bf5c-0f5a-ee11-be6f-000d3a5c6c53"
+        },
+        "workflowName": {
+          "value": "0e861c6f-5312-7f02-3b29-2c0337304325"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {
+          "value": "9e47bf5c-0f5a-ee11-be6f-000d3a5c6c53"
+        },
+        "workflowName": {
+          "value": "0e861c6f-5312-7f02-3b29-2c0337304325"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "RequestsFlow"
+    ],
+    "dependencies": {
+      "shared_office365": "7d0d7931-4e22-473e-8751-3541255a0e62",
+      "shared_sharepointonline": "407774a3-a4b9-40a4-b480-f2da5e7b5270"
+    },
+    "dependents": [],
+    "id": "679e23ba-baa9-4a91-abfc-7712bdb867cc"
+  },
   "7d0d7931-4e22-473e-8751-3541255a0e62": {
     "connectionRef": {
       "displayName": "Office 365 Outlook",
@@ -44,7 +91,9 @@
       "Office365Outlook"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "679e23ba-baa9-4a91-abfc-7712bdb867cc"
+    ],
     "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
   },
   "9427c1a4-5b78-4f3e-84ca-44eb2def378e": {
@@ -66,9 +115,7 @@
       "LeaveRequestsList"
     ],
     "dependencies": {},
-    "dependents": [
-      "88fc2654-7786-4edb-a35c-e508c2fe5c46"
-    ],
+    "dependents": [],
     "id": "9427c1a4-5b78-4f3e-84ca-44eb2def378e"
   }
 }
