@@ -58,9 +58,7 @@
       "Office365Outlook"
     ],
     "dependencies": {},
-    "dependents": [
-      "f621bed3-82a6-4f92-b95d-2a85c99f85b2"
-    ],
+    "dependents": [],
     "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
   },
   "9427c1a4-5b78-4f3e-84ca-44eb2def378e": {
@@ -82,7 +80,9 @@
       "LeaveRequestsList"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "88fc2654-7786-4edb-a35c-e508c2fe5c46"
+    ],
     "id": "9427c1a4-5b78-4f3e-84ca-44eb2def378e"
   },
   "f621bed3-82a6-4f92-b95d-2a85c99f85b2": {
