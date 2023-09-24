@@ -213,8 +213,7 @@ MyLeaveRequests As screen:
             BorderColor: =RGBA(29,24,57,1)
             Color: =Color.Black
             Fill: =Color.White
-            FocusedBorderThickness: |
-                =10
+            FocusedBorderThickness: =1
             FontWeight: =FontWeight.Bold
             Height: =28
             HoverFill: =RGBA(29,24,57,1)
@@ -230,7 +229,7 @@ MyLeaveRequests As screen:
 
     Gallery4 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Height: =410
+        Height: =381
         Items: |+
             =
             
@@ -243,19 +242,19 @@ MyLeaveRequests As screen:
             
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =137
+        TemplateSize: =118
         Width: =953
-        X: =296
-        Y: =358
+        X: =308
+        Y: =318
         ZIndex: =9
 
         Label10 As label:
-            Height: =37
+            Height: =25
             OnSelect: =Select(Parent)
             Size: =12
             Text: =ThisItem.LeaveType.Value
             Width: =351
-            X: =60
+            X: =43
             Y: =12
             ZIndex: =1
 
@@ -265,18 +264,18 @@ MyLeaveRequests As screen:
             Size: =11
             Text: =Text(ThisItem.StartDate,"[$-en-US]dddd, mmm. dd, yyyy") & If(DateDiff(ThisItem.StartDate, ThisItem.EndDate, TimeUnit.Days) <> 0, " - " & Text(ThisItem.EndDate,"[$-en-US]dddd, mmm. dd, yyyy"))
             Width: =582
-            X: =60
-            Y: =49
+            X: =43
+            Y: =37
             ZIndex: =2
 
         Label10_2 As label:
-            Height: =37
+            Height: =35
             OnSelect: =Select(Parent)
             Size: =11
             Text: =ThisItem.LeaveDescription
-            Width: =985
-            X: =60
-            Y: =86
+            Width: =876
+            X: =43
+            Y: =69
             ZIndex: =3
 
         Button1 As button:
