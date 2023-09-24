@@ -87,7 +87,7 @@ App As appinfo:
             )
         
            
-    StartScreen: =If(!IsBlank(Param("ID")) && LookUp(LeaveRequestsList,ID=Value(Param("ID"))).'AssignedTo' = User().Email,NewRequests_1,MyLeaveRequests)
+    StartScreen: =If(!IsBlank(Param("ID")) && LookUp(LeaveRequestsList,ID=Value(Param("ID"))).AssignedTo = User().Email,NewRequests_1,MyLeaveRequests)
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
