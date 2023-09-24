@@ -239,7 +239,7 @@ MyLeaveRequests As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =137
         Width: =1076
-        X: =290
+        X: =273
         Y: =358
         ZIndex: =9
 
