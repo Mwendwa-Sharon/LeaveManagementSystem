@@ -217,23 +217,6 @@ NewRequests_1 As screen:
                 Y: =DataCardKey6.Y
                 ZIndex: =4
 
-        DataCard2 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =200
-            Width: =450
-            X: =0
-            Y: =4
-            ZIndex: =1
-
-            Label11 As label:
-                Text: =ThisItem.'Created By'.Department
-                Width: =302
-                X: =40
-                Y: =40
-                ZIndex: =1
-
         LeaveType_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="LeaveType"
