@@ -58,7 +58,9 @@
       "Office365Outlook"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "f621bed3-82a6-4f92-b95d-2a85c99f85b2"
+    ],
     "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
   },
   "9427c1a4-5b78-4f3e-84ca-44eb2def378e": {
@@ -80,9 +82,7 @@
       "LeaveRequestsList"
     ],
     "dependencies": {},
-    "dependents": [
-      "88fc2654-7786-4edb-a35c-e508c2fe5c46"
-    ],
+    "dependents": [],
     "id": "9427c1a4-5b78-4f3e-84ca-44eb2def378e"
   },
   "f621bed3-82a6-4f92-b95d-2a85c99f85b2": {
@@ -91,6 +91,12 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "5af6161c-a36b-4902-8db2-d6dada74a8f1": {
+          "value": "shared_sharepointonline"
+        },
+        "7d0d7931-4e22-473e-8751-3541255a0e62": {
+          "value": "shared_office365"
+        },
         "workflowEntityId": {
           "value": "9e47bf5c-0f5a-ee11-be6f-000d3a5c6c53"
         },
@@ -99,6 +105,12 @@
         }
       },
       "parameterHintsV2": {
+        "shared_office365": {
+          "value": "7d0d7931-4e22-473e-8751-3541255a0e62"
+        },
+        "shared_sharepointonline": {
+          "value": "5af6161c-a36b-4902-8db2-d6dada74a8f1"
+        },
         "workflowEntityId": {
           "value": "9e47bf5c-0f5a-ee11-be6f-000d3a5c6c53"
         },
