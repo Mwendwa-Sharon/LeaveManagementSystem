@@ -88,6 +88,7 @@ NewRequests_1 As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue1.Selected
+            Visible: =varFormMode <> FormMode.New
             Width: =450
             X: =0
             Y: =3
