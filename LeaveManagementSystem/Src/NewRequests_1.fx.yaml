@@ -55,7 +55,7 @@ NewRequests_1 As screen:
             Navigate(MyLeaveRequests)
         Width: =1352
         X: =12
-        Y: =86
+        Y: =99
         ZIndex: =8
 
         DataCard5 As typedDataCard.blankCard:
