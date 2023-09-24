@@ -2,6 +2,8 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |-
         =If(!IsBlank(Param("ID")),Set(varItem,LookUp(LeaveRequestsList,ID =Value(Param("ID"))));Set(varFormMode,FormMode.Edit));
+        //Setting a date variable 
+        Set(MyDate,Today());
         
         Set(VarUser,User());
         //Collection used for company holidays collection

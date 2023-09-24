@@ -1,8 +1,9 @@
 CompanyHolidaysScreen As screen:
-    Fill: =
+    Fill: =RGBA(243,242,250,1)
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
+        DisplayMode: =DisplayMode.View
         Height: =332
         Items: =CompanyHolidays
         Layout: =Layout.Vertical
@@ -38,7 +39,7 @@ CompanyHolidaysScreen As screen:
         Text: ="The following are the company's paid holidays during which the offices will be closed"
         Width: =590
         X: =350
-        Y: =94
+        Y: =127
         ZIndex: =2
 
     Gallery3_2 As gallery.galleryVertical:
