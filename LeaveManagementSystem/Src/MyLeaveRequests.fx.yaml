@@ -150,9 +150,9 @@ MyLeaveRequests As screen:
             Align: =Align.Center
             DisabledColor: =Color.Black
             DisplayMode: =DisplayMode.Disabled
-            FontWeight: =FontWeight.Bold
+            FontWeight: =FontWeight.Semibold
             Height: =49
-            Size: =18
+            Size: =14
             Text: ="Welcome back ,"
             Width: =249
             X: =435
@@ -166,8 +166,8 @@ MyLeaveRequests As screen:
             Text: |
                 =User().FullName
             Width: =183
-            X: =468
-            Y: =61
+            X: =559
+            Y: =43
             ZIndex: =4
 
     Group1 As group:
@@ -204,17 +204,26 @@ MyLeaveRequests As screen:
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplateSize: =229
-        Width: =951
+        Width: =899
         X: =308
         Y: =244
         ZIndex: =8
 
         Button4 As button:
-            Fill: =RGBA(29,24,57,1)
-            Height: =30
+            BorderColor: =RGBA(29,24,57,1)
+            Color: =Color.Black
+            Fill: =Color.White
+            FocusedBorderThickness: |
+                =10
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            HoverFill: =RGBA(29,24,57,1)
             OnSelect: =Select(Parent)
+            PressedColor: =RGBA(29,24,57,1)
+            PressedFill: =RGBA(29,24,57,1)
+            Size: =12
             Text: =ThisItem.Filter
-            Width: =108
+            Width: =105
             X: =32
             Y: =18
             ZIndex: =1
@@ -226,15 +235,15 @@ MyLeaveRequests As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =137
-        Width: =1076
-        X: =273
+        Width: =953
+        X: =296
         Y: =358
         ZIndex: =9
 
         Label10 As label:
             Height: =37
             OnSelect: =Select(Parent)
-            Size: =10
+            Size: =12
             Text: =ThisItem.LeaveType.Value
             Width: =351
             X: =60
@@ -244,7 +253,7 @@ MyLeaveRequests As screen:
         Label10_1 As label:
             Height: =37
             OnSelect: =Select(Parent)
-            Size: =10
+            Size: =11
             Text: =Text(ThisItem.StartDate,"[$-en-US]dddd, mmm. dd, yyyy") & If(DateDiff(ThisItem.StartDate, ThisItem.EndDate, TimeUnit.Days) <> 0, " - " & Text(ThisItem.EndDate,"[$-en-US]dddd, mmm. dd, yyyy"))
             Width: =582
             X: =60
@@ -254,7 +263,7 @@ MyLeaveRequests As screen:
         Label10_2 As label:
             Height: =37
             OnSelect: =Select(Parent)
-            Size: =10
+            Size: =11
             Text: =ThisItem.LeaveDescription
             Width: =985
             X: =60
@@ -263,16 +272,30 @@ MyLeaveRequests As screen:
 
         Button1 As button:
             BorderColor: =RGBA(29,24,57,1)
+            BorderThickness: =3
             Color: =RGBA(0, 0, 0, 1)
-            DisplayMode: =DisplayMode.View
+            DisabledColor: =Color.Black
+            DisabledFill: =Color.White
+            DisplayMode: =DisplayMode.Disabled
             Fill: =Color.White
             FontWeight: =FontWeight.Bold
+            Height: =35
             OnSelect: =Select(Parent)
             Size: =12
             Text: =ThisItem.LeaveStatus.Value
-            X: =696
-            Y: =49
+            Width: =140
+            X: =722
+            Y: =27
             ZIndex: =5
+
+        Label4 As label:
+            Height: =42
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Created By'.DisplayName
+            Width: =168
+            X: =474
+            Y: =27
+            ZIndex: =6
 
     Icon5 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)

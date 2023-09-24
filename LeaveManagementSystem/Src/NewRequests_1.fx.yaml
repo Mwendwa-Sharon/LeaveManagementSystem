@@ -112,10 +112,10 @@ NewRequests_1 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@LeaveRequestsList].Author)
+                Items: =Choices([@LeaveRequestsList].'Created By')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(LeaveRequestsList.Author,DataCardValue1.SearchText)
+                SearchItems: =Choices(LeaveRequestsList.'Created By',DataCardValue1.SearchText)
                 SelectMultiple: =false
                 Template: =ListItemTemplate.Person
                 Width: =Parent.Width - 60

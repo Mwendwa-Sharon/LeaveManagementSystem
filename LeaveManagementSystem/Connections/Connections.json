@@ -27,7 +27,8 @@
       "LeaveBalancesList",
       "LeaveApprovalHistoryList",
       "FeedbackList",
-      "EmployeeList"
+      "EmployeeList",
+      "LeaveRequestsList"
     ],
     "dependencies": {},
     "dependents": [],
@@ -53,6 +54,12 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "407774a3-a4b9-40a4-b480-f2da5e7b5270": {
+          "value": "shared_sharepointonline"
+        },
+        "7d0d7931-4e22-473e-8751-3541255a0e62": {
+          "value": "shared_office365"
+        },
         "workflowEntityId": {
           "value": "9e47bf5c-0f5a-ee11-be6f-000d3a5c6c53"
         },
@@ -61,6 +68,12 @@
         }
       },
       "parameterHintsV2": {
+        "shared_office365": {
+          "value": "7d0d7931-4e22-473e-8751-3541255a0e62"
+        },
+        "shared_sharepointonline": {
+          "value": "407774a3-a4b9-40a4-b480-f2da5e7b5270"
+        },
         "workflowEntityId": {
           "value": "9e47bf5c-0f5a-ee11-be6f-000d3a5c6c53"
         },
@@ -92,7 +105,7 @@
     ],
     "dependencies": {},
     "dependents": [
-      "f621bed3-82a6-4f92-b95d-2a85c99f85b2"
+      "679e23ba-baa9-4a91-abfc-7712bdb867cc"
     ],
     "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
   },
