@@ -19,15 +19,11 @@
           },
           "LeaveBalancesList": {
             "tableName": "dd87a20c-f215-440f-829a-1b47be2e35ea"
-          },
-          "LeaveRequestsList": {
-            "tableName": "209da888-a4e8-479c-a129-177b684c796a"
           }
         }
       }
     },
     "dataSources": [
-      "LeaveRequestsList",
       "LeaveBalancesList",
       "LeaveApprovalHistoryList",
       "FeedbackList",
@@ -50,5 +46,27 @@
     "dependencies": {},
     "dependents": [],
     "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
+  },
+  "9427c1a4-5b78-4f3e-84ca-44eb2def378e": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1654/1.0.1654.3414/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS": {
+        "dataSources": {
+          "LeaveRequestsList": {
+            "tableName": "209da888-a4e8-479c-a129-177b684c796a"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "LeaveRequestsList"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9427c1a4-5b78-4f3e-84ca-44eb2def378e"
   }
 }
