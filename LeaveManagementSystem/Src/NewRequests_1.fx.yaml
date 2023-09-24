@@ -3,6 +3,7 @@ NewRequests_1 As screen:
     Button3 As button:
         OnSelect: =SubmitForm(Form3)
         Text: ="submit"
+        Visible: =varFormMode <> FormMode.View
         X: =518
         Y: =714
         ZIndex: =7
@@ -47,7 +48,9 @@ NewRequests_1 As screen:
         DefaultMode: =varFormMode
         Height: =601
         Item: =varItem
-        OnSuccess: =
+        OnSuccess: |-
+            =If(varFormMode = FormMode.New,RequestsFlow.Run(Form3.LastSubmit.ID););Notify("New leave request created successfully",NotificationType.Success);
+            Navigate(MyLeaveRequests)
         Width: =1352
         X: =12
         Y: =86

@@ -1,7 +1,9 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =Set(VarUser,User());
+        =If(!IsBlank(Param("ID")),Set(varItem,LookUp(LeaveRequestsList,ID =Value(Param("ID"))));Set(varFormMode,FormMode.Edit));
+        
+        Set(VarUser,User());
         //Collection used for company holidays collection
         ClearCollect(
             CompanyHolidays,
@@ -85,6 +87,7 @@ App As appinfo:
             )
         
            
+    StartScreen: =If(!IsBlank(Param("ID")) && LookUp(LeaveRequestsList,ID=Value(Param("ID"))).'AssignedTo' = User().Email,NewRequests_1,MyLeaveRequests)
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
