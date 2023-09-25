@@ -10,9 +10,7 @@
       "FeedbackList"
     ],
     "dependencies": {},
-    "dependents": [
-      "4336eb50-fd7c-46ee-b226-a5f158b8fabd"
-    ],
+    "dependents": [],
     "id": "0da9b027-c200-492f-b1d7-88046b329865"
   },
   "2d959689-d9ce-4fdb-8406-ffd6f5c72d57": {
@@ -61,9 +59,7 @@
       "Office365Outlook"
     ],
     "dependencies": {},
-    "dependents": [
-      "4336eb50-fd7c-46ee-b226-a5f158b8fabd"
-    ],
+    "dependents": [],
     "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
   },
   "9427c1a4-5b78-4f3e-84ca-44eb2def378e": {
