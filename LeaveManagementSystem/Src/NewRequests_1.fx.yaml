@@ -56,6 +56,28 @@ NewRequests_1 As screen:
         Y: =99
         ZIndex: =8
 
+        DataCard5 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =66
+            Visible: =varFormMode <> FormMode.New
+            Width: =Parent.Width
+            WidthFit: =true
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            Label6 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(0, 13, 75, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =64
+                Text: ="Approver information"
+                Width: =Parent.Width
+                ZIndex: =1
+
         "'Created By_DataCard2' As typedDataCard.comboBoxViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Author"
@@ -206,28 +228,6 @@ NewRequests_1 As screen:
             X: =0
             Y: =275
             ZIndex: =1
-
-        DataCard5 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =66
-            Visible: =varFormMode <> FormMode.New
-            Width: =Parent.Width
-            WidthFit: =true
-            X: =0
-            Y: =2
-            ZIndex: =1
-
-            Label6 As label:
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 13, 75, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =64
-                Text: ="Approver information"
-                Width: =Parent.Width
-                ZIndex: =1
 
         LeaveType_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
