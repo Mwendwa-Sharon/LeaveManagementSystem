@@ -6,7 +6,9 @@
       "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
     },
     "datasets": {},
-    "dataSources": [],
+    "dataSources": [
+      "FeedbackList"
+    ],
     "dependencies": {},
     "dependents": [
       "4336eb50-fd7c-46ee-b226-a5f158b8fabd"

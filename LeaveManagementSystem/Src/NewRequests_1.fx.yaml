@@ -38,9 +38,8 @@ NewRequests_1 As screen:
     Form3 As form:
         DataSource: =LeaveRequestsList
         DefaultMode: =FormMode.New
-        Height: =386
+        Height: =462
         Item: =varItem
-        NumberOfColumns: =2
         OnFailure: |-
             =Notify("Enter the corrected details");
             Navigate(NewRequests_1)
@@ -61,10 +60,10 @@ NewRequests_1 As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =59
             Visible: =varFormMode <> FormMode.New
-            Width: =676
+            Width: =450
             WidthFit: =true
-            X: =0
-            Y: =2
+            X: =1
+            Y: =1
             ZIndex: =1
 
             Label6 As label:
@@ -88,9 +87,9 @@ NewRequests_1 As screen:
             Required: =false
             Update: =DataCardValue1.Selected
             Visible: =varFormMode <> FormMode.New
-            Width: =676
+            Width: =450
             X: =0
-            Y: =3
+            Y: =2
             ZIndex: =1
 
             DataCardKey1 As label:
@@ -156,9 +155,9 @@ NewRequests_1 As screen:
             Required: =false
             Update: =DataCardValue6.Text
             Visible: =varFormMode <> FormMode.New
-            Width: =676
+            Width: =450
             X: =1
-            Y: =3
+            Y: =2
             ZIndex: =1
 
             DataCardKey6 As label:
@@ -223,7 +222,7 @@ NewRequests_1 As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue7.Selected
-            Width: =500
+            Width: =450
             X: =0
             Y: =0
             ZIndex: =9
@@ -293,8 +292,7 @@ NewRequests_1 As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue9.SelectedDate
-            Width: |
-                =500
+            Width: =450
             X: =1
             Y: =0
             ZIndex: =9
@@ -361,10 +359,9 @@ NewRequests_1 As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue10.SelectedDate
-            Width: |
-                =500
-            X: =0
-            Y: =1
+            Width: =450
+            X: =2
+            Y: =0
             ZIndex: =9
 
             DataCardKey10 As label:
@@ -431,9 +428,8 @@ NewRequests_1 As screen:
             MaxLength: =DataSourceInfo([@LeaveRequestsList], DataSourceInfo.MaxLength, "LeaveDescription")
             Required: =false
             Update: =DataCardValue12.Text
-            Width: |
-                =500
-            X: =750
+            Width: =450
+            X: =0
             Y: =1
             ZIndex: =9
 
@@ -500,9 +496,9 @@ NewRequests_1 As screen:
             Required: =false
             Update: =DataCardValue14.Selected
             Visible: =varFormMode <> FormMode.New
-            Width: =676
-            X: =1
-            Y: =2
+            Width: =450
+            X: =2
+            Y: =1
             ZIndex: =9
 
             DataCardKey14 As label:
