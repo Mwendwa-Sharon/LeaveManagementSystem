@@ -311,7 +311,7 @@ NewRequests_1 As screen:
 
             DataCardValue9 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: =MyDate
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(29,24,57,1)
@@ -378,7 +378,8 @@ NewRequests_1 As screen:
 
             DataCardValue10 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
+                DefaultDate: |
+                    =MyDate
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
                 IconBackground: =RGBA(29,24,57,1)
