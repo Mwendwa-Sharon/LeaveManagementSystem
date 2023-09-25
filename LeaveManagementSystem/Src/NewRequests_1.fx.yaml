@@ -1,18 +1,5 @@
 NewRequests_1 As screen:
 
-    SubmitButton As button:
-        Color: =RGBA(0, 0, 0, 1)
-        DisplayMode: =If(DataCardValue9.SelectedDate<MyDate && DataCardValue10.SelectedDate<MyDate, DisplayMode.Disabled)
-        FontWeight: =FontWeight.Bold
-        Height: =38
-        OnSelect: =Set(ConfirmationPopup, true)
-        Text: ="submit Request"
-        Visible: =varFormMode <> FormMode.View
-        Width: =183
-        X: =518
-        Y: =714
-        ZIndex: =7
-
     Header_1 As group:
         Height: =5
         Width: =5
