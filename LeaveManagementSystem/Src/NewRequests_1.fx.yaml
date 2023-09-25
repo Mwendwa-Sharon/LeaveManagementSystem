@@ -610,3 +610,19 @@ NewRequests_1 As screen:
                 Y: =601
                 ZIndex: =4
 
+    Button3 As button:
+        DisplayMode: |-
+            =If(
+                DataCardValue9.SelectedDate > DataCardValue10.SelectedDate || DataCardValue9.SelectedDate < MyDate,
+                DisplayMode.View,
+                DisplayMode.Edit
+            )
+        Fill: =RGBA(29,24,57,1)
+        Height: =35
+        OnSelect: =Set(ConfirmationPopup, true);
+        Text: ="Submit Request"
+        Width: =223
+        X: =603
+        Y: =716
+        ZIndex: =10
+
