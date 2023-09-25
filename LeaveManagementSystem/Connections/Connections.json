@@ -1,5 +1,19 @@
 {
-  "0617b178-d6c2-4962-a397-836e4c4a1b61": {
+  "7d0d7931-4e22-473e-8751-3541255a0e62": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/henryorsborn/partial-builds/asev3migrations-with-resourceTemplate/1.0.1653.3403/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
+  },
+  "ea3fee7f-88e6-4ddc-808f-fb01933c5e21": {
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1656/1.0.1656.3432/sharepointonline/icon.png",
@@ -16,29 +30,22 @@
             "tableNameOverride": {
               "environmentVariableName": "lw_LRequests"
             }
+          },
+          "LRequests": {
+            "tableName": "209da888-a4e8-479c-a129-177b684c796a",
+            "tableNameOverride": {
+              "environmentVariableName": "lw_LRequests"
+            }
           }
         }
       }
     },
     "dataSources": [
-      "LeaveRequestsList"
+      "LeaveRequestsList",
+      "LRequests"
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "0617b178-d6c2-4962-a397-836e4c4a1b61"
-  },
-  "7d0d7931-4e22-473e-8751-3541255a0e62": {
-    "connectionRef": {
-      "displayName": "Office 365 Outlook",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/henryorsborn/partial-builds/asev3migrations-with-resourceTemplate/1.0.1653.3403/office365/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365"
-    },
-    "datasets": {},
-    "dataSources": [
-      "Office365Outlook"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
+    "id": "ea3fee7f-88e6-4ddc-808f-fb01933c5e21"
   }
 }
