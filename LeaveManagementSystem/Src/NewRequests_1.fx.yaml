@@ -1,11 +1,14 @@
 NewRequests_1 As screen:
 
-    Button3 As button:
+    SubmitButton As button:
         Color: =RGBA(0, 0, 0, 1)
         DisplayMode: =If(DataCardValue9.SelectedDate<MyDate && DataCardValue10.SelectedDate<MyDate, DisplayMode.Disabled)
-        OnSelect: =SubmitForm(Form3)
-        Text: ="submit"
+        FontWeight: =FontWeight.Bold
+        Height: =38
+        OnSelect: =Set(ConfirmationPopup, true)
+        Text: ="submit Request"
         Visible: =varFormMode <> FormMode.View
+        Width: =183
         X: =518
         Y: =714
         ZIndex: =7
@@ -48,8 +51,9 @@ NewRequests_1 As screen:
     Form3 As form:
         DataSource: =LeaveRequestsList
         DefaultMode: =FormMode.New
-        Height: =601
+        Height: =386
         Item: =varItem
+        NumberOfColumns: =2
         OnFailure: |-
             =Notify("Enter the corrected details");
             Navigate(NewRequests_1)
@@ -70,7 +74,7 @@ NewRequests_1 As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =59
             Visible: =varFormMode <> FormMode.New
-            Width: =1350
+            Width: =676
             WidthFit: =true
             X: =0
             Y: =2
@@ -97,8 +101,8 @@ NewRequests_1 As screen:
             Required: =false
             Update: =DataCardValue1.Selected
             Visible: =varFormMode <> FormMode.New
-            Width: =450
-            X: =1
+            Width: =676
+            X: =0
             Y: =3
             ZIndex: =1
 
@@ -165,8 +169,8 @@ NewRequests_1 As screen:
             Required: =false
             Update: =DataCardValue6.Text
             Visible: =varFormMode <> FormMode.New
-            Width: =450
-            X: =2
+            Width: =676
+            X: =1
             Y: =3
             ZIndex: =1
 
@@ -232,7 +236,7 @@ NewRequests_1 As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue7.Selected
-            Width: =450
+            Width: =500
             X: =0
             Y: =0
             ZIndex: =9
@@ -249,6 +253,10 @@ NewRequests_1 As screen:
 
             DataCardValue7 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(29,24,57,1)
+                ChevronFill: =Color.White
+                ChevronHoverBackground: |
+                    =RGBA(29,24,57,1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
@@ -298,7 +306,8 @@ NewRequests_1 As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue9.SelectedDate
-            Width: =450
+            Width: |
+                =500
             X: =1
             Y: =0
             ZIndex: =9
@@ -318,6 +327,7 @@ NewRequests_1 As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(29,24,57,1)
                 IsEditable: =true
                 OnSelect: =If(DataCardValue9.SelectedDate<MyDate,Notify("You cannot choose date less than today",NotificationType.Error))
                 PaddingBottom: =0
@@ -364,9 +374,10 @@ NewRequests_1 As screen:
             Height: =50
             Required: =true
             Update: =DataCardValue10.SelectedDate
-            Width: =450
-            X: =2
-            Y: =0
+            Width: |
+                =500
+            X: =0
+            Y: =1
             ZIndex: =9
 
             DataCardKey10 As label:
@@ -384,6 +395,7 @@ NewRequests_1 As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                IconBackground: =RGBA(29,24,57,1)
                 IsEditable: =true
                 OnSelect: =If(DataCardValue10.SelectedDate<MyDate,Notify("You cannot choose date less than today",NotificationType.Error))
                 PaddingBottom: =0
@@ -427,12 +439,14 @@ NewRequests_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@LeaveRequestsList],DataSourceInfo.DisplayName,"LeaveDescription")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =117
+            Height: |
+                =50
             MaxLength: =DataSourceInfo([@LeaveRequestsList], DataSourceInfo.MaxLength, "LeaveDescription")
             Required: =false
             Update: =DataCardValue12.Text
-            Width: =450
-            X: =0
+            Width: |
+                =500
+            X: =750
             Y: =1
             ZIndex: =9
 
@@ -499,9 +513,9 @@ NewRequests_1 As screen:
             Required: =false
             Update: =DataCardValue14.Selected
             Visible: =varFormMode <> FormMode.New
-            Width: =450
-            X: =0
-            Y: =3
+            Width: =676
+            X: =1
+            Y: =2
             ZIndex: =9
 
             DataCardKey14 As label:
@@ -553,5 +567,63 @@ NewRequests_1 As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey14.Y
+                ZIndex: =4
+
+    "'Popup Confirmation_1' As groupContainer.manualLayoutContainer":
+        Height: =Parent.Height
+        Visible: =ConfirmationPopup
+        Width: =Parent.Width
+        ZIndex: =9
+
+        "'popup rectangle_1' As group":
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =5
+
+            Rectangle2_1 As rectangle:
+                Fill: =RGBA(116, 116, 116, 1)
+                Height: =175
+                Width: =389
+                X: =491
+                Y: =499
+                ZIndex: =1
+
+            Label2_1 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =58
+                Size: =12
+                Text: ="Are you sure you want to submit the request?"
+                Width: =206
+                X: =580
+                Y: =522
+                ZIndex: =2
+
+            SubmitForm_1 As button:
+                Fill: =RGBA(29, 24, 57, 1)
+                Height: =27
+                OnSelect: |-
+                    =SubmitForm(Form3);
+                    Navigate(MyLeaveRequests)   
+                Size: =11
+                Text: ="Submit"
+                Width: =104
+                X: =546
+                Y: =601
+                ZIndex: =3
+
+            Cancel_1 As button:
+                Fill: =RGBA(255, 0, 0, 1)
+                Height: =27
+                OnSelect: |
+                    =Set(ConfirmationPopup, false);
+                    ResetForm(Form3)
+                Size: =11
+                Text: ="Cancel"
+                Width: =104
+                X: =745
+                Y: =601
                 ZIndex: =4
 

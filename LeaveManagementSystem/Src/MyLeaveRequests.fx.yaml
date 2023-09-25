@@ -180,7 +180,7 @@ MyLeaveRequests As screen:
         Circle1 As circle:
             Fill: =Color.White
             Height: =40
-            OnSelect: =Navigate(NewRequests, BorderStyle.None)
+            OnSelect: =Navigate(NewRequests_1, BorderStyle.None)
             Width: =40
             X: =1026
             Y: =28
@@ -190,7 +190,7 @@ MyLeaveRequests As screen:
             Color: =RGBA(29,24,57,1)
             Height: =35
             Icon: =Icon.Add
-            OnSelect: =Navigate(NewRequests, BorderStyle.None)
+            OnSelect: =Navigate(NewRequests_1, BorderStyle.None)
             Width: =35
             X: =1028
             Y: =30
@@ -200,7 +200,7 @@ MyLeaveRequests As screen:
         DelayItemLoading: =true
         Height: =87
         Items: |-
-            =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Accepted"}, {Filter: "Rejected"})
+            =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Approved"}, {Filter: "Declined"})
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplateSize: =229
@@ -210,16 +210,24 @@ MyLeaveRequests As screen:
         ZIndex: =8
 
         Button4 As button:
+            AutoDisableOnSelect: =false
             BorderColor: =RGBA(29,24,57,1)
-            Color: =Color.Black
-            Fill: =Color.White
+            Color: =If(_requestTypeFilter=ThisItem.Filter,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
+            Fill: =If(_requestTypeFilter=ThisItem.Filter,RGBA(29,24,57,1),RGBA(255, 255, 255, 1))
             FocusedBorderThickness: =1
             FontWeight: =FontWeight.Bold
             Height: =28
-            HoverFill: =RGBA(29,24,57,1)
-            OnSelect: =Select(Parent)
+            HoverBorderColor: =RGBA(29,24,57,1)
+            HoverColor: =Color.Black
+            HoverFill: =Color.White
+            OnSelect: |
+                =If(ThisItem.Filter <> _requestTypeFilter,
+                Set(_showDetails, false); 
+                Set(_requestTypeFilter, ThisItem.Filter))
             PressedColor: =RGBA(29,24,57,1)
-            PressedFill: =RGBA(29,24,57,1)
+            PressedFill: |
+                =//RGBA(29,24,57,1)
+                Color.White
             Size: =12
             Text: =ThisItem.Filter
             Width: =105
@@ -300,12 +308,4 @@ MyLeaveRequests As screen:
             X: =474
             Y: =27
             ZIndex: =6
-
-    Icon5 As icon.Add:
-        Color: =RGBA(255, 255, 255, 1)
-        Icon: =Icon.Add
-        OnSelect: =Set(varFormMode,FormMode.New);Set(varItem,Blank());Navigate(NewRequests_1)
-        X: =917
-        Y: =16
-        ZIndex: =10
 
