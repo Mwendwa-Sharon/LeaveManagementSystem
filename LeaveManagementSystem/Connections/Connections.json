@@ -22,19 +22,22 @@
     "datasets": {
       "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS_lw_leavelists": {
         "datasetOverride": {
-          "environmentVariableName": "lw_leavelists"
+          "environmentVariableName": "lw_leavelists",
+          "name": "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS"
         },
         "dataSources": {
           "LeaveRequestsList": {
             "tableName": "209da888-a4e8-479c-a129-177b684c796a",
             "tableNameOverride": {
-              "environmentVariableName": "lw_LRequests"
+              "environmentVariableName": "lw_LRequests",
+              "name": "209da888-a4e8-479c-a129-177b684c796a"
             }
           },
           "LRequests": {
             "tableName": "209da888-a4e8-479c-a129-177b684c796a",
             "tableNameOverride": {
-              "environmentVariableName": "lw_LRequests"
+              "environmentVariableName": "lw_LRequests",
+              "name": "209da888-a4e8-479c-a129-177b684c796a"
             }
           }
         }
