@@ -56,6 +56,28 @@ NewRequests_1 As screen:
         Y: =99
         ZIndex: =8
 
+        DataCard5 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =66
+            Visible: =varFormMode <> FormMode.New
+            Width: =Parent.Width
+            WidthFit: =true
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            Label6 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(0, 13, 75, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =64
+                Text: ="Approver information"
+                Width: =Parent.Width
+                ZIndex: =1
+
         "'Created By_DataCard2' As typedDataCard.comboBoxViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Author"
@@ -207,28 +229,6 @@ NewRequests_1 As screen:
             Y: =275
             ZIndex: =1
 
-        DataCard5 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =66
-            Visible: =varFormMode <> FormMode.New
-            Width: =Parent.Width
-            WidthFit: =true
-            X: =0
-            Y: =2
-            ZIndex: =1
-
-            Label6 As label:
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 13, 75, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =64
-                Text: ="Approver information"
-                Width: =Parent.Width
-                ZIndex: =1
-
         LeaveType_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="LeaveType"
@@ -333,7 +333,7 @@ NewRequests_1 As screen:
                 IconBackground: =RGBA(29,24,57,1)
                 IsEditable: =true
                 OnChange: =If(Self.SelectedDate < MyDate,Reset(Self) & Notify("You cannot choose start date earlier than today",NotificationType.Error));
-                OnSelect: =If(DataCardValue9.SelectedDate<MyDate,Notify("You cannot choose date less than today",NotificationType.Error))
+                OnSelect: =//If(DataCardValue9.SelectedDate<MyDate,Notify("You cannot choose date less than today",NotificationType.Error))
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
@@ -520,26 +520,26 @@ NewRequests_1 As screen:
 
             Rectangle2_1 As rectangle:
                 Fill: =RGBA(116, 116, 116, 1)
-                Height: =162
+                Height: =136
                 Width: =416
                 X: =670
-                Y: =511
+                Y: =537
                 ZIndex: =1
 
             Label2_1 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Semibold
-                Height: =53
+                Height: =45
                 Size: =12
                 Text: ="Are you sure you want to submit the request?"
                 Width: =220
                 X: =750
-                Y: =530
+                Y: =555
                 ZIndex: =2
 
             SubmitForm_1 As button:
                 Fill: =RGBA(29, 24, 57, 1)
-                Height: =35
+                Height: =21
                 OnSelect: |-
                     =SubmitForm(Form3);
                     Navigate(MyLeaveRequests);
@@ -548,12 +548,12 @@ NewRequests_1 As screen:
                 Text: ="Submit"
                 Width: =113
                 X: =720
-                Y: =615
+                Y: =537
                 ZIndex: =3
 
             Cancel_1 As button:
                 Fill: =RGBA(255, 0, 0, 1)
-                Height: =35
+                Height: =21
                 OnSelect: |
                     =Set(ConfirmationPopup, false);
                     ResetForm(Form3)
@@ -561,7 +561,7 @@ NewRequests_1 As screen:
                 Text: ="Cancel"
                 Width: =113
                 X: =904
-                Y: =615
+                Y: =537
                 ZIndex: =4
 
     Button3 As button:
