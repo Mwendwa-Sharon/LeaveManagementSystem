@@ -10,9 +10,7 @@
       "Office365Outlook"
     ],
     "dependencies": {},
-    "dependents": [
-      "4336eb50-fd7c-46ee-b226-a5f158b8fabd"
-    ],
+    "dependents": [],
     "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
   },
   "ea3fee7f-88e6-4ddc-808f-fb01933c5e21": {
@@ -24,19 +22,22 @@
     "datasets": {
       "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS_lw_leavelists": {
         "datasetOverride": {
-          "environmentVariableName": "lw_leavelists"
+          "environmentVariableName": "lw_leavelists",
+          "name": "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS"
         },
         "dataSources": {
           "LeaveRequestsList": {
             "tableName": "209da888-a4e8-479c-a129-177b684c796a",
             "tableNameOverride": {
-              "environmentVariableName": "lw_LRequests"
+              "environmentVariableName": "lw_LRequests",
+              "name": "209da888-a4e8-479c-a129-177b684c796a"
             }
           },
           "LRequests": {
             "tableName": "209da888-a4e8-479c-a129-177b684c796a",
             "tableNameOverride": {
-              "environmentVariableName": "lw_LRequests"
+              "environmentVariableName": "lw_LRequests",
+              "name": "209da888-a4e8-479c-a129-177b684c796a"
             }
           }
         }
