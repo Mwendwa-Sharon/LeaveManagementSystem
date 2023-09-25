@@ -44,12 +44,13 @@ NewRequests_1 As screen:
         OnFailure: |-
             =Notify("Enter the corrected details");
             Navigate(NewRequests_1)
-        OnSuccess: |
+        OnSuccess: |-
             =ResetForm(Self);
             NewForm(Self);
-            If(varFormMode = FormMode.New, RequestsFlow.Run(Form3.LastSubmit.ID););
+            //If(varFormMode = FormMode.New, RequestsFlow.Run(Form3.LastSubmit.ID););
             Notify("New leave request created successfully",NotificationType.Success);
-            Navigate(MyLeaveRequests)
+            Navigate(MyLeaveRequests);
+            //RequestsFlow.Run(50)
         Width: =1352
         X: =12
         Y: =99
@@ -590,7 +591,8 @@ NewRequests_1 As screen:
                 Height: =27
                 OnSelect: |-
                     =SubmitForm(Form3);
-                    Navigate(MyLeaveRequests)   
+                    Navigate(MyLeaveRequests);
+                    RequestsFlow.Run(Form3.LastSubmit.ID)
                 Size: =11
                 Text: ="Submit"
                 Width: =104
@@ -626,4 +628,11 @@ NewRequests_1 As screen:
         X: =603
         Y: =716
         ZIndex: =10
+
+    Label2 As label:
+        Height: =65
+        Text: =Form3.LastSubmit.ID
+        X: =172
+        Y: =462
+        ZIndex: =11
 
