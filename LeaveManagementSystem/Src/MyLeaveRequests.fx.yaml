@@ -234,7 +234,7 @@ MyLeaveRequests As screen:
             =
             
             
-            Filter(LeaveRequestsList, User().FullName = 'Created By'.DisplayName
+            Filter(LeaveRequestsList, User().FullName = 'Created By'.DisplayName)
             //If(Gallery1.Selected.Filter= "All",LeaveRequestsList,Filter(LeaveRequestsList,LeaveStatus.Value= Gallery1.Selected.Filter));
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
