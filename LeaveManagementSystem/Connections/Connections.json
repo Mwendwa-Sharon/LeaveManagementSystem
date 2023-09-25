@@ -1,34 +1,4 @@
 {
-  "0617b178-d6c2-4962-a397-836e4c4a1b61": {
-    "connectionRef": {
-      "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1656/1.0.1656.3432/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
-    },
-    "datasets": {
-      "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS_lw_leavelists": {
-        "datasetOverride": {
-          "environmentVariableName": "lw_leavelists",
-          "name": "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS"
-        },
-        "dataSources": {
-          "LeaveRequestsList": {
-            "tableName": "209da888-a4e8-479c-a129-177b684c796a",
-            "tableNameOverride": {
-              "environmentVariableName": "lw_LRequests",
-              "name": "209da888-a4e8-479c-a129-177b684c796a"
-            }
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "LeaveRequestsList"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "0617b178-d6c2-4962-a397-836e4c4a1b61"
-  },
   "7d0d7931-4e22-473e-8751-3541255a0e62": {
     "connectionRef": {
       "displayName": "Office 365 Outlook",
@@ -40,7 +10,44 @@
       "Office365Outlook"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "4336eb50-fd7c-46ee-b226-a5f158b8fabd"
+    ],
     "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
+  },
+  "ea3fee7f-88e6-4ddc-808f-fb01933c5e21": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1656/1.0.1656.3432/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://betahoodtechnologies.sharepoint.com/sites/Learning/LMS_lw_leavelists": {
+        "datasetOverride": {
+          "environmentVariableName": "lw_leavelists"
+        },
+        "dataSources": {
+          "LeaveRequestsList": {
+            "tableName": "209da888-a4e8-479c-a129-177b684c796a",
+            "tableNameOverride": {
+              "environmentVariableName": "lw_LRequests"
+            }
+          },
+          "LRequests": {
+            "tableName": "209da888-a4e8-479c-a129-177b684c796a",
+            "tableNameOverride": {
+              "environmentVariableName": "lw_LRequests"
+            }
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "LeaveRequestsList",
+      "LRequests"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ea3fee7f-88e6-4ddc-808f-fb01933c5e21"
   }
 }
