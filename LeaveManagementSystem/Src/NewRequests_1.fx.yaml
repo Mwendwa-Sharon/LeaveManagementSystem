@@ -56,6 +56,74 @@ NewRequests_1 As screen:
         Y: =99
         ZIndex: =8
 
+        ApproverComments_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ApproverComments"
+            Default: =ThisItem.ApproverComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"ApproverComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@LRequests], DataSourceInfo.MaxLength, "ApproverComments")
+            Required: =false
+            Update: =DataCardValue1.Text
+            Width: =676
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
         "'Created By_DataCard2' As typedDataCard.comboBoxViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Author"
@@ -87,10 +155,10 @@ NewRequests_1 As screen:
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@LRequests].Author)
+                Items: =Choices([@LRequests].'Created By')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
-                SearchItems: =Choices(LRequests.Author,DataCardValue4.SearchText)
+                SearchItems: =Choices(LRequests.'Created By',DataCardValue4.SearchText)
                 SelectMultiple: =false
                 Template: =ListItemTemplate.Person
                 Width: =Parent.Width - 60
@@ -189,23 +257,6 @@ NewRequests_1 As screen:
                 Wrap: =false
                 Y: =DataCardKey5.Y
                 ZIndex: =4
-
-        ApproverComments_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ApproverComments"
-            Default: =ThisItem.ApproverComments
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"ApproverComments")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =136
-            MaxLength: =DataSourceInfo([@LRequests], DataSourceInfo.MaxLength, "ApproverComments")
-            Required: =false
-            Update: =DataCardValue6.Text
-            Visible: =varFormMode <> FormMode.New
-            Width: =676
-            X: =0
-            Y: =275
-            ZIndex: =1
 
         DataCard5 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
