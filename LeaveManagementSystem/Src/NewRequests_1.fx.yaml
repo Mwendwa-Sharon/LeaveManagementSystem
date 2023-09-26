@@ -1,4 +1,5 @@
 NewRequests_1 As screen:
+    Fill: =
 
     Header_1 As group:
         Height: =5
@@ -37,7 +38,7 @@ NewRequests_1 As screen:
     Form3 As form:
         AcceptsFocus: =true
         DataSource: =LRequests
-        DefaultMode: =FormMode.New
+        DefaultMode: =varFormMode
         Height: =462
         Item: =varItem
         NumberOfColumns: =2
@@ -67,6 +68,7 @@ NewRequests_1 As screen:
             MaxLength: =DataSourceInfo([@LRequests], DataSourceInfo.MaxLength, "ApproverComments")
             Required: =false
             Update: =DataCardValue1.Text
+            Visible: =varFormMode <> FormMode.New
             Width: =676
             X: =0
             Y: =4
