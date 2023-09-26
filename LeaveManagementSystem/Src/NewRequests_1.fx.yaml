@@ -275,7 +275,7 @@ NewRequests_1 As screen:
             Label6 As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 13, 75, 1)
+                Fill: =RGBA(29,24,57,1)
                 FontWeight: =FontWeight.Bold
                 Height: =64
                 Text: ="Approver information"
@@ -585,47 +585,61 @@ NewRequests_1 As screen:
                 Height: =45
                 Size: =12
                 Text: ="Are you sure you want to submit the request?"
-                Width: =220
-                X: =750
+                Width: =210
+                X: =768
                 Y: =555
                 ZIndex: =2
 
             SubmitForm_1 As button:
+                AutoDisableOnSelect: =false
                 Fill: =RGBA(29, 24, 57, 1)
-                Height: =21
+                FocusedBorderThickness: |
+                    =1
+                Height: =35
+                HoverFill: =RGBA(29,24,57,1)
                 OnSelect: |-
                     =SubmitForm(Form3);
                     Navigate(MyLeaveRequests);
                     RequestsFlow.Run(Form3.LastSubmit.ID)
+                PressedFill: =RGBA(29,24,57,1)
                 Size: =11
                 Text: ="Submit"
-                Width: =113
-                X: =720
-                Y: =537
+                Width: =120
+                X: =699
+                Y: =615
                 ZIndex: =3
 
             Cancel_1 As button:
+                AutoDisableOnSelect: =false
                 Fill: =RGBA(255, 0, 0, 1)
-                Height: =21
+                FocusedBorderThickness: |
+                    =1
+                Height: =35
+                HoverFill: =RGBA(255, 0, 0, 1)
                 OnSelect: |
                     =Set(ConfirmationPopup, false);
                     ResetForm(Form3)
+                PressedColor: =Color.White
+                PressedFill: =RGBA(255, 0, 0, 1)
                 Size: =11
                 Text: ="Cancel"
-                Width: =113
-                X: =904
-                Y: =537
+                Width: =120
+                X: =935
+                Y: =615
                 ZIndex: =4
 
     Button3 As button:
         DisplayMode: |-
             =If(
-                DataCardValue9.SelectedDate > DataCardValue10.SelectedDate || DataCardValue9.SelectedDate < MyDate,
+                DataCardValue9.SelectedDate > DataCardValue10.SelectedDate && DataCardValue9.SelectedDate < MyDate && DataCardValue7.Selected.Value,
                 DisplayMode.View,
                 DisplayMode.Edit
             )
         Fill: =RGBA(29,24,57,1)
+        HoverFill: =RGBA(29,24,57,1)
         OnSelect: =Set(ConfirmationPopup, true);
+        PressedBorderColor: =RGBA(29,24,57,1)
+        PressedFill: =RGBA(29,24,57,1)
         Text: ="Submit Request"
         Width: =223
         X: =603
