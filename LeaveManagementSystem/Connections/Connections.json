@@ -39,11 +39,11 @@
       "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
     },
     "datasets": {},
-    "dataSources": [
-      "LeaveRequestsList"
-    ],
+    "dataSources": [],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "261060ee-77d7-48d6-b44a-55585c677860"
+    ],
     "id": "0eaccec2-7e15-4a0c-beab-536112d3679b"
   },
   "44324c75-91ed-4c3c-b7b9-f54b1e15ae09": {
@@ -72,7 +72,7 @@
     ],
     "dependencies": {},
     "dependents": [
-      "05a656b1-ac5e-4aaf-8203-39aec34b1050"
+      "9a5a7ef4-924a-49cd-bef3-32dc12826636"
     ],
     "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
   },
