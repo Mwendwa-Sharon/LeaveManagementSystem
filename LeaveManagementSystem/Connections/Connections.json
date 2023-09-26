@@ -10,7 +10,9 @@
       "Office365Outlook"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "9a5a7ef4-924a-49cd-bef3-32dc12826636"
+    ],
     "id": "7d0d7931-4e22-473e-8751-3541255a0e62"
   },
   "86cb4143-4fe2-4e16-a647-ab2df08d6ec5": {
