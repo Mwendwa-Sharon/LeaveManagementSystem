@@ -79,7 +79,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ApproverComments_DataCard1",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1482,7 +1482,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "Created By_DataCard2",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1685,7 +1685,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCard5",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6142,7 +6142,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EndDate_DataCard2",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9330,7 +9330,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LeaveDescription_DataCard2",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9490,7 +9490,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "LeaveStatus_DataCard2",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9642,7 +9642,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LeaveType_DataCard2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10628,7 +10628,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "StartDate_DataCard2",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

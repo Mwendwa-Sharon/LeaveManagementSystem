@@ -57,46 +57,6 @@ NewRequests_1 As screen:
         Y: =99
         ZIndex: =8
 
-        DataCard1 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =200
-            Width: =676
-            X: =1
-            Y: =4
-            ZIndex: =1
-
-            Label8 As label:
-                Text: ="Status"
-                X: =40
-                Y: =26
-                ZIndex: =1
-
-            Button6_1 As button:
-                OnSelect: |-
-                    =Patch(
-                        LRequests, 
-                        LookUp(LRequests, ID = ThisItem.ID), 
-                        {Status: "Declined"} 
-                    );
-                Text: ="Decline"
-                X: =282
-                Y: =105
-                ZIndex: =3
-
-            Button6 As button:
-                OnSelect: |-
-                    =Patch(
-                        LRequests, 
-                        LookUp(LRequests, ID = ThisItem.ID), 
-                        {Status: "Approved"} 
-                    );
-                Text: ="Approve"
-                X: =40
-                Y: =105
-                ZIndex: =4
-
         DataCard5 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
@@ -320,6 +280,46 @@ NewRequests_1 As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1.Y
+                ZIndex: =4
+
+        DataCard1 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =200
+            Width: =676
+            X: =1
+            Y: =4
+            ZIndex: =1
+
+            Label8 As label:
+                Text: ="Status"
+                X: =40
+                Y: =26
+                ZIndex: =1
+
+            Button6_1 As button:
+                OnSelect: |-
+                    =Patch(
+                        LRequests, 
+                        LookUp(LRequests, ID = ThisItem.ID), 
+                        {Status: "Declined"} 
+                    );
+                Text: ="Decline"
+                X: =282
+                Y: =105
+                ZIndex: =3
+
+            Button6 As button:
+                OnSelect: |-
+                    =Patch(
+                        LRequests, 
+                        LookUp(LRequests, ID = ThisItem.ID), 
+                        {Status: "Approved"} 
+                    );
+                Text: ="Approve"
+                X: =40
+                Y: =105
                 ZIndex: =4
 
         LeaveType_DataCard2 As typedDataCard.comboBoxEditCard:
