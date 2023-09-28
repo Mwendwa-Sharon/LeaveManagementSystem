@@ -173,36 +173,28 @@ ManagerRequests As screen:
             Y: =12
             ZIndex: =1
 
-        Label4_8 As label:
-            Height: =22
-            Text: ="Leave descriptiopn"
-            Width: =182
-            X: =420
-            Y: =12
-            ZIndex: =2
-
         Label4_9 As label:
             Height: =36
             Text: ="Leave type "
             Width: =124
-            X: =184
-            Y: =9
+            X: =389
+            Y: =7
             ZIndex: =3
 
         Label4_10 As label:
             Height: =27
             Text: ="Days off"
             Width: =107
-            X: =854
-            Y: =7
+            X: =932
+            Y: =12
             ZIndex: =4
 
         Label4_11 As label:
             Height: =24
             Text: ="Dates"
             Width: =87
-            X: =652
-            Y: =15
+            X: =679
+            Y: =12
             ZIndex: =5
 
     Gallery1_2 As gallery.galleryVertical:
@@ -233,33 +225,55 @@ ManagerRequests As screen:
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Created By'.DisplayName
             Width: =161
-            X: =54
+            X: =40
             ZIndex: =2
 
         Label2_2 As label:
-            Height: =48
+            Height: =35
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Created By'.Email
-            Width: =181
-            X: =54
+            Width: =309
+            X: =40
             Y: =40
             ZIndex: =3
 
         Label2_3 As label:
-            Height: =48
+            Height: =41
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Created By'.Department
-            Width: =181
-            X: =54
-            Y: =88
+            Width: =231
+            X: =40
+            Y: =75
             ZIndex: =4
 
         Label2_4 As label:
-            Height: =48
+            Height: =31
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Created By'.JobTitle
             Width: =181
-            X: =54
-            Y: =136
+            X: =40
+            Y: =116
             ZIndex: =5
+
+        Label8 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.LeaveType.Value
+            X: =395
+            ZIndex: =6
+
+        Label8_1 As label:
+            Height: =36
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.LeaveDescription
+            Width: =208
+            X: =395
+            Y: =60
+            ZIndex: =7
+
+        Label11 As label:
+            OnSelect: =Select(Parent)
+            Text: =Text(ThisItem.StartDate,"[$-en-US]dd/mm/yyyy") & If(DateDiff(ThisItem.StartDate, ThisItem.EndDate, TimeUnit.Days) <> 0, " - " & Text(ThisItem.EndDate,"[$-en-US]dd/mm/yyyy"))
+            Width: =221
+            X: =638
+            ZIndex: =8
 
