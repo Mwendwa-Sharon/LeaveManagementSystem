@@ -174,86 +174,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "MyLeaveBalance.Circle1_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "MyLeaveBalance.Circle1_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "NewRequests"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "MyLeaveBalance",
-                "type": "MyLeaveBalance.Circle1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "NewRequests"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "MyLeaveBalance.Icon2_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "MyLeaveBalance.Icon2_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "NewRequests"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "MyLeaveBalance",
-                "type": "MyLeaveBalance.Icon2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "NewRequests"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ManagerRequests.Gallery1_2.Items"
                 }
               ],
@@ -264,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 260,
+                  "charOffset": 254,
                   "snippet": {
                     "text": "search"
                   }
@@ -304,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 266,
+                  "charOffset": 260,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -341,7 +261,7 @@
                 },
                 "region": {
                   "charLength": 20,
-                  "charOffset": 252,
+                  "charOffset": 246,
                   "snippet": {
                     "text": "IsBlank(search.Text)"
                   }
@@ -381,7 +301,7 @@
                 },
                 "region": {
                   "charLength": 14,
-                  "charOffset": 284,
+                  "charOffset": 278,
                   "snippet": {
                     "text": "SelectedStatus"
                   }
@@ -421,7 +341,7 @@
                 },
                 "region": {
                   "charLength": 23,
-                  "charOffset": 276,
+                  "charOffset": 270,
                   "snippet": {
                     "text": "IsBlank(SelectedStatus)"
                   }
@@ -461,7 +381,7 @@
                 },
                 "region": {
                   "charLength": 12,
-                  "charOffset": 306,
+                  "charOffset": 299,
                   "snippet": {
                     "text": "ListOfOrders"
                   }
@@ -501,7 +421,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 346,
+                  "charOffset": 337,
                   "snippet": {
                     "text": "search"
                   }
@@ -541,7 +461,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 352,
+                  "charOffset": 343,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -578,7 +498,7 @@
                 },
                 "region": {
                   "charLength": 20,
-                  "charOffset": 338,
+                  "charOffset": 329,
                   "snippet": {
                     "text": "IsBlank(search.Text)"
                   }
@@ -618,7 +538,7 @@
                 },
                 "region": {
                   "charLength": 12,
-                  "charOffset": 390,
+                  "charOffset": 379,
                   "snippet": {
                     "text": "ListOfOrders"
                   }
@@ -657,10 +577,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 88,
-                  "charOffset": 369,
+                  "charLength": 85,
+                  "charOffset": 359,
                   "snippet": {
-                    "text": "Filter(\r\n            ListOfOrders,\r\n            Status.Value = SelectedStatus\r\n        )"
+                    "text": "Filter(\n            ListOfOrders,\n            Status.Value = SelectedStatus\n        )"
                   }
                 }
               },
@@ -698,7 +618,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 417,
+                  "charOffset": 405,
                   "snippet": {
                     "text": "Status"
                   }
@@ -738,7 +658,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 423,
+                  "charOffset": 411,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -775,7 +695,7 @@
                 },
                 "region": {
                   "charLength": 14,
-                  "charOffset": 432,
+                  "charOffset": 420,
                   "snippet": {
                     "text": "SelectedStatus"
                   }
@@ -815,7 +735,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 430,
+                  "charOffset": 418,
                   "snippet": {
                     "text": "="
                   }
@@ -856,7 +776,7 @@
                 },
                 "region": {
                   "charLength": 14,
-                  "charOffset": 493,
+                  "charOffset": 478,
                   "snippet": {
                     "text": "SelectedStatus"
                   }
@@ -896,7 +816,7 @@
                 },
                 "region": {
                   "charLength": 23,
-                  "charOffset": 485,
+                  "charOffset": 470,
                   "snippet": {
                     "text": "IsBlank(SelectedStatus)"
                   }
@@ -936,7 +856,7 @@
                 },
                 "region": {
                   "charLength": 12,
-                  "charOffset": 548,
+                  "charOffset": 531,
                   "snippet": {
                     "text": "ListOfOrders"
                   }
@@ -975,10 +895,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 159,
-                  "charOffset": 523,
+                  "charLength": 153,
+                  "charOffset": 507,
                   "snippet": {
-                    "text": "Filter(\r\n                ListOfOrders,\r\n                StartsWith(\r\n                    ID,\r\n                    search.Text\r\n                )\r\n            )"
+                    "text": "Filter(\n                ListOfOrders,\n                StartsWith(\n                    ID,\n                    search.Text\n                )\n            )"
                   }
                 }
               },
@@ -1016,7 +936,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 612,
+                  "charOffset": 593,
                   "snippet": {
                     "text": "ID"
                   }
@@ -1056,7 +976,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 637,
+                  "charOffset": 617,
                   "snippet": {
                     "text": "search"
                   }
@@ -1096,7 +1016,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 643,
+                  "charOffset": 623,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -1132,10 +1052,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 88,
-                  "charOffset": 579,
+                  "charLength": 85,
+                  "charOffset": 561,
                   "snippet": {
-                    "text": "StartsWith(\r\n                    ID,\r\n                    search.Text\r\n                )"
+                    "text": "StartsWith(\n                    ID,\n                    search.Text\n                )"
                   }
                 }
               },
@@ -1173,7 +1093,7 @@
                 },
                 "region": {
                   "charLength": 12,
-                  "charOffset": 722,
+                  "charOffset": 698,
                   "snippet": {
                     "text": "ListOfOrders"
                   }
@@ -1212,10 +1132,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 192,
-                  "charOffset": 697,
+                  "charLength": 186,
+                  "charOffset": 674,
                   "snippet": {
-                    "text": "Filter(\r\n                ListOfOrders,\r\n                StartsWith(\r\n                    ID,\r\n                    search.Text\r\n                ) && Status.Value - SelectedStatus\r\n            )"
+                    "text": "Filter(\n                ListOfOrders,\n                StartsWith(\n                    ID,\n                    search.Text\n                ) && Status.Value - SelectedStatus\n            )"
                   }
                 }
               },
@@ -1253,7 +1173,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 786,
+                  "charOffset": 760,
                   "snippet": {
                     "text": "ID"
                   }
@@ -1293,7 +1213,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 811,
+                  "charOffset": 784,
                   "snippet": {
                     "text": "search"
                   }
@@ -1333,7 +1253,7 @@
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 817,
+                  "charOffset": 790,
                   "snippet": {
                     "text": ".Text"
                   }
@@ -1369,10 +1289,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 88,
-                  "charOffset": 753,
+                  "charLength": 85,
+                  "charOffset": 728,
                   "snippet": {
-                    "text": "StartsWith(\r\n                    ID,\r\n                    search.Text\r\n                )"
+                    "text": "StartsWith(\n                    ID,\n                    search.Text\n                )"
                   }
                 }
               },
@@ -1410,7 +1330,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 845,
+                  "charOffset": 817,
                   "snippet": {
                     "text": "Status"
                   }
@@ -1450,7 +1370,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 851,
+                  "charOffset": 823,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -1487,7 +1407,7 @@
                 },
                 "region": {
                   "charLength": 14,
-                  "charOffset": 860,
+                  "charOffset": 832,
                   "snippet": {
                     "text": "SelectedStatus"
                   }
@@ -1526,10 +1446,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 665,
-                  "charOffset": 243,
+                  "charLength": 639,
+                  "charOffset": 238,
                   "snippet": {
-                    "text": "If(\r\n    IsBlank(search.Text) && IsBlank(SelectedStatus),\r\n    ListOfOrders,\r\n    If(\r\n        IsBlank(search.Text),\r\n        Filter(\r\n            ListOfOrders,\r\n            Status.Value = SelectedStatus\r\n        ),\r\n        If(\r\n            IsBlank(SelectedStatus),\r\n            Filter(\r\n                ListOfOrders,\r\n                StartsWith(\r\n                    ID,\r\n                    search.Text\r\n                )\r\n            ),\r\n            Filter(\r\n                ListOfOrders,\r\n                StartsWith(\r\n                    ID,\r\n                    search.Text\r\n                ) && Status.Value - SelectedStatus\r\n            )\r\n        )\r\n    ))"
+                    "text": "If(\n    IsBlank(search.Text) && IsBlank(SelectedStatus),\n    ListOfOrders,\n    If(\n        IsBlank(search.Text),\n        Filter(\n            ListOfOrders,\n            Status.Value = SelectedStatus\n        ),\n        If(\n            IsBlank(SelectedStatus),\n            Filter(\n                ListOfOrders,\n                StartsWith(\n                    ID,\n                    search.Text\n                )\n            ),\n            Filter(\n                ListOfOrders,\n                StartsWith(\n                    ID,\n                    search.Text\n                ) && Status.Value - SelectedStatus\n            )\n        )\n    ))"
                   }
                 }
               },
@@ -2275,7 +2195,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 17,
+                  "charOffset": 16,
                   "snippet": {
                     "text": ".Status"
                   }
@@ -2315,7 +2235,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 24,
+                  "charOffset": 23,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -2352,7 +2272,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 31,
+                  "charOffset": 30,
                   "snippet": {
                     "text": "="
                   }
@@ -2393,7 +2313,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 47,
+                  "charOffset": 45,
                   "snippet": {
                     "text": "MyColor"
                   }
@@ -2433,7 +2353,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 69,
+                  "charOffset": 66,
                   "snippet": {
                     "text": ".Status"
                   }
@@ -2473,7 +2393,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 76,
+                  "charOffset": 73,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -2510,7 +2430,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 83,
+                  "charOffset": 80,
                   "snippet": {
                     "text": "="
                   }
@@ -2550,10 +2470,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 152,
+                  "charLength": 146,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "If(\r\n    ThisItem.Status.Value = \"✓Paid\",\r\n    MyColor,\r\n    ThisItem.Status.Value = \"↶Refunded\",\r\n    RGBA(15, 14, 14, 1),\r\n    RGBA(217, 27, 27, 1)\r\n)"
+                    "text": "If(\n    ThisItem.Status.Value = \"✓Paid\",\n    MyColor,\n    ThisItem.Status.Value = \"↶Refunded\",\n    RGBA(15, 14, 14, 1),\n    RGBA(217, 27, 27, 1)\n)"
                   }
                 }
               },
@@ -2591,7 +2511,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 17,
+                  "charOffset": 16,
                   "snippet": {
                     "text": ".Status"
                   }
@@ -2631,7 +2551,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 24,
+                  "charOffset": 23,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -2668,7 +2588,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 31,
+                  "charOffset": 30,
                   "snippet": {
                     "text": "="
                   }
@@ -2709,7 +2629,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 84,
+                  "charOffset": 81,
                   "snippet": {
                     "text": ".Status"
                   }
@@ -2749,7 +2669,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 91,
+                  "charOffset": 88,
                   "snippet": {
                     "text": ".Value"
                   }
@@ -2786,7 +2706,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 98,
+                  "charOffset": 95,
                   "snippet": {
                     "text": "="
                   }
@@ -2920,6 +2840,86 @@
           "message": {
             "arguments": [
               "MyIcons"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MyLeaveBalance.Circle1_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "MyLeaveBalance.Circle1_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "NewRequests"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "MyLeaveBalance",
+                "type": "MyLeaveBalance.Circle1_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "NewRequests"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "MyLeaveBalance.Icon2_2.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "MyLeaveBalance.Icon2_2.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "NewRequests"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "MyLeaveBalance",
+                "type": "MyLeaveBalance.Icon2_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "NewRequests"
             ],
             "id": "issue"
           },
@@ -3397,6 +3397,66 @@
                 "member": "TabIndex",
                 "module": "CompanyHolidaysScreen",
                 "type": "CompanyHolidaysScreen.Gallery2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2"
               }
             }
           ],
@@ -4398,66 +4458,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ManagerRequests",
-                "type": "ManagerRequests.Gallery1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ManagerRequests",
-                "type": "ManagerRequests.Gallery1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
         },
         {
           "locations": [
