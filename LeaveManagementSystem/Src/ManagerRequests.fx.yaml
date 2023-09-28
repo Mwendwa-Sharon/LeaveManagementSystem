@@ -167,14 +167,16 @@ ManagerRequests As screen:
 
         Label4_7 As label:
             Height: =24
+            Size: =12.5
             Text: ="Request by"
             Width: =164
-            X: =20
+            X: =5
             Y: =12
             ZIndex: =1
 
         Label4_9 As label:
             Height: =36
+            Size: =12.5
             Text: ="Leave type "
             Width: =124
             X: =389
@@ -183,6 +185,7 @@ ManagerRequests As screen:
 
         Label4_10 As label:
             Height: =27
+            Size: =12.5
             Text: ="Days off"
             Width: =107
             X: =932
@@ -191,6 +194,7 @@ ManagerRequests As screen:
 
         Label4_11 As label:
             Height: =24
+            Size: =12.5
             Text: ="Dates"
             Width: =87
             X: =679
