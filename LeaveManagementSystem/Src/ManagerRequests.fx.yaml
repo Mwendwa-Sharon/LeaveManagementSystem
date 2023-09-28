@@ -192,8 +192,8 @@ ManagerRequests As screen:
             Size: =12.5
             Text: ="Days off"
             Width: =107
-            X: =932
-            Y: =12
+            X: =936
+            Y: =10
             ZIndex: =4
 
         Label4_11 As label:
@@ -201,8 +201,8 @@ ManagerRequests As screen:
             Size: =12.5
             Text: ="Dates"
             Width: =87
-            X: =679
-            Y: =12
+            X: =683
+            Y: =13
             ZIndex: =5
 
     Gallery1_2 As gallery.galleryVertical:
@@ -220,13 +220,13 @@ ManagerRequests As screen:
         ZIndex: =10
 
         Image3 As image:
-            Height: =60
+            Height: =50
             OnSelect: =Select(Parent)
-            RadiusBottomLeft: =60
-            RadiusBottomRight: =60
-            RadiusTopLeft: =60
-            RadiusTopRight: =60
-            Width: =60
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =50
             X: =2
             ZIndex: =1
 
@@ -246,60 +246,54 @@ ManagerRequests As screen:
             Y: =40
             ZIndex: =3
 
-        Label2_3 As label:
-            Height: =41
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.'Created By'.Department
-            Width: =231
-            X: =75
-            Y: =75
-            ZIndex: =4
-
         Label2_4 As label:
             Height: =31
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Created By'.JobTitle
             Width: =181
             X: =75
-            Y: =116
+            Y: =87
             ZIndex: =5
 
         Label8_1 As label:
-            Height: =56
+            Height: =37
             OnSelect: =Select(Parent)
             Text: =ThisItem.LeaveDescription
-            Width: =208
-            X: =395
-            Y: =60
+            Width: =244
+            X: =384
+            Y: =50
             ZIndex: =7
 
         Label11 As label:
             OnSelect: =Select(Parent)
             Text: =Text(ThisItem.StartDate,"[$-en-US]dd/mm/yyyy") & If(DateDiff(ThisItem.StartDate, ThisItem.EndDate, TimeUnit.Days) <> 0, " - " & Text(ThisItem.EndDate,"[$-en-US]dd/mm/yyyy"))
             Width: =221
-            X: =638
+            X: =673
+            Y: =5
             ZIndex: =8
 
         Label14 As label:
             OnSelect: =Select(Parent)
             Text: =Round(ThisItem.DaysOff, 0)
-            X: =916
+            Width: =41
+            X: =938
             ZIndex: =9
 
         Button1_1 As button:
             BorderColor: =RGBA(29,24,57,1)
             BorderThickness: =3
             Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(29,24,57,0.8)
             DisabledColor: =Color.Black
             DisabledFill: =Color.White
             DisplayMode: =DisplayMode.Disabled
             Fill: =Color.White
-            FontWeight: =FontWeight.Bold
             Height: =35
             OnSelect: =Select(Parent)
-            Size: =11
+            Size: =10
             Text: =ThisItem.LeaveType.Value
             Width: =140
             X: =384
+            Y: =12
             ZIndex: =10
 
