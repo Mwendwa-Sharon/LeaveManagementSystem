@@ -294,7 +294,7 @@ ManagerRequests As screen:
 
     "'Popup Confirmation_2' As groupContainer.manualLayoutContainer":
         Height: =Parent.Height
-        Visible: =ConfirmationPopup
+        Visible: =ViewPopup
         Width: =Parent.Width
         ZIndex: =11
 
@@ -303,6 +303,17 @@ ManagerRequests As screen:
             Visible: =ViewPopup
             Width: =Parent.Width
             ZIndex: =5
+
+            TextInput1 As text:
+                Default: =""
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Size: =10
+                X: =696
+                Y: =568
+                ZIndex: =5
 
             "'popup rectangle_3' As group":
                 Height: =5
@@ -319,18 +330,18 @@ ManagerRequests As screen:
                     Y: =537
                     ZIndex: =1
 
-                Label2_5 As label:
+                CommentsLabel As label:
                     Color: =RGBA(255, 255, 255, 1)
                     FontWeight: =FontWeight.Semibold
-                    Height: =45
-                    Size: =12
-                    Text: ="Are you sure you want to submit the request?"
-                    Width: =210
-                    X: =768
-                    Y: =555
+                    Height: =31
+                    Size: =11
+                    Text: ="Add comments"
+                    Width: =167
+                    X: =696
+                    Y: =537
                     ZIndex: =2
 
-                SubmitForm_3 As button:
+                Approve As button:
                     AutoDisableOnSelect: =false
                     Fill: =RGBA(29, 24, 57, 1)
                     FocusedBorderThickness: |
@@ -338,18 +349,21 @@ ManagerRequests As screen:
                     Height: =35
                     HoverFill: =RGBA(29,24,57,1)
                     OnSelect: |-
-                        =SubmitForm(Form3);
-                        Navigate(MyLeaveRequests);
-                        RequestsFlow.Run(Form3.LastSubmit.ID)
+                        =//Change the leave status to approved
+                        Patch(
+                            LRequests, 
+                            LookUp(LRequests, ID = ThisItem.ID), 
+                            {Status: "Approved"} 
+                        );
                     PressedFill: =RGBA(29,24,57,1)
                     Size: =11
-                    Text: ="Submit"
+                    Text: ="Approve"
                     Width: =120
-                    X: =699
-                    Y: =615
+                    X: =722
+                    Y: =638
                     ZIndex: =3
 
-                Cancel_3 As button:
+                Decline As button:
                     AutoDisableOnSelect: =false
                     Fill: =RGBA(255, 0, 0, 1)
                     FocusedBorderThickness: |
@@ -357,15 +371,19 @@ ManagerRequests As screen:
                     Height: =35
                     HoverFill: =RGBA(255, 0, 0, 1)
                     OnSelect: |
-                        =Set(ConfirmationPopup, false);
-                        ResetForm(Form3)
+                        =//Save the leave status to Declined
+                        Patch(
+                            LRequests,              
+                            LookUp(LRequests, ID = ThisItem.ID), 
+                            {Status: "Declined"} 
+                        );
                     PressedColor: =Color.White
                     PressedFill: =RGBA(255, 0, 0, 1)
                     Size: =11
-                    Text: ="Cancel"
+                    Text: ="Decline"
                     Width: =120
-                    X: =935
-                    Y: =615
+                    X: =923
+                    Y: =638
                     ZIndex: =4
 
         "'popup rectangle_2' As group":
