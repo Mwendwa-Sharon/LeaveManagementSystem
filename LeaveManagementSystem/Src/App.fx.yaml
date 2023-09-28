@@ -1,7 +1,16 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =If(
+        =// Patch for the approve button
+        
+        /*Patch(
+            LRequests,              
+            LookUp(LRequests, ID = ThisItem.ID), 
+            {Status: "Approved"} 
+        )*/
+        
+        
+        If(
             !IsBlank(Param("ID")),
             Set(
                 varItem,
@@ -48,7 +57,7 @@ App As appinfo:
                 StartDate: DateValue("1/1/2024")
             }
         );
-        //collection used in the left nav menu employee
+        //collection used in the left nav menu employee view
         ClearCollect(
             EmployeeNav,
             {
@@ -72,6 +81,29 @@ App As appinfo:
                 TargetScreen: LoginScreen
             }
         );
+        
+        //collection used in the left nav menu manager view
+        ClearCollect(
+            ManagerViewNav,
+            {
+                Title: "Leave Requests",
+                TargetScreen: MyLeaveRequests
+            },
+            
+            {
+                Title: "Company Holidays",
+                TargetScreen: CompanyHolidaysScreen
+            },
+            {
+                Title: "About",
+                TargetScreen: AboutScreen
+            },
+            {
+                Title: "Log out",
+                TargetScreen: LoginScreen
+            }
+        );
+        
         ///About
         ClearCollect(
             LeaveTypeCollection,

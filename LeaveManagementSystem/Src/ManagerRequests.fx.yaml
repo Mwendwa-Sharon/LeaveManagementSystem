@@ -1,0 +1,159 @@
+ManagerRequests As screen:
+    Fill: =RGBA(243,242,250,1)
+
+    Container1_4 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(41,172,96,1)
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Fill: =RGBA(29,24,57,1)
+        Height: =Max(App.Height, App.MinScreenHeight)/8
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =Max(App.Width, App.MinScreenWidth)
+        ZIndex: =1
+
+        Group2_4 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =5
+
+            LblHeaderTItle1_8 As label:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                Color: =Color.White
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                Fill: =RGBA(29,24,57,1)
+                FocusedBorderColor: =LblHeaderTItle1_8.BorderColor
+                Font: =Font.Lato
+                Height: =80
+                HoverBorderColor: =LblHeaderTItle1_8.BorderColor
+                HoverColor: =LblHeaderTItle1_8.Color
+                HoverFill: =LblHeaderTItle1_8.Fill
+                PressedBorderColor: =LblHeaderTItle1_8.BorderColor
+                PressedColor: =LblHeaderTItle1_8.Color
+                PressedFill: =LblHeaderTItle1_8.Fill
+                Size: =15
+                Text: =Upper("Request")
+                Width: =117
+                X: =40
+                Y: =16
+                ZIndex: =1
+
+            icon2_4 As icon.ArrowRight:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                DisabledColor: =RGBA(193, 193, 193, 0.95)
+                DisabledFill: =icon2_4.Fill
+                FocusedBorderColor: =icon2_4.BorderColor
+                Height: =38
+                HoverBorderColor: =ColorFade(icon2_4.BorderColor, 20%)
+                HoverColor: =ColorFade(icon2_4.Color, 20%)
+                HoverFill: =icon2_4.Fill
+                Icon: =Icon.ArrowRight
+                PressedBorderColor: =ColorFade(icon2_4.BorderColor, -20%)
+                PressedColor: =ColorFade(icon2_4.Color, -20%)
+                PressedFill: =icon2_4.Fill
+                Width: =107
+                X: =129
+                Y: =37
+                ZIndex: =2
+
+            LblHeaderTItle1_9 As label:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                Color: =Color.White
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                Fill: =RGBA(29,24,57,1)
+                FocusedBorderColor: =LblHeaderTItle1_9.BorderColor
+                Font: =Font.Lato
+                Height: =80
+                HoverBorderColor: =LblHeaderTItle1_9.BorderColor
+                HoverColor: =LblHeaderTItle1_9.Color
+                HoverFill: =LblHeaderTItle1_9.Fill
+                PressedBorderColor: =LblHeaderTItle1_9.BorderColor
+                PressedColor: =LblHeaderTItle1_9.Color
+                PressedFill: =LblHeaderTItle1_9.Fill
+                Size: =15
+                Text: ="LEAVE"
+                Width: =117
+                X: =224
+                Y: =16
+                ZIndex: =3
+
+    Gallery3_4 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =672
+        Items: =ManagerViewNav
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(ThisItem.TargetScreen);
+        ShowScrollbar: =false
+        TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
+        TemplateSize: =75
+        Width: =273
+        Y: =96
+        ZIndex: =6
+
+        Label9_4 As label:
+            Height: =Gallery3_4.TemplateHeight
+            OnSelect: =Navigate(ThisItem.TargetScreen);
+            Text: =ThisItem.Title
+            Width: =Gallery3_4.TemplateWidth
+            ZIndex: =1
+
+    Container4_1 As groupContainer.manualLayoutContainer:
+        Height: =159
+        Width: =1093
+        X: =273
+        Y: =96
+        ZIndex: =7
+
+        Image2_1 As image:
+            Height: =151
+            Image: =image2
+            ImagePosition: =ImagePosition.Fill
+            Width: =435
+            ZIndex: =2
+
+    Gallery1_1 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Height: =87
+        Items: |-
+            =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Approved"}, {Filter: "Declined"})
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplateSize: =229
+        Width: =899
+        X: =308
+        Y: =244
+        ZIndex: =8
+
+        Button4_1 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(29,24,57,1)
+            Color: =If(_requestTypeFilter=ThisItem.Filter,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
+            Fill: =If(_requestTypeFilter=ThisItem.Filter,RGBA(29,24,57,1),RGBA(255, 255, 255, 1))
+            FocusedBorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            HoverBorderColor: =RGBA(29,24,57,1)
+            HoverColor: =Color.Black
+            HoverFill: =Color.White
+            OnSelect: |
+                =If(ThisItem.Filter <> _requestTypeFilter,
+                Set(_showDetails, false); 
+                Set(_requestTypeFilter, ThisItem.Filter))
+            PressedColor: =RGBA(29,24,57,1)
+            PressedFill: |
+                =//RGBA(29,24,57,1)
+                Color.White
+            Size: =12
+            Text: =ThisItem.Filter
+            Width: =105
+            X: =32
+            Y: =18
+            ZIndex: =1
+
