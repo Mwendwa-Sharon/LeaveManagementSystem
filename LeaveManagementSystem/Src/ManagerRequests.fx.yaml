@@ -295,11 +295,12 @@ ManagerRequests As screen:
             DisplayMode: =DisplayMode.Disabled
             Fill: =Color.White
             FontWeight: =FontWeight.Bold
-            Height: =35
+            Height: =30
             OnSelect: =Select(Parent)
             Size: =11
             Text: =ThisItem.LeaveType.Value
-            Width: =140
-            X: =384
+            Width: =110
+            X: =399
+            Y: =22
             ZIndex: =10
 
