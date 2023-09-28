@@ -104,20 +104,6 @@ ManagerRequests As screen:
             Width: =Gallery3_4.TemplateWidth
             ZIndex: =1
 
-    Container4_1 As groupContainer.manualLayoutContainer:
-        Height: =159
-        Width: =1093
-        X: =273
-        Y: =96
-        ZIndex: =7
-
-        Image2_1 As image:
-            Height: =151
-            Image: =image2
-            ImagePosition: =ImagePosition.Fill
-            Width: =435
-            ZIndex: =2
-
     Gallery1_1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Height: =87
@@ -127,8 +113,8 @@ ManagerRequests As screen:
         ShowScrollbar: =false
         TemplateSize: =229
         Width: =899
-        X: =308
-        Y: =244
+        X: =273
+        Y: =107
         ZIndex: =8
 
         Button4_1 As button:
@@ -165,8 +151,8 @@ ManagerRequests As screen:
         RadiusTopLeft: =5
         RadiusTopRight: =5
         Width: =1076
-        X: =266
-        Y: =331
+        X: =273
+        Y: =174
         ZIndex: =9
 
         Label4_7 As label:
@@ -192,8 +178,8 @@ ManagerRequests As screen:
             Size: =12.5
             Text: ="Days off"
             Width: =107
-            X: =932
-            Y: =12
+            X: =922
+            Y: =10
             ZIndex: =4
 
         Label4_11 As label:
@@ -201,8 +187,8 @@ ManagerRequests As screen:
             Size: =12.5
             Text: ="Dates"
             Width: =87
-            X: =679
-            Y: =12
+            X: =683
+            Y: =13
             ZIndex: =5
 
     Gallery1_2 As gallery.galleryVertical:
@@ -215,18 +201,18 @@ ManagerRequests As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =184
         Width: =1076
-        X: =266
-        Y: =376
+        X: =273
+        Y: =219
         ZIndex: =10
 
         Image3 As image:
-            Height: =60
+            Height: =50
             OnSelect: =Select(Parent)
-            RadiusBottomLeft: =60
-            RadiusBottomRight: =60
-            RadiusTopLeft: =60
-            RadiusTopRight: =60
-            Width: =60
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =50
             X: =2
             ZIndex: =1
 
@@ -246,61 +232,203 @@ ManagerRequests As screen:
             Y: =40
             ZIndex: =3
 
-        Label2_3 As label:
-            Height: =41
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.'Created By'.Department
-            Width: =231
-            X: =75
-            Y: =75
-            ZIndex: =4
-
         Label2_4 As label:
             Height: =31
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Created By'.JobTitle
             Width: =181
             X: =75
-            Y: =116
+            Y: =87
             ZIndex: =5
 
         Label8_1 As label:
-            Height: =56
+            Height: =37
             OnSelect: =Select(Parent)
             Text: =ThisItem.LeaveDescription
-            Width: =208
-            X: =395
-            Y: =60
+            Width: =244
+            X: =384
+            Y: =50
             ZIndex: =7
 
         Label11 As label:
             OnSelect: =Select(Parent)
             Text: =Text(ThisItem.StartDate,"[$-en-US]dd/mm/yyyy") & If(DateDiff(ThisItem.StartDate, ThisItem.EndDate, TimeUnit.Days) <> 0, " - " & Text(ThisItem.EndDate,"[$-en-US]dd/mm/yyyy"))
             Width: =221
-            X: =638
+            X: =673
+            Y: =5
             ZIndex: =8
 
         Label14 As label:
             OnSelect: =Select(Parent)
             Text: =Round(ThisItem.DaysOff, 0)
-            X: =916
+            Width: =41
+            X: =924
             ZIndex: =9
 
         Button1_1 As button:
             BorderColor: =RGBA(29,24,57,1)
             BorderThickness: =3
             Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(29,24,57,0.8)
             DisabledColor: =Color.Black
             DisabledFill: =Color.White
             DisplayMode: =DisplayMode.Disabled
             Fill: =Color.White
-            FontWeight: =FontWeight.Bold
             Height: =30
             OnSelect: =Select(Parent)
-            Size: =11
+            Size: =10
             Text: =ThisItem.LeaveType.Value
             Width: =110
             X: =399
             Y: =22
             ZIndex: =10
+
+        Icon1 As icon.ChevronRight:
+            Color: =RGBA(29,24,57,1)
+            Icon: =Icon.ChevronRight
+            OnSelect: =Set(ViewPopup, true);
+            Width: =25
+            X: =1001
+            Y: =40
+            ZIndex: =11
+
+    "'Popup Confirmation_2' As groupContainer.manualLayoutContainer":
+        Height: =Parent.Height
+        Visible: =ConfirmationPopup
+        Width: =Parent.Width
+        ZIndex: =11
+
+        "'Popup Confirmation_3' As groupContainer.manualLayoutContainer":
+            Height: =Parent.Height
+            Visible: =ViewPopup
+            Width: =Parent.Width
+            ZIndex: =5
+
+            "'popup rectangle_3' As group":
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =5
+
+                Rectangle2_3 As rectangle:
+                    Fill: =RGBA(116, 116, 116, 1)
+                    Height: =136
+                    Width: =416
+                    X: =670
+                    Y: =537
+                    ZIndex: =1
+
+                Label2_5 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =45
+                    Size: =12
+                    Text: ="Are you sure you want to submit the request?"
+                    Width: =210
+                    X: =768
+                    Y: =555
+                    ZIndex: =2
+
+                SubmitForm_3 As button:
+                    AutoDisableOnSelect: =false
+                    Fill: =RGBA(29, 24, 57, 1)
+                    FocusedBorderThickness: |
+                        =1
+                    Height: =35
+                    HoverFill: =RGBA(29,24,57,1)
+                    OnSelect: |-
+                        =SubmitForm(Form3);
+                        Navigate(MyLeaveRequests);
+                        RequestsFlow.Run(Form3.LastSubmit.ID)
+                    PressedFill: =RGBA(29,24,57,1)
+                    Size: =11
+                    Text: ="Submit"
+                    Width: =120
+                    X: =699
+                    Y: =615
+                    ZIndex: =3
+
+                Cancel_3 As button:
+                    AutoDisableOnSelect: =false
+                    Fill: =RGBA(255, 0, 0, 1)
+                    FocusedBorderThickness: |
+                        =1
+                    Height: =35
+                    HoverFill: =RGBA(255, 0, 0, 1)
+                    OnSelect: |
+                        =Set(ConfirmationPopup, false);
+                        ResetForm(Form3)
+                    PressedColor: =Color.White
+                    PressedFill: =RGBA(255, 0, 0, 1)
+                    Size: =11
+                    Text: ="Cancel"
+                    Width: =120
+                    X: =935
+                    Y: =615
+                    ZIndex: =4
+
+        "'popup rectangle_2' As group":
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =5
+
+            Rectangle2_2 As rectangle:
+                Fill: =RGBA(116, 116, 116, 1)
+                Height: =136
+                Width: =416
+                X: =670
+                Y: =537
+                ZIndex: =1
+
+            Label2_3 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =45
+                Size: =12
+                Text: ="Are you sure you want to submit the request?"
+                Width: =210
+                X: =768
+                Y: =555
+                ZIndex: =2
+
+            SubmitForm_2 As button:
+                AutoDisableOnSelect: =false
+                Fill: =RGBA(29, 24, 57, 1)
+                FocusedBorderThickness: |
+                    =1
+                Height: =35
+                HoverFill: =RGBA(29,24,57,1)
+                OnSelect: |-
+                    =SubmitForm(Form3);
+                    Navigate(MyLeaveRequests);
+                    RequestsFlow.Run(Form3.LastSubmit.ID)
+                PressedFill: =RGBA(29,24,57,1)
+                Size: =11
+                Text: ="Submit"
+                Width: =120
+                X: =699
+                Y: =615
+                ZIndex: =3
+
+            Cancel_2 As button:
+                AutoDisableOnSelect: =false
+                Fill: =RGBA(255, 0, 0, 1)
+                FocusedBorderThickness: |
+                    =1
+                Height: =35
+                HoverFill: =RGBA(255, 0, 0, 1)
+                OnSelect: |
+                    =Set(ConfirmationPopup, false);
+                    ResetForm(Form3)
+                PressedColor: =Color.White
+                PressedFill: =RGBA(255, 0, 0, 1)
+                Size: =11
+                Text: ="Cancel"
+                Width: =120
+                X: =935
+                Y: =615
+                ZIndex: =4
 
