@@ -259,12 +259,6 @@ ManagerRequests As screen:
             Y: =116
             ZIndex: =5
 
-        Label8 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.LeaveType.Value
-            X: =395
-            ZIndex: =6
-
         Label8_1 As label:
             Height: =36
             OnSelect: =Select(Parent)
