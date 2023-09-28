@@ -137,6 +137,7 @@
     "LoginScreen",
     "MyLeaveBalance",
     "MyLeaveRequests",
+    "ManagerRequests",
     "NewRequests_1"
   ]
 }
