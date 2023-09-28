@@ -274,13 +274,13 @@ ManagerRequests As screen:
             DisabledFill: =Color.White
             DisplayMode: =DisplayMode.Disabled
             Fill: =Color.White
-            Height: =35
+            Height: =30
             OnSelect: =Select(Parent)
             Size: =10
             Text: =ThisItem.LeaveType.Value
-            Width: =140
-            X: =384
-            Y: =12
+            Width: =110
+            X: =399
+            Y: =22
             ZIndex: =10
 
         Icon1 As icon.ChevronRight:
