@@ -158,10 +158,14 @@ ManagerRequests As screen:
             ZIndex: =1
 
     Container4_2 As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(249, 250, 252, 1)
+        Fill: =RGBA(243,242,250, 1)
         Height: =45
-        Width: =1080
-        X: =273
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Width: =1076
+        X: =266
         Y: =331
         ZIndex: =9
 
@@ -203,7 +207,7 @@ ManagerRequests As screen:
 
     Gallery1_2 As gallery.galleryVertical:
         BorderColor: =RGBA(248, 248, 250, 1)
-        BorderThickness: =3
+        BorderThickness: =2
         DelayItemLoading: =true
         Height: =363
         Items: =LRequests
@@ -261,7 +265,7 @@ ManagerRequests As screen:
             ZIndex: =5
 
         Label8_1 As label:
-            Height: =36
+            Height: =56
             OnSelect: =Select(Parent)
             Text: =ThisItem.LeaveDescription
             Width: =208
@@ -278,7 +282,24 @@ ManagerRequests As screen:
 
         Label14 As label:
             OnSelect: =Select(Parent)
-            Text: =Text(ThisItem.DaysOff, "0")
+            Text: =Round(ThisItem.DaysOff, 0)
             X: =916
             ZIndex: =9
+
+        Button1_1 As button:
+            BorderColor: =RGBA(29,24,57,1)
+            BorderThickness: =3
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =Color.Black
+            DisabledFill: =Color.White
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =Color.White
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            OnSelect: =Select(Parent)
+            Size: =11
+            Text: =ThisItem.LeaveType.Value
+            Width: =140
+            X: =384
+            ZIndex: =10
 
