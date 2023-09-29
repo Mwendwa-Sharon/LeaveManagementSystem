@@ -66,7 +66,7 @@ LoginScreen As screen:
                 Height: =35
                 OnSelect: |-
                     =Set(_managerView, true);
-                    If(User().Email = "Lillian.Warui@Betahood.com",
+                    If(User().Email = "Lillian.Warui@betahood.tech",
                         Navigate(ManagerRequests),
                         Notify("You are not authorized to perform this action.", NotificationType.Error)
                     )
