@@ -300,6 +300,27 @@ AboutScreenManager As screen:
                 Y: =16
                 ZIndex: =3
 
+    Gallery3_6 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =672
+        Items: =ManagerViewNav
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Navigate(ThisItem.TargetScreen);
+        ShowScrollbar: =false
+        TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
+        TemplateSize: =75
+        Width: =273
+        Y: =96
+        ZIndex: =14
+
+        Label9_6 As label:
+            Height: =Gallery3_6.TemplateHeight
+            OnSelect: =Navigate(ThisItem.TargetScreen);
+            Text: =ThisItem.Title
+            Width: =Gallery3_6.TemplateWidth
+            ZIndex: =1
+
     Group1_5 As group:
         Height: =5
         Width: =5
@@ -325,25 +346,4 @@ AboutScreenManager As screen:
             X: =1028
             Y: =30
             ZIndex: =13
-
-    Gallery3_6 As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Height: =672
-        Items: =ManagerViewNav
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =Navigate(ThisItem.TargetScreen);
-        ShowScrollbar: =false
-        TemplateFill: =If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
-        TemplateSize: =75
-        Width: =273
-        Y: =96
-        ZIndex: =14
-
-        Label9_6 As label:
-            Height: =Gallery3_6.TemplateHeight
-            OnSelect: =Navigate(ThisItem.TargetScreen);
-            Text: =ThisItem.Title
-            Width: =Gallery3_6.TemplateWidth
-            ZIndex: =1
 
