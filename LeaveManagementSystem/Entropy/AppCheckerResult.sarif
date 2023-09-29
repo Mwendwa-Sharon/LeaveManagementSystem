@@ -1061,19 +1061,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ManagerRequests.Gallery1_1.AccessibleLabel"
+                  "fullyQualifiedName": "ManagerRequests.Container7_1.search.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ManagerRequests.Gallery1_1.AccessibleLabel",
+                  "fullyQualifiedName": "ManagerRequests.Container7_1.search.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ManagerRequests",
-                "type": "ManagerRequests.Gallery1_1"
+                "type": "ManagerRequests.Container7_1.search"
               }
             }
           ],
@@ -1091,19 +1091,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ManagerRequests.Gallery1_1.TabIndex"
+                  "fullyQualifiedName": "ManagerRequests.Container7_1.DropdownStatus.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ManagerRequests.Gallery1_1.TabIndex",
+                  "fullyQualifiedName": "ManagerRequests.Container7_1.DropdownStatus.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "AccessibleLabel",
                 "module": "ManagerRequests",
-                "type": "ManagerRequests.Gallery1_1"
+                "type": "ManagerRequests.Container7_1.DropdownStatus"
               }
             }
           ],
@@ -1113,8 +1113,38 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.Container7_1.Dropdownleavetype.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.Container7_1.Dropdownleavetype.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Container7_1.Dropdownleavetype"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2255,6 +2285,66 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.SelectedPurchase"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.SelectedPurchase",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "SelectedPurchase",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.SelectedStatus"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.SelectedStatus",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "SelectedStatus",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
         }
       ],
       "tool": {

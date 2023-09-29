@@ -63,10 +63,10 @@ NewRequests_1 As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"Created")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =94
             Required: =false
             Visible: =varFormMode <> FormMode.New
-            Width: =676
+            Width: =329
             X: =1
             Y: =3
             ZIndex: =1
@@ -196,8 +196,8 @@ NewRequests_1 As screen:
             Update: =DataCardValue5.Selected
             Visible: =varFormMode <> FormMode.New
             Width: =676
-            X: =0
-            Y: =4
+            X: =1
+            Y: =3
             ZIndex: =1
 
             DataCardKey5 As label:
@@ -266,7 +266,7 @@ NewRequests_1 As screen:
             Update: =DataCardValue1.Text
             Visible: =varFormMode <> FormMode.New
             Width: =676
-            X: =1
+            X: =0
             Y: =4
             ZIndex: =1
 
@@ -614,6 +614,7 @@ NewRequests_1 As screen:
             Rectangle2_1 As rectangle:
                 Fill: =RGBA(116, 116, 116, 1)
                 Height: =136
+                Visible: =varFormMode <> FormMode.View
                 Width: =416
                 X: =670
                 Y: =537
@@ -625,6 +626,7 @@ NewRequests_1 As screen:
                 Height: =45
                 Size: =12
                 Text: ="Are you sure you want to submit the request?"
+                Visible: =varFormMode <> FormMode.View
                 Width: =210
                 X: =768
                 Y: =555
@@ -637,20 +639,21 @@ NewRequests_1 As screen:
                     =1
                 Height: =35
                 HoverFill: =RGBA(29,24,57,1)
-                OnSelect: |
+                OnSelect: |-
                     =SubmitForm(Form3);
                     Navigate(MyLeaveRequests);
-                    RequestsFlow.Run(Form3.LastSubmit.ID);
+                    //RequestsFlow.Run(Form3.LastSubmit.ID);
                     //Send email to approver
-                    Office365Outlook.SendEmailV2(
+                    If(varFormMode = FormMode.New,Office365Outlook.SendEmailV2(
                         "Lillian.Warui@betahood.tech",
                         "New leave request created",
                         "<p>Please click the link below to review the new approval request created.<br><br>" &
                         "<a href=""https://apps.powerapps.com/play/e/default-a7c9e154-5d84-429c-9595-ed1b396af1be/a/ccb30074-3df3-4803-9bf5-0545a456cf2e?tenantId=a7c9e154-5d84-429c-9595-ed1b396af1be&hint=c28a89bf-4be9-4de5-b5f8-2b72e9d09c0b&sourcetime=1695545404122"">Take Action</a></p>"
-                    );
+                    ))
                 PressedFill: =RGBA(29,24,57,1)
                 Size: =11
                 Text: ="Submit"
+                Visible: =varFormMode <> FormMode.View
                 Width: =120
                 X: =699
                 Y: =615
@@ -670,6 +673,7 @@ NewRequests_1 As screen:
                 PressedFill: =RGBA(255, 0, 0, 1)
                 Size: =11
                 Text: ="Cancel"
+                Visible: =varFormMode <> FormMode.View
                 Width: =120
                 X: =935
                 Y: =615
@@ -684,10 +688,12 @@ NewRequests_1 As screen:
             )
         Fill: =RGBA(29,24,57,1)
         HoverFill: =RGBA(29,24,57,1)
-        OnSelect: =Set(ConfirmationPopup, true);
+        OnSelect: |
+            =Set(ConfirmationPopup, true);
         PressedBorderColor: =RGBA(29,24,57,1)
         PressedFill: =RGBA(29,24,57,1)
         Text: ="Submit Request"
+        Visible: =varFormMode <> FormMode.View
         Width: =223
         X: =603
         Y: =716
