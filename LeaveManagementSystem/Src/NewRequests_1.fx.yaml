@@ -57,95 +57,6 @@ NewRequests_1 As screen:
         Y: =99
         ZIndex: =8
 
-        DataCard5 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =66
-            Visible: =varFormMode <> FormMode.New
-            Width: =Parent.Width
-            WidthFit: =true
-            X: =0
-            Y: =2
-            ZIndex: =1
-
-            Label6 As label:
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(29,24,57,1)
-                FontWeight: =FontWeight.Bold
-                Height: =64
-                Text: ="Approver information"
-                Width: =Parent.Width
-                ZIndex: =1
-
-        "'Created By_DataCard1' As typedDataCard.comboBoxViewCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Author"
-            Default: =ThisItem.'Created By'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"Author")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue3.Selected
-            Width: =676
-            X: =0
-            Y: =3
-            ZIndex: =1
-
-            DataCardKey3 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue3 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["DisplayName","Email","Picture"]
-                DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                Items: =Choices([@LRequests].Author)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["DisplayName"]
-                SearchItems: =[]
-                SelectMultiple: =false
-                Template: =ListItemTemplate.Person
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
-                ZIndex: =2
-
-            ErrorMessage2 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue3.Y + DataCardValue3.Height
-                ZIndex: =3
-
-            StarVisible2 As label:
-                Align: =Align.Center
-                Height: =DataCardKey3.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey3.Y
-                ZIndex: =4
-
         Created_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Created"
@@ -182,6 +93,95 @@ NewRequests_1 As screen:
                 X: =30
                 Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                 ZIndex: =2
+
+        "'Created By_DataCard1' As typedDataCard.comboBoxViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Author"
+            Default: =ThisItem.'Created By'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"Author")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue3.Selected
+            Width: =676
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
+                Items: =Choices([@LRequests].'Created By')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["DisplayName"]
+                SearchItems: =[]
+                SelectMultiple: =false
+                Template: =ListItemTemplate.Person
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey3.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3.Y
+                ZIndex: =4
+
+        DataCard5 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =66
+            Visible: =varFormMode <> FormMode.New
+            Width: =Parent.Width
+            WidthFit: =true
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            Label6 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(29,24,57,1)
+                FontWeight: =FontWeight.Bold
+                Height: =64
+                Text: ="Approver information"
+                Width: =Parent.Width
+                ZIndex: =1
 
         LeaveStatus_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
