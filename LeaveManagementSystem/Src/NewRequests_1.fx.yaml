@@ -57,27 +57,43 @@ NewRequests_1 As screen:
         Y: =99
         ZIndex: =8
 
-        DataCard5 As typedDataCard.blankCard:
+        Created_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
+            DataField: ="Created"
+            Default: =ThisItem.Created
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"Created")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =66
+            Height: =94
+            Required: =false
             Visible: =varFormMode <> FormMode.New
-            Width: =Parent.Width
-            WidthFit: =true
-            X: =0
-            Y: =2
+            Width: =329
+            X: =1
+            Y: =3
             ZIndex: =1
 
-            Label6 As label:
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(29,24,57,1)
-                FontWeight: =FontWeight.Bold
-                Height: =64
-                Text: ="Approver information"
-                Width: =Parent.Width
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
                 ZIndex: =1
+
+            DataCardValue2 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                ZIndex: =2
 
         "'Created By_DataCard1' As typedDataCard.comboBoxViewCard":
             BorderStyle: =BorderStyle.Solid
@@ -147,112 +163,27 @@ NewRequests_1 As screen:
                 Y: =DataCardKey3.Y
                 ZIndex: =4
 
-        Created_DataCard1 As typedDataCard.textualViewCard:
+        DataCard5 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Created"
-            Default: =ThisItem.Created
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"Created")
+            DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
+            Height: =66
             Visible: =varFormMode <> FormMode.New
-            Width: =676
-            X: =1
-            Y: =3
-            ZIndex: =1
-
-            DataCardKey2 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue2 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
-                ZIndex: =2
-
-        LeaveStatus_DataCard2 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="LeaveStatus"
-            Default: =ThisItem.LeaveStatus
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"LeaveStatus")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue5.Selected
-            Visible: =varFormMode <> FormMode.New
-            Width: =676
+            Width: =Parent.Width
+            WidthFit: =true
             X: =0
-            Y: =4
+            Y: =2
             ZIndex: =1
 
-            DataCardKey5 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue5 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(29,24,57, 1)
-                ChevronHoverBackground: =RGBA(29,24,57, 1)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@LRequests].LeaveStatus)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices(LRequests.LeaveStatus,DataCardValue5.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
-                ZIndex: =2
-
-            ErrorMessage5 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue5.Y + DataCardValue5.Height
-                ZIndex: =3
-
-            StarVisible5 As label:
+            Label6 As label:
                 Align: =Align.Center
-                Height: =DataCardKey5.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey5.Y
-                ZIndex: =4
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(29,24,57,1)
+                FontWeight: =FontWeight.Bold
+                Height: =64
+                Text: ="Approver information"
+                Width: =Parent.Width
+                ZIndex: =1
 
         ApproverComments_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -267,7 +198,7 @@ NewRequests_1 As screen:
             Update: =DataCardValue1.Text
             Visible: =varFormMode <> FormMode.New
             Width: =676
-            X: =1
+            X: =0
             Y: =4
             ZIndex: =1
 
@@ -321,6 +252,75 @@ NewRequests_1 As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1.Y
+                ZIndex: =4
+
+        LeaveStatus_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="LeaveStatus"
+            Default: =ThisItem.LeaveStatus
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"LeaveStatus")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue5.Selected
+            Visible: =varFormMode <> FormMode.New
+            Width: =676
+            X: =1
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(29,24,57, 1)
+                ChevronHoverBackground: =RGBA(29,24,57, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@LRequests].LeaveStatus)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(LRequests.LeaveStatus,DataCardValue5.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
+            ErrorMessage5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible5 As label:
+                Align: =Align.Center
+                Height: =DataCardKey5.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey5.Y
                 ZIndex: =4
 
         LeaveType_DataCard2 As typedDataCard.comboBoxEditCard:
@@ -615,6 +615,7 @@ NewRequests_1 As screen:
             Rectangle2_1 As rectangle:
                 Fill: =RGBA(116, 116, 116, 1)
                 Height: =136
+                Visible: =varFormMode <> FormMode.View
                 Width: =416
                 X: =670
                 Y: =537
@@ -626,6 +627,7 @@ NewRequests_1 As screen:
                 Height: =45
                 Size: =12
                 Text: ="Are you sure you want to submit the request?"
+                Visible: =varFormMode <> FormMode.View
                 Width: =210
                 X: =768
                 Y: =555
@@ -638,20 +640,21 @@ NewRequests_1 As screen:
                     =1
                 Height: =35
                 HoverFill: =RGBA(29,24,57,1)
-                OnSelect: |
+                OnSelect: |-
                     =SubmitForm(Form3);
                     Navigate(MyLeaveRequests);
-                    RequestsFlow.Run(Form3.LastSubmit.ID);
+                    //RequestsFlow.Run(Form3.LastSubmit.ID);
                     //Send email to approver
-                    Office365Outlook.SendEmailV2(
+                    If(varFormMode = FormMode.New,Office365Outlook.SendEmailV2(
                         "Lillian.Warui@betahood.tech",
                         "New leave request created",
                         "<p>Please click the link below to review the new approval request created.<br><br>" &
                         "<a href=""https://apps.powerapps.com/play/e/default-a7c9e154-5d84-429c-9595-ed1b396af1be/a/ccb30074-3df3-4803-9bf5-0545a456cf2e?tenantId=a7c9e154-5d84-429c-9595-ed1b396af1be&hint=c28a89bf-4be9-4de5-b5f8-2b72e9d09c0b&sourcetime=1695545404122"">Take Action</a></p>"
-                    );
+                    ))
                 PressedFill: =RGBA(29,24,57,1)
                 Size: =11
                 Text: ="Submit"
+                Visible: =varFormMode <> FormMode.View
                 Width: =120
                 X: =699
                 Y: =615
@@ -671,6 +674,7 @@ NewRequests_1 As screen:
                 PressedFill: =RGBA(255, 0, 0, 1)
                 Size: =11
                 Text: ="Cancel"
+                Visible: =varFormMode <> FormMode.View
                 Width: =120
                 X: =935
                 Y: =615
@@ -685,10 +689,12 @@ NewRequests_1 As screen:
             )
         Fill: =RGBA(29,24,57,1)
         HoverFill: =RGBA(29,24,57,1)
-        OnSelect: =Set(ConfirmationPopup, true);
+        OnSelect: |
+            =Set(ConfirmationPopup, true);
         PressedBorderColor: =RGBA(29,24,57,1)
         PressedFill: =RGBA(29,24,57,1)
         Text: ="Submit Request"
+        Visible: =varFormMode <> FormMode.View
         Width: =223
         X: =603
         Y: =716

@@ -154,7 +154,6 @@ ManagerRequests As screen:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =1
         DelayItemLoading: =true
-        DisplayMode: =DisplayMode.View
         Height: =496
         Items: |
             =If(
