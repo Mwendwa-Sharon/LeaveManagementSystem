@@ -113,7 +113,8 @@ MyLeaveRequests As screen:
     Gallery3 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =672
-        Items: =EmployeeNav
+        Items: |
+            =If(_managerView, ManagerViewNav, EmployeeNav)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(ThisItem.TargetScreen);

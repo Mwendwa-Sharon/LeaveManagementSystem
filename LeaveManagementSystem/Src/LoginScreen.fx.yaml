@@ -32,7 +32,9 @@ LoginScreen As screen:
                 Fill: =RGBA(29,24,57,1)
                 FontWeight: =FontWeight.Bold
                 Height: =35
-                OnSelect: =Navigate(MyLeaveRequests,BorderStyle.None)
+                OnSelect: |-
+                    =Set(_managerView,false);
+                    Navigate(MyLeaveRequests,BorderStyle.None);
                 Size: =11
                 Text: ="Log in as an employee"
                 Width: =298
@@ -63,7 +65,8 @@ LoginScreen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =35
                 OnSelect: |-
-                    =If(User().Email = "Lillian.Warui@Betahood.com",
+                    =Set(_managerView, true);
+                    If(User().Email = "Lillian.Warui@Betahood.com",
                         Navigate(ManagerRequests),
                         Notify("You are not authorized to perform this action.", NotificationType.Error)
                     )
