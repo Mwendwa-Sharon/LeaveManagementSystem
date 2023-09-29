@@ -87,16 +87,16 @@ App As appinfo:
             ManagerViewNav,
             {
                 Title: "Leave Requests",
-                TargetScreen: MyLeaveRequests
+                TargetScreen: ManagerRequests
             },
             
             {
                 Title: "Company Holidays",
-                TargetScreen: CompanyHolidaysScreen
+                TargetScreen: CompanyHolidaysManager
             },
             {
                 Title: "About",
-                TargetScreen: AboutScreen
+                TargetScreen: AboutScreenManager
             },
             {
                 Title: "Log out",
