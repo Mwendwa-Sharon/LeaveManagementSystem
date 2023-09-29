@@ -634,17 +634,17 @@ NewRequests_1 As screen:
                     =1
                 Height: =35
                 HoverFill: =RGBA(29,24,57,1)
-                OnSelect: |+
+                OnSelect: |-
                     =SubmitForm(Form3);
                     Navigate(MyLeaveRequests);
                     RequestsFlow.Run(Form3.LastSubmit.ID);
                     Office365Outlook.SendEmailV2(
                         "Lillian.Warui@betahood.tech",
                         "New leave request created",
-                        "<p>Please click the link below to review the new approval request created.<br><br>" &
-                        "<a href=""https://apps.powerapps.com/play/e/default-a7c9e154-5d84-429c-9595-ed1b396af1be/a/ccb30074-3df3-4803-9bf5-0545a456cf2e?tenantId=a7c9e154-5d84-429c-9595-ed1b396af1be&hint=c28a89bf-4be9-4de5-b5f8-2b72e9d09c0b&sourcetime=1695545404122"">Take Action</a></p>"
+                        "Please click the link below to review the new approval request created.")
+                    <br><br>" +
+                        "<a href=\"https://apps.powerapps.com/play/e/default-a7c9e154-5d84-429c-9595-ed1b396af1be/a/ccb30074-3df3-4803-9bf5-0545a456cf2e?tenantId=a7c9e154-5d84-429c-9595-ed1b396af1be&hint=c28a89bf-4be9-4de5-b5f8-2b72e9d09c0b&sourcetime=1695545404122\">Take Action</a></p>"
                     );
-                    
                 PressedFill: =RGBA(29,24,57,1)
                 Size: =11
                 Text: ="Submit"
