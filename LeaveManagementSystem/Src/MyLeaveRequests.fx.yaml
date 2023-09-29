@@ -167,7 +167,7 @@ MyLeaveRequests As screen:
             Text: |
                 =User().FullName
             Width: =183
-            X: =559
+            X: =486
             Y: =43
             ZIndex: =4
 

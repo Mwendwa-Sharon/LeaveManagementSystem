@@ -641,7 +641,13 @@ NewRequests_1 As screen:
                 HoverFill: =RGBA(29,24,57,1)
                 OnSelect: |
                     =SubmitForm(Form3);
-                    If(varFormMode = FormMode.New,Navigate(MyLeaveRequests),Navigate(ManagerRequests));
+                    If(
+                        varFormMode = FormMode.New,
+                        Navigate(MyLeaveRequests, ScreenTransition.Fade),
+                        varFormMode = FormMode.Edit,
+                        Navigate(ManagerRequests, ScreenTransition.Fade)
+                    );
+                    
                     //RequestsFlow.Run(Form3.LastSubmit.ID);
                     //Send email to approver
                     If(varFormMode = FormMode.New,Office365Outlook.SendEmailV2(
