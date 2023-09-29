@@ -156,36 +156,15 @@ ManagerRequests As screen:
         DelayItemLoading: =true
         DisplayMode: =DisplayMode.View
         Height: =496
-        Items: |-
-            =LRequests
-            /*If(
-                IsBlank(search.Text) && IsBlank(DropdownStatus.Selected.Value),
+        Items: |
+            =If(
+                Gallery1_1.Selected.Filter = "All",
                 LRequests,
-                If(
-                    IsBlank(search.Text),
-                    Filter(
-                        LRequests,
-                        LeaveStatus.Value = DropdownStatus.Selected.Value
-                    ),
-                    If(
-                        IsBlank(DropdownStatus.Selected.Value),
-                        Filter(
-                            LRequests,
-                            StartsWith(
-                                'Created By'.DisplayName,
-                                search.Text
-                            )
-                        ),
-                        Filter(
-                            LRequests,
-                            StartsWith(
-                                'Created By'.DisplayName,
-                                search.Text
-                            ) && LeaveType.Value = Dropdownleavetype.Selected.Value
-                        )
-                    )
+                Filter(
+                    LRequests,
+                    LeaveStatus.Value = Gallery1_1.Selected.Filter
                 )
-            )*/
+            )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TabIndex: =3
@@ -283,67 +262,42 @@ ManagerRequests As screen:
             Y: =45
             ZIndex: =12
 
-    Container7_1 As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(249, 250, 252, 1)
-        Height: =115
-        Width: =1093
-        X: =273
+    Gallery1_1 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Height: =102
+        Items: |-
+            =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Approved"}, {Filter: "Declined"})
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplateSize: =229
+        Width: =1058
+        X: =291
         Y: =96
         ZIndex: =11
 
-        Label2_12 As label:
-            Height: =29
-            Size: =11
-            Text: ="Category"
-            Width: =110
-            X: =827
-            Y: =27
-            ZIndex: =5
-
-        Label2_11 As label:
-            Height: =23
-            Size: =11
-            Text: ="Status"
-            Width: =110
-            X: =380
-            Y: =29
-            ZIndex: =6
-
-        search As text:
-            BorderThickness: =0
-            Default: =""
-            Height: =36
-            HintText: ="Search"
-            Width: =197
-            X: =30
-            Y: =55
-            ZIndex: =7
-
-        Label2_10 As label:
-            Height: =26
-            Size: =11
-            Text: ="Search for order"
-            X: =54
-            Y: =29
-            ZIndex: =8
-
-        DropdownStatus As dropdown:
-            Height: =36
-            Items: =Distinct(LRequests,LeaveStatus.Value)
-            OnChange: |-
-                =UpdateContext({SelectedStatus: DropdownStatus.Selected.Value})
-            Width: =190
-            X: =380
-            Y: =55
-            ZIndex: =9
-
-        Dropdownleavetype As dropdown:
-            Height: =36
-            Items: =Distinct(LRequests,LeaveType.Value)
-            OnChange: |-
-                =UpdateContext({SelectedPurchase: Dropdownleavetype.Selected.Value})
-            Width: =196
-            X: =810
-            Y: =56
-            ZIndex: =10
+        Button4_1 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(29,24,57,1)
+            Color: =If(_requestTypeFilter=ThisItem.Filter,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
+            Fill: =If(_requestTypeFilter=ThisItem.Filter,RGBA(29,24,57,1),RGBA(255, 255, 255, 1))
+            FocusedBorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            HoverBorderColor: =RGBA(29,24,57,1)
+            HoverColor: =Color.Black
+            HoverFill: =Color.White
+            OnSelect: |
+                =If(ThisItem.Filter <> _requestTypeFilter,
+                Set(_showDetails, false); 
+                Set(_requestTypeFilter, ThisItem.Filter))
+            PressedColor: =RGBA(29,24,57,1)
+            PressedFill: |
+                =//RGBA(29,24,57,1)
+                Color.White
+            Size: =12
+            Text: =ThisItem.Filter
+            Width: =105
+            X: =32
+            Y: =48
+            ZIndex: =1
 
