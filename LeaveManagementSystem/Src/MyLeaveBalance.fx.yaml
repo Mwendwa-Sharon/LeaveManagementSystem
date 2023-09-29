@@ -157,3 +157,11 @@ MyLeaveBalance As screen:
             Y: =30
             ZIndex: =3
 
+    Label2 As label:
+        Height: =56
+        Text: ="These are the remaining leave days for each leave type"
+        Width: =305
+        X: =273
+        Y: =96
+        ZIndex: =5
+

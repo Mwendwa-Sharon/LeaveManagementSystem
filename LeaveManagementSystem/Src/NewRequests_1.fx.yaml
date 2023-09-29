@@ -29,10 +29,9 @@ NewRequests_1 As screen:
             Color: =RGBA(255, 255, 255, 1)
             Height: =81
             Icon: =Icon.ArrowLeft
-            OnSelect: =Navigate(MyLeaveBalance)
-            Width: =45
-            X: =41
-            Y: =1
+            OnSelect: =Navigate(MyLeaveRequests)
+            Width: =33
+            X: =12
             ZIndex: =4
 
     Form3 As form:
