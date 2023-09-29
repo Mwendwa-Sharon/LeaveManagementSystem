@@ -218,7 +218,7 @@ ManagerRequests As screen:
 
         Label2 As label:
             OnSelect: =Select(Parent)
-            Text: =ThisItem.'Created By'.DisplayName
+            Text: =Set(varFormMode,FormMode.View);Set(varItem,ThisItem);Navigate(NewRequests_1)
             Width: =161
             X: =75
             ZIndex: =2
@@ -260,7 +260,7 @@ ManagerRequests As screen:
 
         Label14 As label:
             OnSelect: =Select(Parent)
-            Text: =Round(ThisItem.DaysOff, 0)
+            Text: =Round(ThisItem.dd, 0)
             Width: =41
             X: =924
             ZIndex: =9
@@ -313,6 +313,40 @@ ManagerRequests As screen:
             Width: =Parent.Width
             ZIndex: =5
 
+            Decline As button:
+                AutoDisableOnSelect: =false
+                Fill: =RGBA(255, 0, 0, 1)
+                FocusedBorderThickness: |
+                    =1
+                Height: =35
+                HoverFill: =RGBA(255, 0, 0, 1)
+                OnSelect: |
+                    =//Save the leave status to Declined
+                    Patch(
+                        LRequests,              
+                        LookUp(LRequests, ID = ThisItem.ID), 
+                        {Status: "Declined"} 
+                    );
+                PressedColor: =Color.White
+                PressedFill: =RGBA(255, 0, 0, 1)
+                Size: =11
+                Text: ="Decline"
+                Width: =120
+                X: =923
+                Y: =638
+                ZIndex: =4
+
+            TextInput1 As text:
+                Default: =""
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Size: =10
+                X: =696
+                Y: =568
+                ZIndex: =5
+
             "'popup rectangle_3' As group":
                 Height: =5
                 Width: =5
@@ -360,40 +394,6 @@ ManagerRequests As screen:
                     X: =722
                     Y: =638
                     ZIndex: =3
-
-                Decline As button:
-                    AutoDisableOnSelect: =false
-                    Fill: =RGBA(255, 0, 0, 1)
-                    FocusedBorderThickness: |
-                        =1
-                    Height: =35
-                    HoverFill: =RGBA(255, 0, 0, 1)
-                    OnSelect: |
-                        =//Save the leave status to Declined
-                        Patch(
-                            LRequests,              
-                            LookUp(LRequests, ID = ThisItem.ID), 
-                            {Status: "Declined"} 
-                        );
-                    PressedColor: =Color.White
-                    PressedFill: =RGBA(255, 0, 0, 1)
-                    Size: =11
-                    Text: ="Decline"
-                    Width: =120
-                    X: =923
-                    Y: =638
-                    ZIndex: =4
-
-            TextInput1 As text:
-                Default: =""
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Size: =10
-                X: =696
-                Y: =568
-                ZIndex: =5
 
         "'popup rectangle_2' As group":
             Height: =5
