@@ -972,7 +972,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Created By_DataCard1",
-      "ParentIndex": 1,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1111,7 +1111,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Created_DataCard1",
-      "ParentIndex": 0,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1229,7 +1229,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCard5",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2449,7 +2449,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey3",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4847,7 +4847,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
       "Name": "DataCardValue3",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6241,7 +6241,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EndDate_DataCard2",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7230,7 +7230,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
       "Name": "ErrorMessage2",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9167,7 +9167,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LeaveDescription_DataCard2",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9479,7 +9479,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LeaveType_DataCard2",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10465,7 +10465,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "StartDate_DataCard2",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11454,7 +11454,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible2",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
