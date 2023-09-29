@@ -28,13 +28,18 @@ LoginScreen As screen:
                 ZIndex: =1
 
             Button2 As button:
+                AutoDisableOnSelect: =false
                 Color: =Color.White
                 Fill: =RGBA(29,24,57,1)
+                FocusedBorderThickness: =1
                 FontWeight: =FontWeight.Bold
                 Height: =35
+                HoverFill: =RGBA(29,24,57,1)
                 OnSelect: |-
                     =Set(_managerView,false);
                     Navigate(MyLeaveRequests,BorderStyle.None);
+                PressedBorderColor: =RGBA(29,24,57,1)
+                PressedFill: =RGBA(29,24,57,1)
                 Size: =11
                 Text: ="Log in as an employee"
                 Width: =298
@@ -62,14 +67,17 @@ LoginScreen As screen:
 
             Button2_1 As button:
                 Fill: =RGBA(29,24,57,1)
+                FocusedBorderThickness: =1
                 FontWeight: =FontWeight.Bold
                 Height: =35
+                HoverFill: =RGBA(29,24,57,1)
                 OnSelect: |-
                     =Set(_managerView, true);
                     If(User().Email = "Lillian.Warui@betahood.tech",
                         Navigate(ManagerRequests),
                         Notify("You are not authorized to perform this action.", NotificationType.Error)
                     )
+                PressedFill: =RGBA(29,24,57,1)
                 Size: =11
                 Text: ="Log in as an approver"
                 Width: =298

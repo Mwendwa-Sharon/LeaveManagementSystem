@@ -38,7 +38,7 @@ NewRequests_1 As screen:
         AcceptsFocus: =true
         DataSource: =LRequests
         DefaultMode: =varFormMode
-        Height: =472
+        Height: =486
         Item: =varItem
         NumberOfColumns: =2
         OnFailure: |-
