@@ -161,16 +161,16 @@ ManagerRequests As screen:
         Items: |-
             =LRequests
             /*If(
-                IsBlank(search.Text) && IsBlank(DropdownStatus),
+                IsBlank(search.Text) && IsBlank(DropdownStatus.Selected.Value),
                 LRequests,
                 If(
                     IsBlank(search.Text),
                     Filter(
                         LRequests,
-                        LeaveStatus.Value = DropdownStatus
+                        LeaveStatus.Value = DropdownStatus.Selected.Value
                     ),
                     If(
-                        IsBlank(DropdownStatus),
+                        IsBlank(DropdownStatus.Selected.Value),
                         Filter(
                             LRequests,
                             StartsWith(
@@ -183,12 +183,11 @@ ManagerRequests As screen:
                             StartsWith(
                                 'Created By'.DisplayName,
                                 search.Text
-                            ) && LeaveType.Value = Dropdownleavetype
+                            ) && LeaveType.Value = Dropdownleavetype.Selected.Value
                         )
                     )
                 )
-            )
-            */
+            )*/
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TabIndex: =3
