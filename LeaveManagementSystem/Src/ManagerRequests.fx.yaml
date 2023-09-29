@@ -38,8 +38,7 @@ ManagerRequests As screen:
                 Size: =15
                 Text: =Upper("Request")
                 Width: =117
-                X: =40
-                Y: =16
+                X: =32
                 ZIndex: =1
 
             icon2_4 As icon.ArrowRight:
@@ -58,8 +57,8 @@ ManagerRequests As screen:
                 PressedColor: =ColorFade(icon2_4.Color, -20%)
                 PressedFill: =icon2_4.Fill
                 Width: =107
-                X: =129
-                Y: =37
+                X: =121
+                Y: =21
                 ZIndex: =2
 
             LblHeaderTItle1_9 As label:
@@ -79,8 +78,7 @@ ManagerRequests As screen:
                 Size: =15
                 Text: ="LEAVE"
                 Width: =117
-                X: =224
-                Y: =16
+                X: =216
                 ZIndex: =3
 
     Gallery3_4 As gallery.galleryVertical:

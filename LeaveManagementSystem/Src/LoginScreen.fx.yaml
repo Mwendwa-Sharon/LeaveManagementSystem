@@ -62,6 +62,11 @@ LoginScreen As screen:
                 Fill: =RGBA(29,24,57,1)
                 FontWeight: =FontWeight.Bold
                 Height: =35
+                OnSelect: |-
+                    =If(User().Email = "Lillian.Warui@Betahood.com",
+                        Navigate(ManagerRequests),
+                        Notify("You are not authorized to perform this action.", NotificationType.Error)
+                    )
                 Size: =11
                 Text: ="Log in as an approver"
                 Width: =298
