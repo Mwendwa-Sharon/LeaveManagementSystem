@@ -132,7 +132,8 @@ App As appinfo:
         )
     StartScreen: |-
         =//If(!IsBlank(Param("ID")) && LookUp(LeaveRequestsList,ID=Value(Param("ID"))).AssignedTo = User().Email,//NewRequests_1,MyLeaveRequests)
-        If(User().Email = "Lillian.Warui@betahood.tech",ManagerRequests,MyLeaveRequests)
+        //If(User().Email = "Lillian.Warui@betahood.tech",ManagerRequests,MyLeaveRequests)
+        LoginScreen
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
