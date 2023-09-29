@@ -137,7 +137,9 @@
     "MyLeaveRequests",
     "MyLeaveBalance",
     "CompanyHolidaysScreen",
+    "CompanyHolidaysManager",
     "ManagerRequests",
-    "NewRequests_1"
+    "NewRequests_1",
+    "AboutScreenManager"
   ]
 }

@@ -1,0 +1,328 @@
+AboutScreenManager As screen:
+    Fill: =RGBA(243,242,250,1)
+
+    AboutLeaveMiddle_1 As group:
+        Height: =5
+        Width: =5
+        X: =-224
+        Y: =-72
+        ZIndex: =10
+
+        AboutTitle_1 As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(101, 128, 187, 1)
+            Color: =RGBA(74, 74, 74, 1)
+            DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+            FocusedBorderColor: =AboutTitle_1.BorderColor
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =15
+            HoverBorderColor: =AboutTitle_1.BorderColor
+            HoverColor: =AboutTitle_1.Color
+            HoverFill: =AboutTitle_1.Fill
+            LineHeight: =1
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            PressedBorderColor: =AboutTitle_1.BorderColor
+            PressedColor: =AboutTitle_1.Color
+            PressedFill: =AboutTitle_1.Fill
+            Size: =13.5
+            Text: |-
+                ="Learn about the types of leave:"
+            Width: =745
+            X: =310
+            Y: =200
+            ZIndex: =5
+
+        AboutLeaveTypeGallery_1 As gallery.galleryVertical:
+            BorderColor: =RGBA(101, 128, 187, 1)
+            Default: =If(!IsBlank(_aboutSelectedLeaveType),LookUp(LeaveTypeCollection, type=_aboutSelectedLeaveType))
+            DisabledBorderColor: =AboutLeaveTypeGallery_1.BorderColor
+            DisabledFill: =AboutLeaveTypeGallery_1.Fill
+            Height: =188
+            HoverBorderColor: =AboutLeaveTypeGallery_1.BorderColor
+            HoverFill: =AboutLeaveTypeGallery_1.Fill
+            Items: =LeaveTypeCollection
+            Layout: =Layout.Vertical
+            LoadingSpinnerColor: =AboutLeaveTypeGallery_1.BorderColor
+            OnSelect: =Set(_aboutSelectedLeaveType,ThisItem.type)
+            PressedBorderColor: =AboutLeaveTypeGallery_1.BorderColor
+            PressedFill: =AboutLeaveTypeGallery_1.Fill
+            ShowScrollbar: =false
+            TemplatePadding: =20
+            TemplateSize: =57
+            Width: =698
+            WrapCount: =3
+            X: =346
+            Y: =227
+            ZIndex: =6
+
+            AboutLeveTypeCell_1 As rectangle:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                DisabledFill: =AboutLeveTypeCell_1.Fill
+                Fill: =RGBA(0, 0, 0, 0)
+                FocusedBorderColor: =AboutLeveTypeCell_1.BorderColor
+                FocusedBorderThickness: =0
+                Height: =40
+                HoverFill: =AboutLeveTypeCell_1.Fill
+                OnSelect: =Select(Parent)
+                PressedFill: =AboutLeveTypeCell_1.Fill
+                Width: =206
+                ZIndex: =1
+
+            AboutLeaveTypeButton_1 As button:
+                AutoDisableOnSelect: =false
+                BorderColor: =RGBA(29,24,57,1)
+                DisabledBorderColor: =ColorFade(AboutLeaveTypeButton_1.BorderColor, 70%)
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+                Fill: =If(_aboutSelectedLeaveType = ThisItem.type, RGBA(29,24,57, 1),Color.White)
+                FocusedBorderColor: =AboutLeaveTypeButton_1.BorderColor
+                FocusedBorderThickness: =0
+                HoverBorderColor: =ColorFade(AboutLeaveTypeButton_1.BorderColor, 20%)
+                HoverColor: =AboutLeaveTypeButton_1.Color
+                HoverFill: =ColorFade(AboutLeaveTypeButton_1.Fill, 20%)
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                PressedBorderColor: =AboutLeaveTypeButton_1.Fill
+                PressedColor: =
+                PressedFill: =AboutLeaveTypeButton_1.Color
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =11
+                Text: =""
+                Width: =206
+                ZIndex: =2
+
+            AboutLeaveTypeLabel_1 As label:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                Color: =If(_aboutSelectedLeaveType = ThisItem.type, Color.White, RGBA(0, 0, 0, 1))
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                FocusedBorderColor: =AboutLeaveTypeLabel_1.BorderColor
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Bold
+                HoverBorderColor: =AboutLeaveTypeLabel_1.BorderColor
+                HoverColor: =AboutLeaveTypeLabel_1.Color
+                HoverFill: =AboutLeaveTypeLabel_1.Fill
+                LineHeight: =1
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                PressedBorderColor: =AboutLeaveTypeLabel_1.BorderColor
+                PressedColor: =AboutLeaveTypeLabel_1.Color
+                PressedFill: =Color.White
+                Size: =11
+                Text: =ThisItem.type
+                Width: =193
+                X: =13
+                ZIndex: =3
+
+        AboutDescription_1 As label:
+            AutoHeight: =true
+            BorderColor: =RGBA(101, 128, 187, 1)
+            Color: =RGBA(74, 74, 74, 1)
+            DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+            FocusedBorderColor: =AboutDescription_1.BorderColor
+            Font: =Font.Lato
+            Height: =35
+            HoverBorderColor: =AboutDescription_1.BorderColor
+            HoverColor: =AboutDescription_1.Color
+            HoverFill: =AboutDescription_1.Fill
+            LineHeight: =1.5
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            PressedBorderColor: =AboutDescription_1.BorderColor
+            PressedColor: =AboutDescription_1.Color
+            PressedFill: =AboutDescription_1.Fill
+            Size: =12
+            Text: ="Manage your personal leave requests and team leave requests in one place. When a request is completed, managers are notified via email and can quickly approve or decline based on the situation."
+            Width: =745
+            X: =310
+            Y: =122
+            ZIndex: =7
+
+        AboutLeaveTypeDescription_1 As label:
+            BorderColor: =RGBA(101, 128, 187, 1)
+            Color: =RGBA(47,41,43,1)
+            DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+            FocusedBorderColor: =AboutLeaveTypeDescription_1.BorderColor
+            Font: =Font.Lato
+            Height: =170
+            HoverBorderColor: =AboutLeaveTypeDescription_1.BorderColor
+            HoverColor: =AboutLeaveTypeDescription_1.Color
+            HoverFill: =AboutLeaveTypeDescription_1.Fill
+            LineHeight: =1.5
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =AboutLeaveTypeDescription_1.BorderColor
+            PressedColor: =AboutLeaveTypeDescription_1.Color
+            PressedFill: =AboutLeaveTypeDescription_1.Fill
+            Size: =12
+            Text: =If(IsBlank(AboutLeaveTypeGallery_1.Selected), "", AboutLeaveTypeGallery_1.Selected.description)
+            Width: =745
+            X: =310
+            Y: =425
+            ZIndex: =8
+
+        AboutLeaveGallerySeparator_1 As rectangle:
+            BorderColor: =RGBA(101, 128, 187, 1)
+            DisabledFill: =AboutLeaveGallerySeparator_1.Fill
+            Fill: =RGBA(205, 205, 205, 1)
+            FocusedBorderColor: =AboutLeaveGallerySeparator_1.BorderColor
+            FocusedBorderThickness: =0
+            Height: =0
+            HoverFill: =AboutLeaveGallerySeparator_1.Fill
+            PressedFill: =AboutLeaveGallerySeparator_1.Fill
+            Width: =775
+            X: =310
+            Y: =499
+            ZIndex: =9
+
+    Container1_6 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(41,172,96,1)
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Fill: =RGBA(29,24,57,1)
+        Height: =Max(App.Height, App.MinScreenHeight)/8
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =Max(App.Width, App.MinScreenWidth)
+        ZIndex: =11
+
+        LblHeaderCreateNew_5 As label:
+            BorderColor: =RGBA(101, 128, 187, 1)
+            Color: =Color.White
+            DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+            FocusedBorderColor: =LblHeaderCreateNew_5.BorderColor
+            FocusedBorderThickness: =02
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =38
+            HoverBorderColor: =LblHeaderCreateNew_5.BorderColor
+            HoverColor: =LblHeaderCreateNew_5.Color
+            HoverFill: =LblHeaderCreateNew_5.Fill
+            OnSelect: =
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =LblHeaderCreateNew_5.BorderColor
+            PressedColor: =LblHeaderCreateNew_5.Color
+            PressedFill: =LblHeaderCreateNew_5.Fill
+            Size: =14
+            Text: ="Create Request"
+            Width: =192
+            X: =1100
+            Y: =30
+            ZIndex: =4
+
+        Group2_6 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =5
+
+            LblHeaderTItle1_12 As label:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                Color: =Color.White
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                Fill: =RGBA(29,24,57,1)
+                FocusedBorderColor: =LblHeaderTItle1_12.BorderColor
+                Font: =Font.Lato
+                Height: =80
+                HoverBorderColor: =LblHeaderTItle1_12.BorderColor
+                HoverColor: =LblHeaderTItle1_12.Color
+                HoverFill: =LblHeaderTItle1_12.Fill
+                PressedBorderColor: =LblHeaderTItle1_12.BorderColor
+                PressedColor: =LblHeaderTItle1_12.Color
+                PressedFill: =LblHeaderTItle1_12.Fill
+                Size: =15
+                Text: =Upper("Request")
+                Width: =117
+                X: =40
+                Y: =16
+                ZIndex: =1
+
+            icon2_6 As icon.ArrowRight:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(159, 167, 165, 1)
+                DisabledColor: =RGBA(193, 193, 193, 0.95)
+                DisabledFill: =icon2_6.Fill
+                FocusedBorderColor: =icon2_6.BorderColor
+                Height: =38
+                HoverBorderColor: =ColorFade(icon2_6.BorderColor, 20%)
+                HoverColor: =ColorFade(icon2_6.Color, 20%)
+                HoverFill: =icon2_6.Fill
+                Icon: =Icon.ArrowRight
+                PressedBorderColor: =ColorFade(icon2_6.BorderColor, -20%)
+                PressedColor: =ColorFade(icon2_6.Color, -20%)
+                PressedFill: =icon2_6.Fill
+                Width: =107
+                X: =129
+                Y: =37
+                ZIndex: =2
+
+            LblHeaderTItle1_13 As label:
+                BorderColor: =RGBA(101, 128, 187, 1)
+                Color: =Color.White
+                DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+                Fill: =RGBA(29,24,57,1)
+                FocusedBorderColor: =LblHeaderTItle1_13.BorderColor
+                Font: =Font.Lato
+                Height: =80
+                HoverBorderColor: =LblHeaderTItle1_13.BorderColor
+                HoverColor: =LblHeaderTItle1_13.Color
+                HoverFill: =LblHeaderTItle1_13.Fill
+                PressedBorderColor: =LblHeaderTItle1_13.BorderColor
+                PressedColor: =LblHeaderTItle1_13.Color
+                PressedFill: =LblHeaderTItle1_13.Fill
+                Size: =15
+                Text: ="LEAVE"
+                Width: =117
+                X: =224
+                Y: =16
+                ZIndex: =3
+
+    Group1_5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =14
+
+        Circle1_5 As circle:
+            Fill: =Color.White
+            Height: =40
+            OnSelect: =Navigate(NewRequests_1, BorderStyle.None)
+            Width: =40
+            X: =1026
+            Y: =28
+            ZIndex: =12
+
+        Icon2_5 As icon.Add:
+            Color: =RGBA(29,24,57,1)
+            Height: =35
+            Icon: =Icon.Add
+            OnSelect: =Navigate(NewRequests_1, BorderStyle.None)
+            Width: =35
+            X: =1028
+            Y: =30
+            ZIndex: =13
+
