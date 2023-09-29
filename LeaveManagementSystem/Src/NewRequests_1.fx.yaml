@@ -29,10 +29,9 @@ NewRequests_1 As screen:
             Color: =RGBA(255, 255, 255, 1)
             Height: =81
             Icon: =Icon.ArrowLeft
-            OnSelect: =Navigate(MyLeaveBalance)
-            Width: =45
-            X: =41
-            Y: =1
+            OnSelect: =Navigate(MyLeaveRequests)
+            Width: =33
+            X: =12
             ZIndex: =4
 
     Form3 As form:
@@ -57,43 +56,27 @@ NewRequests_1 As screen:
         Y: =99
         ZIndex: =8
 
-        Created_DataCard1 As typedDataCard.textualViewCard:
+        DataCard5 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Created"
-            Default: =ThisItem.Created
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"Created")
+            DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =94
-            Required: =false
+            Height: =66
             Visible: =varFormMode <> FormMode.New
-            Width: =329
-            X: =1
-            Y: =3
+            Width: =Parent.Width
+            WidthFit: =true
+            X: =0
+            Y: =2
             ZIndex: =1
 
-            DataCardKey2 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
+            Label6 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(29,24,57,1)
+                FontWeight: =FontWeight.Bold
+                Height: =64
+                Text: ="Approver information"
+                Width: =Parent.Width
                 ZIndex: =1
-
-            DataCardValue2 As label:
-                AutoHeight: =true
-                DisplayMode: =Parent.DisplayMode
-                Height: =27
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
-                ZIndex: =2
 
         "'Created By_DataCard1' As typedDataCard.comboBoxViewCard":
             BorderStyle: =BorderStyle.Solid
@@ -163,46 +146,22 @@ NewRequests_1 As screen:
                 Y: =DataCardKey3.Y
                 ZIndex: =4
 
-        DataCard5 As typedDataCard.blankCard:
+        Created_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
+            DataField: ="Created"
+            Default: =ThisItem.Created
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"Created")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =66
-            Visible: =varFormMode <> FormMode.New
-            Width: =Parent.Width
-            WidthFit: =true
-            X: =0
-            Y: =2
-            ZIndex: =1
-
-            Label6 As label:
-                Align: =Align.Center
-                Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(29,24,57,1)
-                FontWeight: =FontWeight.Bold
-                Height: =64
-                Text: ="Approver information"
-                Width: =Parent.Width
-                ZIndex: =1
-
-        ApproverComments_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ApproverComments"
-            Default: =ThisItem.ApproverComments
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"ApproverComments")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@LRequests], DataSourceInfo.MaxLength, "ApproverComments")
+            Height: =94
             Required: =false
-            Update: =DataCardValue1.Text
             Visible: =varFormMode <> FormMode.New
-            Width: =676
-            X: =0
-            Y: =4
+            Width: =329
+            X: =1
+            Y: =3
             ZIndex: =1
 
-            DataCardKey1 As label:
+            DataCardKey2 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -212,47 +171,18 @@ NewRequests_1 As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue1 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1 As label:
+            DataCardValue2 As label:
                 AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue1.Y + DataCardValue1.Height
-                ZIndex: =3
-
-            StarVisible1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1.Y
-                ZIndex: =4
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                ZIndex: =2
 
         LeaveStatus_DataCard2 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -321,6 +251,75 @@ NewRequests_1 As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        ApproverComments_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ApproverComments"
+            Default: =ThisItem.ApproverComments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"ApproverComments")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@LRequests], DataSourceInfo.MaxLength, "ApproverComments")
+            Required: =false
+            Update: =DataCardValue1.Text
+            Visible: =varFormMode <> FormMode.New
+            Width: =676
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
                 ZIndex: =4
 
         LeaveType_DataCard2 As typedDataCard.comboBoxEditCard:
