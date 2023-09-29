@@ -316,10 +316,3 @@ MyLeaveRequests As screen:
             Y: =37
             ZIndex: =7
 
-        Label7 As label:
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.ID
-            X: =380
-            Y: =57
-            ZIndex: =9
-

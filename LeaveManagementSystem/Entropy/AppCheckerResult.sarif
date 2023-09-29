@@ -14,63 +14,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 266,
+                  "charOffset": 30,
                   "snippet": {
-                    "text": "<"
+                    "text": ";"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 267,
-                  "snippet": {
-                    "text": "br"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
+                "member": "Text",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Label2"
               }
             }
           ],
@@ -81,43 +44,6 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 269,
-                  "snippet": {
-                    "text": ">"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
           "ruleIndex": 0
         },
         {
@@ -125,26 +51,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 9,
-                  "charOffset": 270,
+                  "charLength": 1,
+                  "charOffset": 52,
                   "snippet": {
-                    "text": "\" +\n    \""
+                    "text": ";"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
+                "member": "Text",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Label2"
               }
             }
           ],
@@ -155,33 +81,33 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
-                  "charOffset": 279,
+                  "charLength": 30,
+                  "charOffset": 0,
                   "snippet": {
-                    "text": "<"
+                    "text": "Set(varFormMode,FormMode.View)"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
+                "member": "Text",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Label2"
               }
             }
           ],
@@ -191,34 +117,108 @@
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 0
+          "ruleId": "app-ErrBehaviorPropertyExpected",
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
-                  "charOffset": 280,
+                  "charLength": 21,
+                  "charOffset": 31,
                   "snippet": {
-                    "text": "a"
+                    "text": "Set(varItem,ThisItem)"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
+                "member": "Text",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Label2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBehaviorPropertyExpected",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 23,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": "Navigate(NewRequests_1)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Label2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBehaviorPropertyExpected",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 52,
+                  "snippet": {
+                    "text": ";"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Label2"
               }
             }
           ],
@@ -229,43 +229,6 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 287,
-                  "snippet": {
-                    "text": "\\"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
           "ruleIndex": 0
         },
         {
@@ -273,26 +236,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label2.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 233,
-                  "charOffset": 288,
+                  "charLength": 1,
+                  "charOffset": 30,
                   "snippet": {
-                    "text": "\"https://apps.powerapps.com/play/e/default-a7c9e154-5d84-429c-9595-ed1b396af1be/a/ccb30074-3df3-4803-9bf5-0545a456cf2e?tenantId=a7c9e154-5d84-429c-9595-ed1b396af1be&hint=c28a89bf-4be9-4de5-b5f8-2b72e9d09c0b&sourcetime=1695545404122\\\""
+                    "text": ";"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
+                "member": "Text",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Label2"
               }
             }
           ],
@@ -303,43 +266,6 @@
             "level": "High"
           },
           "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 521,
-                  "snippet": {
-                    "text": ">"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
           "ruleIndex": 0
         },
         {
@@ -347,328 +273,32 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label14.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label14.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 4,
-                  "charOffset": 522,
+                  "charLength": 3,
+                  "charOffset": 14,
                   "snippet": {
-                    "text": "Take"
+                    "text": ".dd"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 534,
-                  "snippet": {
-                    "text": "/"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 535,
-                  "snippet": {
-                    "text": "a"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 536,
-                  "snippet": {
-                    "text": ">"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 538,
-                  "snippet": {
-                    "text": "/"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 539,
-                  "snippet": {
-                    "text": "p"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 540,
-                  "snippet": {
-                    "text": ">"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 541,
-                  "snippet": {
-                    "text": "\"\n);"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 263,
-                  "snippet": {
-                    "text": "br"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
+                "member": "Text",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Label14"
               }
             }
           ],
           "message": {
             "arguments": [
-              "br"
+              "dd"
             ],
             "id": "issue"
           },
@@ -683,39 +313,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label14.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Label14.Text",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 176,
-                  "charOffset": 85,
+                  "charLength": 21,
+                  "charOffset": 0,
                   "snippet": {
-                    "text": "Office365Outlook.SendEmailV2(\n    \"Lillian.Warui@betahood.tech\",\n    \"New leave request created\",\n    \"Please click the link below to review the new approval request created.\")"
+                    "text": "Round(ThisItem.dd, 0)"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
+                "member": "Text",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Label14"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Number, Decimal, Date, Time, DateTime, UntypedObject"
+              "Round"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadType-ExpectedTypesCSV",
+          "ruleId": "app-ErrInvalidArgs-Func",
           "ruleIndex": 3
         },
         {
@@ -723,472 +353,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Approve.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 282,
-                  "snippet": {
-                    "text": "href"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "href"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 280,
-                  "snippet": {
-                    "text": "a"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 270,
-                  "snippet": {
-                    "text": "\" +\n    \""
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 267,
-                  "snippet": {
-                    "text": "br"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 262,
-                  "snippet": {
-                    "text": "<"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Number, Decimal, Date, Time, DateTime, UntypedObject"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadType-ExpectedTypesCSV",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 527,
-                  "snippet": {
-                    "text": "Action"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Action"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 522,
-                  "snippet": {
-                    "text": "Take"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 233,
-                  "charOffset": 288,
-                  "snippet": {
-                    "text": "\"https://apps.powerapps.com/play/e/default-a7c9e154-5d84-429c-9595-ed1b396af1be/a/ccb30074-3df3-4803-9bf5-0545a456cf2e?tenantId=a7c9e154-5d84-429c-9595-ed1b396af1be&hint=c28a89bf-4be9-4de5-b5f8-2b72e9d09c0b&sourcetime=1695545404122\\\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 286,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Boolean",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 535,
-                  "snippet": {
-                    "text": "a"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 539,
-                  "snippet": {
-                    "text": "p"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 533,
-                  "snippet": {
-                    "text": "<"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.'Popup Confirmation_1'.SubmitForm_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Number, Decimal, Date, Time, DateTime, UntypedObject"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadType-ExpectedTypesCSV",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.Approve_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.Approve_1.OnSelect",
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Approve.OnSelect",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1201,8 +371,8 @@
               },
               "properties": {
                 "member": "OnSelect",
-                "module": "Screen1",
-                "type": "Screen1.Approve_1"
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Approve"
               }
             }
           ],
@@ -1223,12 +393,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Approve_1.OnSelect"
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Approve.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Approve_1.OnSelect",
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Approve.OnSelect",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1241,8 +411,8 @@
               },
               "properties": {
                 "member": "OnSelect",
-                "module": "Screen1",
-                "type": "Screen1.Approve_1"
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Approve"
               }
             }
           ],
@@ -1253,19 +423,19 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 5
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.Approve_1.OnSelect"
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Approve.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.Approve_1.OnSelect",
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Approve.OnSelect",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -1278,8 +448,8 @@
               },
               "properties": {
                 "member": "OnSelect",
-                "module": "Screen1",
-                "type": "Screen1.Approve_1"
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Approve"
               }
             }
           ],
@@ -1294,7 +464,125 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Decline.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Decline.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 99,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Decline"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Decline.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Decline.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 107,
+                  "snippet": {
+                    "text": ".ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Decline"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Decline.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Decline.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 97,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.Decline"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2230,19 +1518,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ManagerRequests.Container7_1.DropdownStatus.AccessibleLabel"
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ManagerRequests.Container7_1.DropdownStatus.AccessibleLabel",
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ManagerRequests",
-                "type": "ManagerRequests.Container7_1.DropdownStatus"
+                "type": "ManagerRequests.Gallery1_1"
               }
             }
           ],
@@ -2260,19 +1548,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ManagerRequests.Container7_1.search.AccessibleLabel"
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ManagerRequests.Container7_1.search.AccessibleLabel",
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "TabIndex",
                 "module": "ManagerRequests",
-                "type": "ManagerRequests.Container7_1.search"
+                "type": "ManagerRequests.Gallery1_1"
               }
             }
           ],
@@ -2282,8 +1570,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2340,10 +1628,70 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Low"
+            "level": "Medium"
           },
-          "ruleId": "acc-TabOrderShouldBeChecked",
-          "ruleIndex": 10
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Icon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ManagerRequests.Gallery1_2.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ManagerRequests",
+                "type": "ManagerRequests.Gallery1_2.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2410,19 +1758,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ManagerRequests.Container7_1.Dropdownleavetype.AccessibleLabel"
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.TextInput1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ManagerRequests.Container7_1.Dropdownleavetype.AccessibleLabel",
+                  "fullyQualifiedName": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.TextInput1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ManagerRequests",
-                "type": "ManagerRequests.Container7_1.Dropdownleavetype"
+                "type": "ManagerRequests.'Popup Confirmation_2'.'Popup Confirmation_3'.TextInput1"
               }
             }
           ],
@@ -3160,36 +2508,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewRequests_1.Form3.'Created By_DataCard1'.DataCardValue3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NewRequests_1.Form3.'Created By_DataCard1'.DataCardValue3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "NewRequests_1",
-                "type": "NewRequests_1.Form3.'Created By_DataCard1'.DataCardValue3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "NewRequests_1.Form3.LeaveType_DataCard2.DataCardValue7.AccessibleLabel"
                 }
               ],
@@ -3310,6 +2628,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NewRequests_1.Form3.'Created By_DataCard1'.DataCardValue3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NewRequests_1.Form3.'Created By_DataCard1'.DataCardValue3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NewRequests_1",
+                "type": "NewRequests_1.Form3.'Created By_DataCard1'.DataCardValue3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "NewRequests_1.Form3.LeaveStatus_DataCard2.DataCardValue5.AccessibleLabel"
                 }
               ],
@@ -3393,7 +2741,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -3423,7 +2771,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -3453,66 +2801,6 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ManagerRequests.SelectedPurchase"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ManagerRequests.SelectedPurchase",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "SelectedPurchase",
-                "module": "ManagerRequests",
-                "type": "ManagerRequests"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ManagerRequests.SelectedStatus"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ManagerRequests.SelectedStatus",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "SelectedStatus",
-                "module": "ManagerRequests",
-                "type": "ManagerRequests"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
           "ruleIndex": 11
         }
       ],
@@ -3521,23 +2809,6 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
-            {
-              "id": "app-ErrBadToken",
-              "messageStrings": {
-                "issue": {
-                  "text": "Unexpected characters. Characters are used in the formula in an unexpected way."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or replace the unexpected characters."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
             {
               "id": "app-ErrOperatorExpected",
               "messageStrings": {
@@ -3549,6 +2820,23 @@
                 "componentType": "app",
                 "howToFix": [
                   "Edit your formula so that it includes an operator between the operands."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBehaviorPropertyExpected",
+              "messageStrings": {
+                "issue": {
+                  "text": "Behavior function in a non-behavior property. You can't use this property to change values elsewhere in the app."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Move the behavior function to a behavior-based property."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",
@@ -3573,10 +2861,24 @@
               }
             },
             {
-              "id": "app-ErrBadType-ExpectedTypesCSV",
+              "id": "app-ErrInvalidArgs-Func",
               "messageStrings": {
                 "issue": {
-                  "text": "Invalid argument type. Expecting one of the following: {0}."
+                  "text": "The function '{0}' has some invalid arguments."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
                 }
               },
               "properties": {
@@ -3599,20 +2901,6 @@
                   "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
                   "If you’re comparing records or tables, the field or column types must match exactly."
                 ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
-                }
-              },
-              "properties": {
-                "componentType": "app",
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
@@ -3684,23 +2972,6 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "If the focus isn't visible, people who don't use a mouse won't be able to see it when they're interacting with the app."
-              }
-            },
-            {
-              "id": "acc-TabOrderShouldBeChecked",
-              "messageStrings": {
-                "issue": {
-                  "text": "Check the order of the screen items"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Make sure that your screen elements match the order in which you'd want to tab through them."
-                ],
-                "level": "Low",
-                "primaryCategory": "accessibility",
-                "whyFix": "When a screen reader reads the elements of a slide, it's important that they appear in the order that a user would see them, instead of the order they were added to the slide."
               }
             },
             {
