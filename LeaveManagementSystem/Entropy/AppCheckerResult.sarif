@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 107,
+                  "charLength": 141,
                   "charOffset": 4127,
                   "snippet": {
-                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Vacation\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
+                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Vacation\" And User().FullName= 'Created By'.DisplayName And LeaveStatus.Value =\"Approved\"), DaysOff)"
                   }
                 }
               },
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 103,
-                  "charOffset": 4298,
+                  "charOffset": 4332,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Sick\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
                   }
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 108,
-                  "charOffset": 4470,
+                  "charOffset": 4504,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Maternity\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
                   }
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 107,
-                  "charOffset": 4647,
+                  "charOffset": 4681,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Vacation\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
                   }
@@ -184,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 110,
-                  "charOffset": 4824,
+                  "charOffset": 4858,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Bereavement\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
                   }
@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 104,
-                  "charOffset": 4998,
+                  "charOffset": 5032,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Other\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
                   }
