@@ -195,7 +195,7 @@ MyLeaveBalance As screen:
 
         Rectangle6 As rectangle:
             AccessibleLabel: =
-            BorderColor: =RGBA(10, 106, 204, 1)
+            BorderColor: =RGBA(29,24,57,1)
             BorderThickness: =1
             DisabledFill: =Rectangle6.Fill
             Fill: =RGBA(62,96,170,0)
@@ -278,7 +278,7 @@ MyLeaveBalance As screen:
         icon3 As icon.Information:
             AccessibleLabel: =ThisItem.leavetype & " more info, " & ThisItem.BalanceDays & If(Abs(ThisItem.BalanceDays) = 1, " day", " days") & " available"
             BorderColor: =RGBA(101, 128, 187, 1)
-            Color: =RGBA(10, 106, 204, 1)
+            Color: =RGBA(29,24,57,1)
             DisabledBorderColor: =RGBA(159, 167, 165, 1)
             DisabledColor: =RGBA(193, 193, 193, 0.95)
             DisabledFill: =icon3.Fill
