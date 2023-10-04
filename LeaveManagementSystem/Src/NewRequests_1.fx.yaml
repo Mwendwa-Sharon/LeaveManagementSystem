@@ -38,7 +38,7 @@ NewRequests_1 As screen:
         AcceptsFocus: =true
         DataSource: =LRequests
         DefaultMode: =varFormMode
-        Height: =486
+        Height: =588
         Item: =varItem
         NumberOfColumns: =2
         OnFailure: |-
@@ -266,7 +266,7 @@ NewRequests_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"ApproverComments")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =79
             MaxLength: =DataSourceInfo([@LRequests], DataSourceInfo.MaxLength, "ApproverComments")
             Required: =false
             Update: =DataCardValue1.Text
@@ -298,7 +298,7 @@ NewRequests_1 As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =616
                 X: =30
                 Y: =DataCardKey1.Y + DataCardKey1.Height + 5
                 ZIndex: =2
