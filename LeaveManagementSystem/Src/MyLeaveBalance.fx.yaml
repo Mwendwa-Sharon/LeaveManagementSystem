@@ -173,7 +173,7 @@ MyLeaveBalance As screen:
         Height: =616
         HoverBorderColor: =GalleryLeaveBalance.BorderColor
         HoverFill: =GalleryLeaveBalance.Fill
-        Items: =RequesterBalanceCollection
+        Items: =LeaveBalance
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =GalleryLeaveBalance.BorderColor
         PressedBorderColor: =GalleryLeaveBalance.BorderColor
@@ -201,24 +201,6 @@ MyLeaveBalance As screen:
             Width: =196.25
             ZIndex: =1
 
-        Image3_1 As image:
-            AccessibleLabel: =ThisItem.type
-            BorderColor: =RGBA(101, 128, 187, 1)
-            DisabledBorderColor: =RGBA(159, 167, 165, 1)
-            DisabledFill: =RGBA(193, 193, 193, 0.95)
-            FocusedBorderColor: =Image3_1.BorderColor
-            Height: =40
-            HoverBorderColor: =ColorFade(Image3_1.BorderColor, 20%)
-            HoverFill: =ColorFade(Image3_1.Fill, 20%)
-            Image: =LookUp(LeaveTypeCollection, type = ThisItem.type).icon
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =ColorFade(Image3_1.BorderColor, -20%)
-            PressedFill: =ColorFade(Image3_1.Fill, -20%)
-            Width: =40
-            X: =Parent.TemplateWidth/2 - Image3_1.Width/2
-            Y: =30
-            ZIndex: =2
-
         Label16 As label:
             Align: =LayoutAlignItems.Center
             BorderColor: =RGBA(101, 128, 187, 1)
@@ -237,7 +219,7 @@ MyLeaveBalance As screen:
             PressedColor: =Label16.Color
             PressedFill: =Label16.Fill
             Size: =18
-            Text: =ThisItem.type
+            Text: =ThisItem.leavetype
             Width: =Parent.TemplateWidth
             Y: =83
             ZIndex: =3
@@ -260,7 +242,7 @@ MyLeaveBalance As screen:
             PressedColor: =Label17.Color
             PressedFill: =Label17.Fill
             Size: =27
-            Text: =Text(ThisItem.balance) & If(Abs(ThisItem.balance)=1, " day", " days")
+            Text: =Text(ThisItem.da) & If(Abs(ThisItem.balance)=1, " day", " days")
             Width: =Parent.TemplateWidth
             Y: =137
             ZIndex: =4
@@ -303,7 +285,7 @@ MyLeaveBalance As screen:
             HoverFill: =icon3.Fill
             Icon: =Icon.Information
             OnSelect: |
-                =Set(_aboutSelectedLeaveType, ThisItem.type); Navigate(AboutScreen, BorderStyle.None)
+                =Navigate(AboutScreen, BorderStyle.None)
             PressedBorderColor: =ColorFade(icon3.BorderColor, -20%)
             PressedColor: =ColorFade(icon3.Color, -20%)
             PressedFill: =icon3.Fill
