@@ -47,10 +47,8 @@ NewRequests_1 As screen:
         OnSuccess: |-
             =ResetForm(Self);
             NewForm(Self);
-            //If(varFormMode = FormMode.New, RequestsFlow.Run(Form3.LastSubmit.ID););
-            //Notify("New leave request created successfully",NotificationType.Success);
-            //Navigate(MyLeaveRequests);
-            //RequestsFlow.Run(50)
+            
+            Set(varRequesterEmail, User().Email);
             If(
                 varFormMode = FormMode.New,
                 Navigate(MyLeaveRequests, ScreenTransition.Fade ) And Notify("New leave request created successfully",NotificationType.Success) And    Office365Outlook.SendEmailV2(
@@ -60,7 +58,7 @@ NewRequests_1 As screen:
                 ),
                 varFormMode = FormMode.Edit,
                 Navigate(ManagerRequests, ScreenTransition.Fade) And Notify("Leave status updated successfully",NotificationType.Success) And    Office365Outlook.SendEmailV2(
-                    "User().Email",
+                    "varRequesterEmail",
                     "New leave request created",
                     "<p>Please click the link below to review the new approval request created.<br><br>" & "<a href=""https://apps.powerapps.com/play/e/default-a7c9e154-5d84-429c-9595-ed1b396af1be/a/ccb30074-3df3-4803-9bf5-0545a456cf2e?tenantId=a7c9e154-5d84-429c-9595-ed1b396af1be&hint=c28a89bf-4be9-4de5-b5f8-2b72e9d09c0b&sourcetime=1695545404122"">Take Action</a></p>"
                 )
@@ -274,7 +272,7 @@ NewRequests_1 As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@LRequests],DataSourceInfo.DisplayName,"ApproverComments")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =83
             MaxLength: =DataSourceInfo([@LRequests], DataSourceInfo.MaxLength, "ApproverComments")
             Required: =false
             Update: =DataCardValue1.Text
