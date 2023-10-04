@@ -55,7 +55,7 @@ MyLeaveRequests As screen:
                 Fill: =RGBA(29,24,57,1)
                 FocusedBorderColor: =LblHeaderTItle1.BorderColor
                 Font: =Font.Lato
-                Height: =80
+                Height: =93
                 HoverBorderColor: =LblHeaderTItle1.BorderColor
                 HoverColor: =LblHeaderTItle1.Color
                 HoverFill: =LblHeaderTItle1.Fill
@@ -64,9 +64,9 @@ MyLeaveRequests As screen:
                 PressedFill: =LblHeaderTItle1.Fill
                 Size: =15
                 Text: =Upper("Request")
-                Width: =117
-                X: =40
-                Y: =16
+                Width: =127
+                X: =12
+                Y: =2
                 ZIndex: =1
 
             icon2 As icon.ArrowRight:
@@ -76,7 +76,7 @@ MyLeaveRequests As screen:
                 DisabledColor: =RGBA(193, 193, 193, 0.95)
                 DisabledFill: =icon2.Fill
                 FocusedBorderColor: =icon2.BorderColor
-                Height: =38
+                Height: =44
                 HoverBorderColor: =ColorFade(icon2.BorderColor, 20%)
                 HoverColor: =ColorFade(icon2.Color, 20%)
                 HoverFill: =icon2.Fill
@@ -84,9 +84,9 @@ MyLeaveRequests As screen:
                 PressedBorderColor: =ColorFade(icon2.BorderColor, -20%)
                 PressedColor: =ColorFade(icon2.Color, -20%)
                 PressedFill: =icon2.Fill
-                Width: =107
-                X: =129
-                Y: =37
+                Width: =116
+                X: =12
+                Y: =26
                 ZIndex: =2
 
             LblHeaderTItle1_1 As label:
@@ -96,7 +96,7 @@ MyLeaveRequests As screen:
                 Fill: =RGBA(29,24,57,1)
                 FocusedBorderColor: =LblHeaderTItle1_1.BorderColor
                 Font: =Font.Lato
-                Height: =80
+                Height: =93
                 HoverBorderColor: =LblHeaderTItle1_1.BorderColor
                 HoverColor: =LblHeaderTItle1_1.Color
                 HoverFill: =LblHeaderTItle1_1.Fill
@@ -105,9 +105,9 @@ MyLeaveRequests As screen:
                 PressedFill: =LblHeaderTItle1_1.Fill
                 Size: =15
                 Text: ="LEAVE"
-                Width: =117
-                X: =224
-                Y: =16
+                Width: =127
+                X: =12
+                Y: =2
                 ZIndex: =3
 
     Gallery3 As gallery.galleryVertical:
@@ -221,10 +221,18 @@ MyLeaveRequests As screen:
             HoverBorderColor: =RGBA(29,24,57,1)
             HoverColor: =Color.Black
             HoverFill: =Color.White
-            OnSelect: |
-                =If(ThisItem.Filter <> _requestTypeFilter,
-                Set(_showDetails, false); 
-                Set(_requestTypeFilter, ThisItem.Filter))
+            OnSelect: |-
+                =If(
+                    ThisItem.Filter <> _requestTypeFilter,
+                    Set(
+                        _showDetails,
+                        false
+                    );
+                    Set(
+                        _requestTypeFilter,
+                        ThisItem.Filter
+                    )
+                )
             PressedColor: =RGBA(29,24,57,1)
             PressedFill: |
                 =//RGBA(29,24,57,1)
