@@ -240,15 +240,28 @@ MyLeaveRequests As screen:
         DelayItemLoading: =true
         Height: =381
         Items: |-
-            =If(Gallery1.Selected.Filter = "All" ,Filter( LRequests , User().FullName = 'Created By'.DisplayName),
-            Filter(LRequests,LeaveStatus.Value= Gallery1.Selected.Filter And User().FullName = 'Created By'.DisplayName))
+            =Sort(
+                If(
+                    Gallery1.Selected.Filter = "All",
+                    Filter(
+                        LRequests,
+                        User().FullName = 'Created By'.DisplayName
+                    ),
+                    Filter(
+                        LRequests,
+                        LeaveStatus.Value = Gallery1.Selected.Filter And User().FullName = 'Created By'.DisplayName
+                    )
+                ),
+                StartDate,
+                SortOrder.Descending
+            )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =118
         Transition: =Transition.Push
         Width: =953
         X: =308
-        Y: =318
+        Y: =320
         ZIndex: =9
 
         Label10 As label:
