@@ -143,10 +143,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 141,
+                  "charLength": 142,
                   "charOffset": 4749,
                   "snippet": {
-                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Vacation\" And User().FullName= 'Created By'.DisplayName And LeaveStatus.Value =\"Approved\"), DaysOff)"
+                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Paternity\" And User().FullName= 'Created By'.DisplayName And LeaveStatus.Value =\"Approved\"), DaysOff)"
                   }
                 }
               },
@@ -184,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 144,
-                  "charOffset": 4960,
+                  "charOffset": 4961,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Bereavement\" And User().FullName= 'Created By'.DisplayName And LeaveStatus.Value =\"Approved\"), DaysOff)"
                   }
@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 138,
-                  "charOffset": 5168,
+                  "charOffset": 5169,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Other\" And User().FullName= 'Created By'.DisplayName And LeaveStatus.Value =\"Approved\"), DaysOff)"
                   }

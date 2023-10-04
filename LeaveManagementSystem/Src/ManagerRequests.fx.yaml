@@ -173,7 +173,7 @@ ManagerRequests As screen:
         Transition: =Transition.Pop
         Width: =1076
         X: =273
-        Y: =271
+        Y: =272
         ZIndex: =10
 
         Image3 As image:
