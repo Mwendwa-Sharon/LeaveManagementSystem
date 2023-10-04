@@ -59,6 +59,7 @@ CompanyHolidaysScreen As screen:
         Label9_2 As label:
             Height: =Gallery3_2.TemplateHeight
             OnSelect: =Navigate(ThisItem.TargetScreen);
+            PressedFill: =Color.White
             Text: =ThisItem.Title
             Width: =Gallery3_2.TemplateWidth
             ZIndex: =1
