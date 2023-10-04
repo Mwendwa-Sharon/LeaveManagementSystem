@@ -17,7 +17,9 @@ AboutScreen As screen:
 
         Label9_3 As label:
             Height: =Gallery3_3.TemplateHeight
-            OnSelect: =Navigate(ThisItem.TargetScreen);
+            OnSelect: |-
+                =Navigate(ThisItem.TargetScreen);
+                If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
             Text: =ThisItem.Title
             Width: =Gallery3_3.TemplateWidth
             ZIndex: =1
