@@ -134,27 +134,27 @@ App As appinfo:
             LeaveBalance,
             {
                 leavetype: "Vacation",
-                DalanceDays:21-Sum(Filter(LRequests, LeaveType.Value = "Vacation"), DaysOff)
+                BalanceDays:21-Sum(Filter(LRequests, LeaveType.Value = "Vacation"), DaysOff)
             },
             {
                 leavetype: "Sick",
-                DalanceDays:10-Sum(Filter(LRequests, LeaveType.Value = "Sick"), DaysOff)
+                BalanceDays:10-Sum(Filter(LRequests, LeaveType.Value = "Sick"), DaysOff)
             },
             {
                 leavetype: "Maternity",
-                DalanceDays:90-Sum(Filter(LRequests, LeaveType.Value = "Maternity"), DaysOff)
+                BalanceDays:90-Sum(Filter(LRequests, LeaveType.Value = "Maternity"), DaysOff)
             },
             {
                 leavetype: "Paternity",
-                DalanceDays:14-Sum(Filter(LRequests, LeaveType.Value = "Vacation"), DaysOff)
+                BalanceDays:14-Sum(Filter(LRequests, LeaveType.Value = "Vacation"), DaysOff)
             },
             {
                 leavetype: "Bereavement",
-                DalanceDays:25-Sum(Filter(LRequests, LeaveType.Value = "Bereavement"), DaysOff)
+                BalanceDays:25-Sum(Filter(LRequests, LeaveType.Value = "Bereavement"), DaysOff)
             },
             {
                 leavetype: "Other",
-                DalanceDays:7-Sum(Filter(LRequests, LeaveType.Value = "Other"), DaysOff)
+                BalanceDays:7-Sum(Filter(LRequests, LeaveType.Value = "Other"), DaysOff)
             }
         );
             
