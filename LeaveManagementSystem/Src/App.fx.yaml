@@ -134,7 +134,7 @@ App As appinfo:
             LeaveBalance,
             {
                 leavetype: "Vacation",
-                BalanceDays:21-Sum(Filter(LRequests, LeaveType.Value = "Vacation" And User().FullName= 'Created By'.DisplayName), DaysOff)
+                BalanceDays:21-Sum(Filter(LRequests, LeaveType.Value = "Vacation" And User().FullName= 'Created By'.DisplayName And LeaveStatus.Value ="Approved"), DaysOff)
             },
             {
                 leavetype: "Sick",
