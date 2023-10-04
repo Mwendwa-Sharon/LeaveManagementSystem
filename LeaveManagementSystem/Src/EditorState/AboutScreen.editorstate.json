@@ -2686,7 +2686,14 @@
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "ItemAccessibleLabel",
-        "TemplateFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))",
+          "InvariantPropertyName": "TemplateFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "OnSelect"
       ],
       "HasDynamicProperties": false,

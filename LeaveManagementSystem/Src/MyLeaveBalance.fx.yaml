@@ -289,7 +289,7 @@ MyLeaveBalance As screen:
             =Navigate(ThisItem.TargetScreen);
             If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
         ShowScrollbar: =false
-        TemplateFill: =If(ThisItem.Title,RGBA(253,253,253,1),RGBA(243,242,250,1))
+        TemplateFill: =RGBA(243,242,250,1)
         TemplateSize: =75
         Width: =273
         Y: =96
