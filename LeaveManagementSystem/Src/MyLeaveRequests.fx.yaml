@@ -110,41 +110,6 @@ MyLeaveRequests As screen:
                 Y: =2
                 ZIndex: =3
 
-    Gallery3 As gallery.galleryVertical:
-        Height: =672
-        Items: |
-            =If(_managerView, ManagerViewNav, EmployeeNav)
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: |-
-            =Set(_navMenuSelect, ThisItem.Title);
-            If(
-                ThisItem.Title, Navigate(MyLeaveRequests, BorderStyle.None),
-                ThisItem.Title, Navigate(MyLeaveBalance , BorderStyle.None),
-                ThisItem.Title, Navigate(CompanyHolidaysScreen, BorderStyle.None),
-                ThisItem.Title = "About", Navigate(AboutScreen, BorderStyle.None),
-                ThisItem.Title = "Log out", Navigate(LoginScreen, BorderStyle.None)
-            );
-        ShowScrollbar: =false
-        TemplateFill: |-
-            =//If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
-            If(ThisItem.Title = _navMenuSelect, RGBA(253,253,253,1), RGBA(243,242,250,1))
-        TemplateSize: =75
-        Width: =273
-        Y: =96
-        ZIndex: =6
-
-        Label9 As label:
-            Height: =Gallery3.TemplateHeight
-            OnSelect: =Select(Parent)
-            PressedColor: |-
-                =//If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
-                Label9.Color
-            PressedFill: =Label9.Fill
-            Text: =ThisItem.Title
-            Width: =Gallery3.TemplateWidth
-            ZIndex: =1
-
     Container4 As groupContainer.manualLayoutContainer:
         Height: =133
         Width: =1093
@@ -350,4 +315,32 @@ MyLeaveRequests As screen:
             X: =899
             Y: =37
             ZIndex: =7
+
+    Gallery3_8 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =672
+        Items: |
+            =If(_managerView, ManagerViewNav, EmployeeNav)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |-
+            =Navigate(ThisItem.TargetScreen);
+            If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
+        ShowScrollbar: =false
+        TemplateFill: =RGBA(243,242,250,1)
+        TemplateSize: =89
+        Width: =273
+        Y: =96
+        ZIndex: =10
+
+        Label9_8 As label:
+            Height: =54
+            OnSelect: =Navigate(ThisItem.TargetScreen);
+            PressedColor: =Color.Black
+            PressedFill: =RGBA(243,242,250,1)
+            Text: =ThisItem.Title
+            Width: =182
+            X: =28
+            Y: =18
+            ZIndex: =1
 
