@@ -184,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 64,
-                  "charOffset": 4641,
+                  "charOffset": 4640,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Bereavement\"), DaysOff)"
                   }
@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 58,
-                  "charOffset": 4769,
+                  "charOffset": 4768,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Other\"), DaysOff)"
                   }

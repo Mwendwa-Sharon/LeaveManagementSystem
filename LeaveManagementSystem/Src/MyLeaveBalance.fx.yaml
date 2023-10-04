@@ -177,8 +177,9 @@ MyLeaveBalance As screen:
         Height: =616
         HoverBorderColor: =GalleryLeaveBalance.BorderColor
         HoverFill: =GalleryLeaveBalance.Fill
-        Items: |
-            =Filter(LeaveBalance,  User().FullName)
+        Items: |-
+            =//Filter(LeaveBalance, User().FullName)
+            LeaveBalance
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =GalleryLeaveBalance.BorderColor
         PressedBorderColor: =GalleryLeaveBalance.BorderColor
