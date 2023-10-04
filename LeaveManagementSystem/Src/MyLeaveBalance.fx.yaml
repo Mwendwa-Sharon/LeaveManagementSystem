@@ -278,7 +278,7 @@ MyLeaveBalance As screen:
             Y: =8
             ZIndex: =6
 
-    Gallery3_1 As gallery.galleryVertical:
+    Gallery3_7 As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =672
         Items: |
@@ -290,17 +290,19 @@ MyLeaveBalance As screen:
             If(ThisItem.IsSelected,RGBA(253,253,253,1),RGBA(243,242,250,1))
         ShowScrollbar: =false
         TemplateFill: =RGBA(243,242,250,1)
-        TemplateSize: =75
+        TemplateSize: =89
         Width: =273
         Y: =96
         ZIndex: =7
 
-        Label9_1 As label:
-            Height: =Gallery3_1.TemplateHeight
+        Label9_7 As label:
+            Height: =54
             OnSelect: =Navigate(ThisItem.TargetScreen);
             PressedColor: =Color.Black
-            PressedFill: =Color.White
+            PressedFill: =RGBA(243,242,250,1)
             Text: =ThisItem.Title
-            Width: =Gallery3_1.TemplateWidth
+            Width: =182
+            X: =28
+            Y: =18
             ZIndex: =1
 
