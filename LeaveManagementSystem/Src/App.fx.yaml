@@ -146,7 +146,7 @@ App As appinfo:
             },
             {
                 leavetype: "Paternity",
-                BalanceDays:14-Sum(Filter(LRequests, LeaveType.Value = "Vacation" And User().FullName= 'Created By'.DisplayName And LeaveStatus.Value ="Approved"), DaysOff)
+                BalanceDays:14-Sum(Filter(LRequests, LeaveType.Value = "Paternity" And User().FullName= 'Created By'.DisplayName And LeaveStatus.Value ="Approved"), DaysOff)
             },
             {
                 leavetype: "Bereavement",
