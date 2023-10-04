@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 61,
+                  "charLength": 107,
                   "charOffset": 4127,
                   "snippet": {
-                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Vacation\"), DaysOff)"
+                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Vacation\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
                   }
                 }
               },
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 57,
-                  "charOffset": 4252,
+                  "charOffset": 4298,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Sick\"), DaysOff)"
                   }
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 62,
-                  "charOffset": 4378,
+                  "charOffset": 4424,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Maternity\"), DaysOff)"
                   }
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 61,
-                  "charOffset": 4509,
+                  "charOffset": 4555,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Vacation\"), DaysOff)"
                   }
@@ -184,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 64,
-                  "charOffset": 4640,
+                  "charOffset": 4686,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Bereavement\"), DaysOff)"
                   }
@@ -224,7 +224,7 @@
                 },
                 "region": {
                   "charLength": 58,
-                  "charOffset": 4768,
+                  "charOffset": 4814,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Other\"), DaysOff)"
                   }
