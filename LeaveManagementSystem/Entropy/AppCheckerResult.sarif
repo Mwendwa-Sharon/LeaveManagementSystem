@@ -374,19 +374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "MyLeaveRequests.Gallery3.AccessibleLabel"
+                  "fullyQualifiedName": "MyLeaveRequests.Gallery3_8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "MyLeaveRequests.Gallery3.AccessibleLabel",
+                  "fullyQualifiedName": "MyLeaveRequests.Gallery3_8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "MyLeaveRequests",
-                "type": "MyLeaveRequests.Gallery3"
+                "type": "MyLeaveRequests.Gallery3_8"
               }
             }
           ],
@@ -404,19 +404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "MyLeaveRequests.Gallery3.TabIndex"
+                  "fullyQualifiedName": "MyLeaveRequests.Gallery3_8.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "MyLeaveRequests.Gallery3.TabIndex",
+                  "fullyQualifiedName": "MyLeaveRequests.Gallery3_8.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "MyLeaveRequests",
-                "type": "MyLeaveRequests.Gallery3"
+                "type": "MyLeaveRequests.Gallery3_8"
               }
             }
           ],
@@ -434,19 +434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "MyLeaveRequests.Gallery3.Label9.FocusedBorderThickness"
+                  "fullyQualifiedName": "MyLeaveRequests.Gallery3_8.Label9_8.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "MyLeaveRequests.Gallery3.Label9.FocusedBorderThickness",
+                  "fullyQualifiedName": "MyLeaveRequests.Gallery3_8.Label9_8.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "MyLeaveRequests",
-                "type": "MyLeaveRequests.Gallery3.Label9"
+                "type": "MyLeaveRequests.Gallery3_8.Label9_8"
               }
             }
           ],
@@ -464,19 +464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "MyLeaveRequests.Gallery3.Label9.TabIndex"
+                  "fullyQualifiedName": "MyLeaveRequests.Gallery3_8.Label9_8.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "MyLeaveRequests.Gallery3.Label9.TabIndex",
+                  "fullyQualifiedName": "MyLeaveRequests.Gallery3_8.Label9_8.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "MyLeaveRequests",
-                "type": "MyLeaveRequests.Gallery3.Label9"
+                "type": "MyLeaveRequests.Gallery3_8.Label9_8"
               }
             }
           ],
@@ -2804,19 +2804,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_1.AccessibleLabel"
+                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_1.AccessibleLabel",
+                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "MyLeaveBalance",
-                "type": "MyLeaveBalance.Gallery3_1"
+                "type": "MyLeaveBalance.Gallery3_7"
               }
             }
           ],
@@ -2834,19 +2834,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_1.TabIndex"
+                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_7.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_1.TabIndex",
+                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_7.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "MyLeaveBalance",
-                "type": "MyLeaveBalance.Gallery3_1"
+                "type": "MyLeaveBalance.Gallery3_7"
               }
             }
           ],
@@ -2864,19 +2864,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_1.Label9_1.FocusedBorderThickness"
+                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_7.Label9_7.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_1.Label9_1.FocusedBorderThickness",
+                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_7.Label9_7.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "MyLeaveBalance",
-                "type": "MyLeaveBalance.Gallery3_1.Label9_1"
+                "type": "MyLeaveBalance.Gallery3_7.Label9_7"
               }
             }
           ],
@@ -2894,19 +2894,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_1.Label9_1.TabIndex"
+                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_7.Label9_7.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_1.Label9_1.TabIndex",
+                  "fullyQualifiedName": "MyLeaveBalance.Gallery3_7.Label9_7.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "MyLeaveBalance",
-                "type": "MyLeaveBalance.Gallery3_1.Label9_1"
+                "type": "MyLeaveBalance.Gallery3_7.Label9_7"
               }
             }
           ],
