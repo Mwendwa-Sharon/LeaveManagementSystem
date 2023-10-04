@@ -156,14 +156,16 @@ ManagerRequests As screen:
         DelayItemLoading: =true
         Height: =496
         Items: |
-            =If(
+            =Sort(If(
                 Gallery1_1.Selected.Filter = "All",
                 LRequests,
                 Filter(
                     LRequests,
                     LeaveStatus.Value = Gallery1_1.Selected.Filter
                 )
-            )
+            ), 
+            StartDate,
+            SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TabIndex: =3
