@@ -195,7 +195,7 @@ MyLeaveRequests As screen:
             Fill: =If(_requestTypeFilter=ThisItem.Filter,RGBA(29,24,57,1),RGBA(255, 255, 255, 1))
             FocusedBorderThickness: =1
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =26
             HoverBorderColor: =RGBA(29,24,57,1)
             HoverColor: =Color.Black
             HoverFill: =Color.White
@@ -217,7 +217,7 @@ MyLeaveRequests As screen:
                 Color.White
             Size: =12
             Text: =ThisItem.Filter
-            Width: =105
+            Width: =88
             X: =32
             Y: =18
             ZIndex: =1
@@ -289,11 +289,11 @@ MyLeaveRequests As screen:
             DisplayMode: =DisplayMode.Disabled
             Fill: =Color.White
             FontWeight: =FontWeight.Bold
-            Height: =35
+            Height: =30
             OnSelect: =Select(Parent)
             Size: =12
             Text: =ThisItem.LeaveStatus.Value
-            Width: =140
+            Width: =101
             X: =722
             Y: =27
             ZIndex: =5
