@@ -23,8 +23,128 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 107,
+                  "charLength": 141,
                   "charOffset": 4127,
+                  "snippet": {
+                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Vacation\" And User().FullName= 'Created By'.DisplayName And LeaveStatus.Value =\"Approved\"), DaysOff)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnStart",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.OnStart"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.OnStart",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 103,
+                  "charOffset": 4332,
+                  "snippet": {
+                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Sick\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnStart",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.OnStart"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.OnStart",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 108,
+                  "charOffset": 4504,
+                  "snippet": {
+                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Maternity\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnStart",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sum"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.OnStart"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.OnStart",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 107,
+                  "charOffset": 4681,
                   "snippet": {
                     "text": "Sum(Filter(LRequests, LeaveType.Value = \"Vacation\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
                   }
@@ -63,10 +183,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 57,
-                  "charOffset": 4298,
+                  "charLength": 110,
+                  "charOffset": 4858,
                   "snippet": {
-                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Sick\"), DaysOff)"
+                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Bereavement\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
                   }
                 }
               },
@@ -103,130 +223,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 62,
-                  "charOffset": 4424,
+                  "charLength": 104,
+                  "charOffset": 5032,
                   "snippet": {
-                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Maternity\"), DaysOff)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnStart",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.OnStart"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.OnStart",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 61,
-                  "charOffset": 4555,
-                  "snippet": {
-                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Vacation\"), DaysOff)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnStart",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.OnStart"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.OnStart",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 64,
-                  "charOffset": 4686,
-                  "snippet": {
-                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Bereavement\"), DaysOff)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnStart",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sum"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.OnStart"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.OnStart",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 58,
-                  "charOffset": 4814,
-                  "snippet": {
-                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Other\"), DaysOff)"
+                    "text": "Sum(Filter(LRequests, LeaveType.Value = \"Other\" And User().FullName= 'Created By'.DisplayName), DaysOff)"
                   }
                 }
               },
