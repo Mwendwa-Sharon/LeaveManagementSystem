@@ -158,10 +158,14 @@ MyLeaveBalance As screen:
             ZIndex: =3
 
     Label2 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
         Height: =56
-        Text: ="These are the remaining leave days for each leave type"
-        Width: =305
-        X: =273
+        Size: =15
+        Text: |-
+            ="These are the remaining leave days for each leave type:"
+        Width: =841
+        X: =311
         Y: =96
         ZIndex: =5
 
@@ -173,51 +177,33 @@ MyLeaveBalance As screen:
         Height: =616
         HoverBorderColor: =GalleryLeaveBalance.BorderColor
         HoverFill: =GalleryLeaveBalance.Fill
-        Items: =RequesterBalanceCollection
+        Items: =LeaveBalance
         Layout: =Layout.Vertical
         LoadingSpinnerColor: =GalleryLeaveBalance.BorderColor
         PressedBorderColor: =GalleryLeaveBalance.BorderColor
         PressedFill: =GalleryLeaveBalance.Fill
         ShowScrollbar: =false
         TemplatePadding: =20
-        TemplateSize: =290
-        Width: =885
-        WrapCount: =4
+        TemplateSize: =172
+        Width: =884
+        WrapCount: =3
         X: =291
         Y: =152
         ZIndex: =6
 
         Rectangle6 As rectangle:
-            AccessibleLabel: =ThisItem.type
+            AccessibleLabel: =
             BorderColor: =RGBA(10, 106, 204, 1)
             BorderThickness: =1
             DisabledFill: =Rectangle6.Fill
             Fill: =RGBA(62,96,170,0)
             FocusedBorderColor: =Rectangle6.BorderColor
-            Height: =290
+            Height: =168
             HoverFill: =Rectangle6.Fill
             OnSelect: =
             PressedFill: =Rectangle6.Fill
-            Width: =196.25
+            Width: =268
             ZIndex: =1
-
-        Image3_1 As image:
-            AccessibleLabel: =ThisItem.type
-            BorderColor: =RGBA(101, 128, 187, 1)
-            DisabledBorderColor: =RGBA(159, 167, 165, 1)
-            DisabledFill: =RGBA(193, 193, 193, 0.95)
-            FocusedBorderColor: =Image3_1.BorderColor
-            Height: =40
-            HoverBorderColor: =ColorFade(Image3_1.BorderColor, 20%)
-            HoverFill: =ColorFade(Image3_1.Fill, 20%)
-            Image: =LookUp(LeaveTypeCollection, type = ThisItem.type).icon
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =ColorFade(Image3_1.BorderColor, -20%)
-            PressedFill: =ColorFade(Image3_1.Fill, -20%)
-            Width: =40
-            X: =Parent.TemplateWidth/2 - Image3_1.Width/2
-            Y: =30
-            ZIndex: =2
 
         Label16 As label:
             Align: =LayoutAlignItems.Center
@@ -236,10 +222,9 @@ MyLeaveBalance As screen:
             PressedBorderColor: =Label16.BorderColor
             PressedColor: =Label16.Color
             PressedFill: =Label16.Fill
-            Size: =18
-            Text: =ThisItem.type
+            Text: =ThisItem.leavetype
             Width: =Parent.TemplateWidth
-            Y: =83
+            Y: =28
             ZIndex: =3
 
         Label17 As label:
@@ -250,7 +235,7 @@ MyLeaveBalance As screen:
             FocusedBorderColor: =Label17.BorderColor
             FocusedBorderThickness: =2
             Font: =Font.'Lato Light'
-            Height: =48
+            Height: =32
             HoverBorderColor: =Label17.BorderColor
             HoverColor: =Label17.Color
             HoverFill: =Label17.Fill
@@ -259,10 +244,9 @@ MyLeaveBalance As screen:
             PressedBorderColor: =Label17.BorderColor
             PressedColor: =Label17.Color
             PressedFill: =Label17.Fill
-            Size: =27
-            Text: =Text(ThisItem.balance) & If(Abs(ThisItem.balance)=1, " day", " days")
+            Text: =ThisItem.BalanceDays
             Width: =Parent.TemplateWidth
-            Y: =137
+            Y: =76
             ZIndex: =4
 
         Label18 As label:
@@ -286,11 +270,11 @@ MyLeaveBalance As screen:
             Size: =12
             Text: ="available"
             Width: =Parent.TemplateWidth
-            Y: =185
+            Y: =108
             ZIndex: =5
 
         icon3 As icon.Information:
-            AccessibleLabel: =ThisItem.type & " more info, " & ThisItem.balance & If(Abs(ThisItem.balance) = 1, " day", " days") & " available"
+            AccessibleLabel: =ThisItem.leavetype & " more info, " & ThisItem.BalanceDays & If(Abs(ThisItem.BalanceDays) = 1, " day", " days") & " available"
             BorderColor: =RGBA(101, 128, 187, 1)
             Color: =RGBA(10, 106, 204, 1)
             DisabledBorderColor: =RGBA(159, 167, 165, 1)
@@ -303,39 +287,13 @@ MyLeaveBalance As screen:
             HoverFill: =icon3.Fill
             Icon: =Icon.Information
             OnSelect: |
-                =Set(_aboutSelectedLeaveType, ThisItem.type); Navigate(AboutScreen, BorderStyle.None)
+                =Navigate(AboutScreen, BorderStyle.None);
             PressedBorderColor: =ColorFade(icon3.BorderColor, -20%)
             PressedColor: =ColorFade(icon3.Color, -20%)
             PressedFill: =icon3.Fill
             TabIndex: =1
             Width: =20
-            X: =171
-            Y: =10
+            X: =236
+            Y: =8
             ZIndex: =6
-
-        Label19 As label:
-            Align: =LayoutAlignItems.Center
-            BorderColor: =RGBA(101, 128, 187, 1)
-            Color: =RGBA(10, 106, 204, 1)
-            DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-            FocusedBorderColor: =Label19.BorderColor
-            FocusedBorderThickness: =2
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Semibold
-            HoverBorderColor: =Label19.BorderColor
-            HoverColor: =Label19.Color
-            HoverFill: =Label19.Fill
-            OnSelect: |
-                =Set(_selectedLeaveType, ThisItem.type);
-                Set(_editingRequest, false);
-                Navigate(NewRequestScreen, BorderStyle.None);
-            PressedBorderColor: =Label19.BorderColor
-            PressedColor: =Label19.Color
-            PressedFill: =Label19.Fill
-            Size: =12
-            TabIndex: =0
-            Text: ="+ Request leave"
-            X: =23
-            Y: =235
-            ZIndex: =7
 
