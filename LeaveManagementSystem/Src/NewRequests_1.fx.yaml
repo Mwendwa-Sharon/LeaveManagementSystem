@@ -48,9 +48,15 @@ NewRequests_1 As screen:
             =ResetForm(Self);
             NewForm(Self);
             //If(varFormMode = FormMode.New, RequestsFlow.Run(Form3.LastSubmit.ID););
-            Notify("New leave request created successfully",NotificationType.Success);
-            Navigate(MyLeaveRequests);
+            //Notify("New leave request created successfully",NotificationType.Success);
+            //Navigate(MyLeaveRequests);
             //RequestsFlow.Run(50)
+            If(
+                varFormMode = FormMode.New,
+                Navigate(MyLeaveRequests, ScreenTransition.Fade ) And Notify("New leave request created successfully",NotificationType.Success);,
+                varFormMode = FormMode.Edit,
+                Navigate(ManagerRequests, ScreenTransition.Fade) And Notify("Leave status updated successfully",NotificationType.Success);
+            );
         Width: =1352
         X: =12
         Y: =99
