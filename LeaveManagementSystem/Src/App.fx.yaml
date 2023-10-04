@@ -138,23 +138,23 @@ App As appinfo:
             },
             {
                 leavetype: "Sick",
-                BalanceDays:10-Sum(Filter(LRequests, LeaveType.Value = "Sick"), DaysOff)
+                BalanceDays:10-Sum(Filter(LRequests, LeaveType.Value = "Sick" And User().FullName= 'Created By'.DisplayName), DaysOff)
             },
             {
                 leavetype: "Maternity",
-                BalanceDays:90-Sum(Filter(LRequests, LeaveType.Value = "Maternity"), DaysOff)
+                BalanceDays:90-Sum(Filter(LRequests, LeaveType.Value = "Maternity" And User().FullName= 'Created By'.DisplayName), DaysOff)
             },
             {
                 leavetype: "Paternity",
-                BalanceDays:14-Sum(Filter(LRequests, LeaveType.Value = "Vacation"), DaysOff)
+                BalanceDays:14-Sum(Filter(LRequests, LeaveType.Value = "Vacation" And User().FullName= 'Created By'.DisplayName), DaysOff)
             },
             {
                 leavetype: "Bereavement",
-                BalanceDays:7-Sum(Filter(LRequests, LeaveType.Value = "Bereavement"), DaysOff)
+                BalanceDays:7-Sum(Filter(LRequests, LeaveType.Value = "Bereavement" And User().FullName= 'Created By'.DisplayName), DaysOff)
             },
             {
                 leavetype: "Other",
-                BalanceDays:7-Sum(Filter(LRequests, LeaveType.Value = "Other"), DaysOff)
+                BalanceDays:7-Sum(Filter(LRequests, LeaveType.Value = "Other" And User().FullName= 'Created By'.DisplayName), DaysOff)
             }
         );
             
