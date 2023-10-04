@@ -129,7 +129,35 @@ App As appinfo:
                     description: " is a specific type of employee benefit or workplace policy that allows employees to take time off from work when they experience the loss of a loved one. This leave is designed to provide employees with the necessary time to grieve, make funeral arrangements, and attend to family matters without the added stress of work responsibilities. a"
                 }
             )
-        )
+        );
+        ClearCollect(
+            LeaveBalance,
+            {
+                leavetype: "Vacation",
+                DalanceDays:21-Sum(Filter(LRequests, LeaveType.Value = "Vacation"), DaysOff)
+            },
+            {
+                leavetype: "Sick",
+                DalanceDays:10-Sum(Filter(LRequests, LeaveType.Value = "Sick"), DaysOff)
+            },
+            {
+                leavetype: "Maternity",
+                DalanceDays:90-Sum(Filter(LRequests, LeaveType.Value = "Maternity"), DaysOff)
+            },
+            {
+                leavetype: "Paternity",
+                DalanceDays:14-Sum(Filter(LRequests, LeaveType.Value = "Vacation"), DaysOff)
+            },
+            {
+                leavetype: "Bereavement",
+                DalanceDays:25-Sum(Filter(LRequests, LeaveType.Value = "Bereavement"), DaysOff)
+            },
+            {
+                leavetype: "Other",
+                DalanceDays:7-Sum(Filter(LRequests, LeaveType.Value = "Other"), DaysOff)
+            }
+        );
+            
     StartScreen: |-
         =//If(!IsBlank(Param("ID")) && LookUp(LeaveRequestsList,ID=Value(Param("ID"))).AssignedTo = User().Email,//NewRequests_1,MyLeaveRequests)
         //If(User().Email = "Lillian.Warui@betahood.tech",ManagerRequests,MyLeaveRequests)
