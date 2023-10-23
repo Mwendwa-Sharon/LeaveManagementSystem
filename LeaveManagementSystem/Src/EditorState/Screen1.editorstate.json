@@ -4289,7 +4289,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "NewExpenseCreateButton_1": {
+    "NewExpenseCreateButton_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -4494,8 +4494,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "NewExpenseCreateButton_1",
-      "ParentIndex": 14,
+      "Name": "NewExpenseCreateButton_2",
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

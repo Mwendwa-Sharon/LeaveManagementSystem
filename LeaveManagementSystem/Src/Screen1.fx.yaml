@@ -14,7 +14,6 @@ Screen1 As screen:
         FocusedBorderColor: =NewExpenseCancelButton_1.BorderColor
         FocusedBorderThickness: =1
         FontWeight: =FontWeight.Normal
-        Height: =54
         HoverBorderColor: =ColorFade(NewExpenseCancelButton_1.BorderColor, 20%)
         HoverColor: =NewExpenseCancelButton_1.Color
         HoverFill: =ColorFade(NewExpenseCancelButton_1.Fill, 20%)
@@ -26,57 +25,16 @@ Screen1 As screen:
         PressedBorderColor: =NewExpenseCancelButton_1.Fill
         PressedColor: =NewExpenseCancelButton_1.Fill
         PressedFill: =NewExpenseCancelButton_1.Color
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
+        RadiusBottomLeft: =9
+        RadiusBottomRight: =9
+        RadiusTopLeft: =9
+        RadiusTopRight: =9
         Size: =14
         Text: ="CANCEL"
-        Width: =131
-        X: =90
-        Y: =693
+        Width: =130
+        X: =104
+        Y: =646
         ZIndex: =4
-
-    NewExpenseCreateButton_1 As button:
-        BorderColor: =RGBA(4, 169, 244, 1)
-        BorderThickness: =0
-        DisabledBorderColor: =ColorFade(NewExpenseCreateButton_1.BorderColor, 70%)
-        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
-        Fill: =RGBA(4, 169, 244, 1)
-        FocusedBorderColor: =NewExpenseCreateButton_1.BorderColor
-        FocusedBorderThickness: =0
-        FontWeight: =FontWeight.Normal
-        Height: =54
-        HoverBorderColor: =ColorFade(NewExpenseCreateButton_1.BorderColor, 20%)
-        HoverColor: =NewExpenseCreateButton_1.Color
-        HoverFill: =ColorFade(NewExpenseCreateButton_1.Fill, 20%)
-        OnSelect: |-
-            =Collect(Expenses2, {ApproverName: First(DataCardValue3_1.SelectedItems).Value, CostCenter: First(DataCardValue8_1.SelectedItems).Value, DateSubmitted: Now(), EndDate: DataCardValue6_1.SelectedDate, ID: Text(CountRows(Expenses2) + 1), StartDate: DataCardValue5_1.SelectedDate, Status: "Open", Title: DataCardValue1_1.Text});
-            Set(SelectedReport2, Last(Expenses2));
-            
-            UpdateContext({Defaults: false, DefaultDate: Today(), DefaultTextValue: "1"});
-            UpdateContext({Defaults: true, DefaultDate: Today(), DefaultTextValue: ""});
-            ClearCollect(DefaultRecord, "");
-            
-            Navigate(ViewReport, BorderStyle.None)
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        PressedBorderColor: =NewExpenseCreateButton_1.Fill
-        PressedColor: =NewExpenseCreateButton_1.Fill
-        PressedFill: =NewExpenseCreateButton_1.Color
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Size: =14
-        Text: ="CREATE"
-        Width: =129
-        X: =368
-        Y: =693
-        ZIndex: =5
 
     DataCardKey5_1 As label:
         AutoHeight: =true
@@ -94,6 +52,7 @@ Screen1 As screen:
         PressedBorderColor: =DataCardKey5_1.BorderColor
         PressedColor: =DataCardKey5_1.Color
         PressedFill: =DataCardKey5_1.Fill
+        Size: =11
         Text: ="START DATE"
         Width: =179
         Wrap: =false
@@ -117,6 +76,7 @@ Screen1 As screen:
         PressedBorderColor: =DataCardKey6_1.BorderColor
         PressedColor: =DataCardKey6_1.Color
         PressedFill: =DataCardKey6_1.Fill
+        Size: =11
         Text: ="END DATE"
         Width: =164
         Wrap: =false
@@ -134,7 +94,7 @@ Screen1 As screen:
         DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
         FocusedBorderColor: =DataCardValue6_1.BorderColor
         FocusedBorderThickness: =1
-        Height: =70
+        Height: =48
         HoverBorderColor: =DataCardValue6_1.BorderColor
         HoverDateFill: =RGBA(190,202,226,1)
         HoverFill: =DataCardValue6_1.Fill
@@ -148,11 +108,10 @@ Screen1 As screen:
         PressedFill: =DataCardValue6_1.Fill
         Reset: =Defaults
         SelectedDateFill: =RGBA(62,96,170,1)
-        Size: =18
         StartYear: =1899
-        Width: =228
+        Width: =221
         X: =410
-        Y: =148
+        Y: =138
         ZIndex: =8
 
     DataCardValue5_1 As datepicker:
@@ -167,7 +126,7 @@ Screen1 As screen:
         DisplayMode: =DisplayMode.Edit 
         FocusedBorderColor: =DataCardValue5_1.BorderColor
         FocusedBorderThickness: =1
-        Height: =70
+        Height: =48
         HoverBorderColor: =DataCardValue5_1.BorderColor
         HoverDateFill: =RGBA(190,202,226,1)
         HoverFill: =DataCardValue5_1.Fill
@@ -182,10 +141,9 @@ Screen1 As screen:
         PressedFill: =DataCardValue5_1.Fill
         Reset: =Defaults
         SelectedDateFill: =RGBA(62,96,170,1)
-        Size: =18
         StartYear: =1899
-        Width: =228
-        X: =8
+        Width: =213
+        X: =22
         Y: =138
         ZIndex: =9
 
@@ -208,8 +166,8 @@ Screen1 As screen:
         Text: ="Leave Type"
         Width: =114
         Wrap: =false
-        X: =22
-        Y: =236
+        X: =21
+        Y: =216
         ZIndex: =10
 
     DataCardValue3_1 As combobox:
@@ -255,7 +213,7 @@ Screen1 As screen:
         Template: =ListItemTemplate.Person
         Width: =610 
         X: =21
-        Y: =279
+        Y: =265
         ZIndex: =13
 
     DataCardKey8_1 As label:
@@ -276,8 +234,8 @@ Screen1 As screen:
         Text: ="Leave description"
         Width: =152
         Wrap: =false
-        X: =34
-        Y: =393
+        X: =21
+        Y: =365
         ZIndex: =14
 
     DataCardValue8_1 As combobox:
@@ -319,7 +277,7 @@ Screen1 As screen:
         Size: =21
         Width: =609
         X: =22
-        Y: =434
+        Y: =404
         ZIndex: =15
 
     DataCardKey3_1 As label:
@@ -341,8 +299,8 @@ Screen1 As screen:
         Text: ="APPROVER"
         Width: =90
         Wrap: =false
-        X: =34
-        Y: =538
+        X: =22
+        Y: =502
         ZIndex: =16
 
     DataCardValue3_2 As combobox:
@@ -387,8 +345,8 @@ Screen1 As screen:
         Size: =21
         Template: =ListItemTemplate.Person
         Width: =610 
-        X: =28
-        Y: =579
+        X: =21
+        Y: =538
         ZIndex: =17
 
     Header_2 As group:
@@ -424,4 +382,44 @@ Screen1 As screen:
             X: =8
             Y: =8
             ZIndex: =20
+
+    NewExpenseCreateButton_2 As button:
+        BorderColor: =RGBA(4, 169, 244, 1)
+        BorderThickness: =0
+        DisabledBorderColor: =ColorFade(NewExpenseCreateButton_2.BorderColor, 70%)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        Fill: =RGBA(29,24,57,1)
+        FocusedBorderColor: =NewExpenseCreateButton_2.BorderColor
+        FocusedBorderThickness: =0
+        FontWeight: =FontWeight.Normal
+        HoverBorderColor: =ColorFade(NewExpenseCreateButton_2.BorderColor, 20%)
+        HoverColor: =NewExpenseCreateButton_2.Color
+        HoverFill: =ColorFade(NewExpenseCreateButton_2.Fill, 20%)
+        OnSelect: |-
+            =Collect(Expenses2, {ApproverName: First(DataCardValue3_2.SelectedItems).Value, CostCenter: First(DataCardValue8_2.SelectedItems).Value, DateSubmitted: Now(), EndDate: DataCardValue6_2.SelectedDate, ID: Text(CountRows(Expenses2) + 1), StartDate: DataCardValue5_2.SelectedDate, Status: "Open", Title: DataCardValue1_2.Text});
+            Set(SelectedReport2, Last(Expenses2));
+            
+            UpdateContext({Defaults: false, DefaultDate: Today(), DefaultTextValue: "1"});
+            UpdateContext({Defaults: true, DefaultDate: Today(), DefaultTextValue: ""});
+            ClearCollect(DefaultRecord, "");
+            
+            Navigate(ViewReport, BorderStyle.None)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =NewExpenseCreateButton_2.Fill
+        PressedColor: =NewExpenseCreateButton_2.Fill
+        PressedFill: =NewExpenseCreateButton_2.Color
+        RadiusBottomLeft: =9
+        RadiusBottomRight: =9
+        RadiusTopLeft: =9
+        RadiusTopRight: =9
+        Size: =14
+        Text: ="CREATE"
+        Width: =130
+        X: =387
+        Y: =646
+        ZIndex: =21
 
