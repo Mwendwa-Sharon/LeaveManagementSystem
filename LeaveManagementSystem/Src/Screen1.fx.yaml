@@ -235,50 +235,8 @@ Screen1 As screen:
         Width: =152
         Wrap: =false
         X: =21
-        Y: =365
+        Y: =357
         ZIndex: =14
-
-    DataCardValue8_1 As combobox:
-        BorderColor: =Color.White
-        BorderThickness: =0
-        ChevronBackground: =RGBA(251, 251, 251, 1)
-        ChevronDisabledBackground: =RGBA(159, 167, 165, 1)
-        ChevronDisabledFill: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-        ChevronFill: =RGBA(4, 169, 244, 1)
-        ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-        ChevronHoverFill: =ColorFade(RGBA(255,255,255,1), -5%)
-        Color: =RGBA(47, 41, 43, 1)
-        DefaultSelectedItems: =
-        DisabledBorderColor: =RGBA(159, 167, 165, 1)
-        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
-        DisplayFields: =["Value"]
-        FocusedBorderColor: =DataCardValue8_1.BorderColor
-        FocusedBorderThickness: =0
-        Height: =70
-        HoverBorderColor: =ColorFade(DataCardValue8_1.BorderColor, 15%)
-        HoverColor: =RGBA(47, 41, 43, 1)
-        HoverFill: =RGBA(255, 255, 255, 1)
-        InputTextPlaceholder: =""
-        IsSearchable: =false
-        Items: =CostCenters
-        MoreItemsButtonColor: =DataCardValue8_1.ChevronBackground
-        PaddingLeft: =If(DataCardValue8_1.DisplayMode = DisplayMode.Edit, 5, 0)
-        PressedBorderColor: =DataCardValue8_1.HoverBorderColor
-        PressedColor: =RGBA(255,255,255,1)
-        PressedFill: =RGBA(253, 254, 255, 1)
-        SearchFields: =["Value"]
-        SearchItems: =[]
-        SelectionColor: =RGBA(255,255,255,1)
-        SelectionFill: =RGBA(4, 169, 244, 1)
-        SelectionTagColor: =DataCardValue8_1.HoverColor
-        SelectionTagFill: =DataCardValue8_1.HoverFill
-        SelectMultiple: =false
-        Size: =21
-        Width: =609
-        X: =22
-        Y: =404
-        ZIndex: =15
 
     DataCardKey3_1 As label:
         AutoHeight: =true
@@ -422,4 +380,38 @@ Screen1 As screen:
             X: =8
             Y: =8
             ZIndex: =20
+
+    DataCardValue1_2 As text:
+        BorderColor: =Color.White
+        BorderThickness: =0
+        Clear: =Defaults
+        Color: =RGBA(47, 41, 43, 1)
+        Default: =DefaultTextValue
+        DisabledBorderColor: =RGBA(159, 167, 165, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        DisplayMode: =DisplayMode.Edit 
+        FocusedBorderColor: =DataCardValue1_2.BorderColor
+        FocusedBorderThickness: =0
+        Height: =70
+        HoverBorderColor: =RGBA(101, 128, 187, 1)
+        HoverColor: =RGBA(47, 41, 43, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        MaxLength: =500 
+        PaddingBottom: =0
+        PaddingLeft: =20
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =DataCardValue1_2.HoverBorderColor
+        PressedColor: =DataCardValue1_2.Color
+        PressedFill: =DataCardValue1_2.Fill
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Size: =21
+        Width: =610
+        X: =22
+        Y: =401
+        ZIndex: =22
 
