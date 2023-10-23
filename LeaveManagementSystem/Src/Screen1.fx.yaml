@@ -120,7 +120,7 @@ Screen1 As screen:
         Text: ="END DATE"
         Width: =164
         Wrap: =false
-        X: =443
+        X: =411
         Y: =117
         ZIndex: =7
 
@@ -208,7 +208,7 @@ Screen1 As screen:
         Text: ="Leave Type"
         Width: =114
         Wrap: =false
-        X: =36
+        X: =27
         Y: =242
         ZIndex: =10
 
@@ -276,7 +276,7 @@ Screen1 As screen:
         Text: ="Leave description"
         Width: =152
         Wrap: =false
-        X: =28
+        X: =27
         Y: =367
         ZIndex: =14
 
@@ -318,7 +318,7 @@ Screen1 As screen:
         SelectMultiple: =false
         Size: =21
         Width: =609
-        X: =28
+        X: =27
         Y: =417
         ZIndex: =15
 
@@ -341,7 +341,7 @@ Screen1 As screen:
         Text: ="APPROVER"
         Width: =90
         Wrap: =false
-        X: =36
+        X: =27
         Y: =508
         ZIndex: =16
 
@@ -387,7 +387,7 @@ Screen1 As screen:
         Size: =21
         Template: =ListItemTemplate.Person
         Width: =610 
-        X: =40
+        X: =27
         Y: =560
         ZIndex: =17
 
@@ -421,6 +421,7 @@ Screen1 As screen:
             Icon: =Icon.ArrowLeft
             OnSelect: =Navigate(MyLeaveRequests)
             Width: =32
-            X: =45
+            X: =8
+            Y: =8
             ZIndex: =20
 
