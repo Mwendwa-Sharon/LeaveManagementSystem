@@ -1,0 +1,427 @@
+Screen1 As screen:
+    Fill: =RGBA(243,242,250,1)
+    Height: =Max(App.Height, App.DesignHeight)
+    Width: =Max(App.Width, App.DesignWidth)
+
+    NewExpenseCancelButton_1 As button:
+        BorderColor: =RGBA(4, 169, 244, 1)
+        BorderThickness: =1
+        Color: =RGBA(4, 169, 244, 1)
+        DisabledBorderColor: =ColorFade(NewExpenseCancelButton_1.BorderColor, 70%)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderColor: =NewExpenseCancelButton_1.BorderColor
+        FocusedBorderThickness: =1
+        FontWeight: =FontWeight.Normal
+        Height: =54
+        HoverBorderColor: =ColorFade(NewExpenseCancelButton_1.BorderColor, 20%)
+        HoverColor: =NewExpenseCancelButton_1.Color
+        HoverFill: =ColorFade(NewExpenseCancelButton_1.Fill, 20%)
+        OnSelect: =Back()
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =NewExpenseCancelButton_1.Fill
+        PressedColor: =NewExpenseCancelButton_1.Fill
+        PressedFill: =NewExpenseCancelButton_1.Color
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =14
+        Text: ="CANCEL"
+        Width: =129
+        X: =166
+        Y: =682
+        ZIndex: =4
+
+    NewExpenseCreateButton_1 As button:
+        BorderColor: =RGBA(4, 169, 244, 1)
+        BorderThickness: =0
+        DisabledBorderColor: =ColorFade(NewExpenseCreateButton_1.BorderColor, 70%)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        Fill: =RGBA(4, 169, 244, 1)
+        FocusedBorderColor: =NewExpenseCreateButton_1.BorderColor
+        FocusedBorderThickness: =0
+        FontWeight: =FontWeight.Normal
+        Height: =54
+        HoverBorderColor: =ColorFade(NewExpenseCreateButton_1.BorderColor, 20%)
+        HoverColor: =NewExpenseCreateButton_1.Color
+        HoverFill: =ColorFade(NewExpenseCreateButton_1.Fill, 20%)
+        OnSelect: |-
+            =Collect(Expenses2, {ApproverName: First(DataCardValue3_1.SelectedItems).Value, CostCenter: First(DataCardValue8_1.SelectedItems).Value, DateSubmitted: Now(), EndDate: DataCardValue6_1.SelectedDate, ID: Text(CountRows(Expenses2) + 1), StartDate: DataCardValue5_1.SelectedDate, Status: "Open", Title: DataCardValue1_1.Text});
+            Set(SelectedReport2, Last(Expenses2));
+            
+            UpdateContext({Defaults: false, DefaultDate: Today(), DefaultTextValue: "1"});
+            UpdateContext({Defaults: true, DefaultDate: Today(), DefaultTextValue: ""});
+            ClearCollect(DefaultRecord, "");
+            
+            Navigate(ViewReport, BorderStyle.None)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =NewExpenseCreateButton_1.Fill
+        PressedColor: =NewExpenseCreateButton_1.Fill
+        PressedFill: =NewExpenseCreateButton_1.Color
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =14
+        Text: ="CREATE"
+        Width: =129
+        X: =345
+        Y: =682
+        ZIndex: =5
+
+    DataCardKey5_1 As label:
+        AutoHeight: =true
+        Color: =RGBA(120, 144, 156, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        FocusedBorderColor: =DataCardKey5_1.BorderColor
+        Height: =15
+        HoverBorderColor: =DataCardKey5_1.BorderColor
+        HoverColor: =DataCardKey5_1.Color
+        HoverFill: =DataCardKey5_1.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =DataCardKey5_1.BorderColor
+        PressedColor: =DataCardKey5_1.Color
+        PressedFill: =DataCardKey5_1.Fill
+        Text: ="START DATE"
+        Width: =179
+        Wrap: =false
+        X: =16
+        Y: =117
+        ZIndex: =6
+
+    DataCardKey6_1 As label:
+        AutoHeight: =true
+        Color: =RGBA(120, 144, 156, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        FocusedBorderColor: =DataCardKey6_1.BorderColor
+        Height: =15
+        HoverBorderColor: =DataCardKey6_1.BorderColor
+        HoverColor: =DataCardKey6_1.Color
+        HoverFill: =DataCardKey6_1.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =DataCardKey6_1.BorderColor
+        PressedColor: =DataCardKey6_1.Color
+        PressedFill: =DataCardKey6_1.Fill
+        Text: ="END DATE"
+        Width: =164
+        Wrap: =false
+        X: =290
+        Y: =117
+        ZIndex: =7
+
+    DataCardValue6_1 As datepicker:
+        BorderColor: =Color.White
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(101,128,187,1)
+        DefaultDate: =DefaultDate
+        DisabledBorderColor: =RGBA(159, 167, 165, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        FocusedBorderColor: =DataCardValue6_1.BorderColor
+        FocusedBorderThickness: =1
+        Height: =70
+        HoverBorderColor: =DataCardValue6_1.BorderColor
+        HoverDateFill: =RGBA(190,202,226,1)
+        HoverFill: =DataCardValue6_1.Fill
+        IconBackground: =RGBA(35, 31, 32, 1)
+        InputTextPlaceholder: =Text(Date(2001,12,31), DataCardValue6_1.Format, DataCardValue6_1.Language)
+        IsEditable: =true
+        PaddingBottom: =0
+        PaddingLeft: =20  
+        PaddingRight: =0
+        PressedBorderColor: =DataCardValue6_1.BorderColor
+        PressedFill: =DataCardValue6_1.Fill
+        Reset: =Defaults
+        SelectedDateFill: =RGBA(62,96,170,1)
+        Size: =18
+        StartYear: =1899
+        Width: =228
+        X: =290
+        Y: =154
+        ZIndex: =8
+
+    DataCardValue5_1 As datepicker:
+        BorderColor: =Color.White
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(101,128,187,1)
+        Color: =RGBA(47, 41, 43, 1)
+        DefaultDate: =DefaultDate
+        DisabledBorderColor: =RGBA(159, 167, 165, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        DisplayMode: =DisplayMode.Edit 
+        FocusedBorderColor: =DataCardValue5_1.BorderColor
+        FocusedBorderThickness: =1
+        Height: =70
+        HoverBorderColor: =DataCardValue5_1.BorderColor
+        HoverDateFill: =RGBA(190,202,226,1)
+        HoverFill: =DataCardValue5_1.Fill
+        IconBackground: =RGBA(35, 31, 32, 1)
+        IconFill: =RGBA(250, 250, 250, 1)
+        InputTextPlaceholder: =Text(Date(2001,12,31), DataCardValue5_1.Format, DataCardValue5_1.Language)
+        IsEditable: =true
+        PaddingBottom: =0
+        PaddingLeft: =20
+        PaddingRight: =0
+        PressedBorderColor: =DataCardValue5_1.BorderColor
+        PressedFill: =DataCardValue5_1.Fill
+        Reset: =Defaults
+        SelectedDateFill: =RGBA(62,96,170,1)
+        Size: =18
+        StartYear: =1899
+        Width: =228
+        X: =16
+        Y: =154
+        ZIndex: =9
+
+    DataCardKey1_1 As label:
+        AutoHeight: =true
+        Color: =RGBA(120, 144, 156, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        FocusedBorderColor: =DataCardKey1_1.BorderColor
+        Height: =15
+        HoverBorderColor: =DataCardKey1_1.BorderColor
+        HoverColor: =DataCardKey1_1.Color
+        HoverFill: =DataCardKey1_1.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =DataCardKey1_1.BorderColor
+        PressedColor: =DataCardKey1_1.Color
+        PressedFill: =DataCardKey1_1.Fill
+        Text: ="Leave Type"
+        Width: =114
+        Wrap: =false
+        X: =17
+        Y: =236
+        ZIndex: =10
+
+    DataCardValue3_1 As combobox:
+        BorderColor: =Color.White
+        BorderThickness: =0
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(159, 167, 165, 1)
+        ChevronDisabledFill: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        ChevronFill: =Color.White
+        ChevronHoverBackground: =RGBA(255, 255, 255, 1)
+        ChevronHoverFill: =ColorFade(RGBA(255,255,255,1), -5%)
+        Color: =RGBA(47, 41, 43, 1)
+        Default: =First(DefaultRecord)
+        DefaultSelectedItems: =
+        DisabledBorderColor: =RGBA(159, 167, 165, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        DisplayFields: =["Value"]
+        DisplayMode: =DisplayMode.Edit 
+        FocusedBorderColor: =DataCardValue3_1.BorderColor
+        FocusedBorderThickness: =0
+        Height: =70
+        HoverBorderColor: =ColorFade(DataCardValue3_1.BorderColor, 15%)
+        HoverColor: =RGBA(47, 41, 43, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        InputTextPlaceholder: =""
+        IsSearchable: =false
+        Items: =Approvers
+        MoreItemsButtonColor: =DataCardValue3_1.ChevronBackground
+        PaddingLeft: =If(DataCardValue3_1.DisplayMode = DisplayMode.Edit, 5, 0)
+        PressedBorderColor: =DataCardValue3_1.HoverBorderColor
+        PressedColor: =RGBA(255,255,255,1)
+        PressedFill: =RGBA(101,128,187,1)
+        Reset: =Defaults
+        SearchFields: =["Value"]
+        SearchItems: =[]
+        SelectionColor: =RGBA(255,255,255,1)
+        SelectionFill: =RGBA(62, 96, 170, 1)
+        SelectionTagColor: =DataCardValue3_1.HoverColor
+        SelectionTagFill: =DataCardValue3_1.HoverFill
+        SelectMultiple: =false
+        Size: =21
+        Template: =ListItemTemplate.Person
+        Width: =610 
+        X: =16
+        Y: =283
+        ZIndex: =13
+
+    DataCardKey8_1 As label:
+        Color: =RGBA(120, 144, 156, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        FocusedBorderColor: =DataCardKey8_1.BorderColor
+        Height: =25
+        HoverBorderColor: =DataCardKey8_1.BorderColor
+        HoverColor: =DataCardKey8_1.Color
+        HoverFill: =DataCardKey8_1.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =DataCardKey8_1.BorderColor
+        PressedColor: =DataCardKey8_1.Color
+        PressedFill: =DataCardKey8_1.Fill
+        Text: ="Leave description"
+        Width: =152
+        Wrap: =false
+        X: =17
+        Y: =368
+        ZIndex: =14
+
+    DataCardValue8_1 As combobox:
+        BorderColor: =Color.White
+        BorderThickness: =0
+        ChevronBackground: =RGBA(251, 251, 251, 1)
+        ChevronDisabledBackground: =RGBA(159, 167, 165, 1)
+        ChevronDisabledFill: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        ChevronFill: =RGBA(4, 169, 244, 1)
+        ChevronHoverBackground: =RGBA(255, 255, 255, 1)
+        ChevronHoverFill: =ColorFade(RGBA(255,255,255,1), -5%)
+        Color: =RGBA(47, 41, 43, 1)
+        DefaultSelectedItems: =
+        DisabledBorderColor: =RGBA(159, 167, 165, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        DisplayFields: =["Value"]
+        FocusedBorderColor: =DataCardValue8_1.BorderColor
+        FocusedBorderThickness: =0
+        Height: =70
+        HoverBorderColor: =ColorFade(DataCardValue8_1.BorderColor, 15%)
+        HoverColor: =RGBA(47, 41, 43, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        InputTextPlaceholder: =""
+        IsSearchable: =false
+        Items: =CostCenters
+        MoreItemsButtonColor: =DataCardValue8_1.ChevronBackground
+        PaddingLeft: =If(DataCardValue8_1.DisplayMode = DisplayMode.Edit, 5, 0)
+        PressedBorderColor: =DataCardValue8_1.HoverBorderColor
+        PressedColor: =RGBA(255,255,255,1)
+        PressedFill: =RGBA(253, 254, 255, 1)
+        SearchFields: =["Value"]
+        SearchItems: =[]
+        SelectionColor: =RGBA(255,255,255,1)
+        SelectionFill: =RGBA(4, 169, 244, 1)
+        SelectionTagColor: =DataCardValue8_1.HoverColor
+        SelectionTagFill: =DataCardValue8_1.HoverFill
+        SelectMultiple: =false
+        Size: =21
+        Width: =609
+        X: =16
+        Y: =418
+        ZIndex: =15
+
+    DataCardKey3_1 As label:
+        AutoHeight: =true
+        Color: =RGBA(120, 144, 156, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        FocusedBorderColor: =DataCardKey3_1.BorderColor
+        Height: =15
+        HoverBorderColor: =DataCardKey3_1.BorderColor
+        HoverColor: =DataCardKey3_1.Color
+        HoverFill: =DataCardKey3_1.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =DataCardKey3_1.BorderColor
+        PressedColor: =DataCardKey3_1.Color
+        PressedFill: =DataCardKey3_1.Fill
+        Text: ="APPROVER"
+        Width: =90
+        Wrap: =false
+        X: =16
+        Y: =505
+        ZIndex: =16
+
+    DataCardValue3_2 As combobox:
+        BorderColor: =Color.White
+        BorderThickness: =0
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(159, 167, 165, 1)
+        ChevronDisabledFill: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        ChevronFill: =Color.White
+        ChevronHoverBackground: =RGBA(255, 255, 255, 1)
+        ChevronHoverFill: =ColorFade(RGBA(255,255,255,1), -5%)
+        Color: =RGBA(47, 41, 43, 1)
+        Default: =First(DefaultRecord)
+        DefaultSelectedItems: =
+        DisabledBorderColor: =RGBA(159, 167, 165, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        DisplayFields: =["Value"]
+        DisplayMode: =DisplayMode.Edit 
+        FocusedBorderColor: =DataCardValue3_2.BorderColor
+        FocusedBorderThickness: =0
+        Height: =70
+        HoverBorderColor: =ColorFade(DataCardValue3_2.BorderColor, 15%)
+        HoverColor: =RGBA(47, 41, 43, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        InputTextPlaceholder: =""
+        IsSearchable: =false
+        Items: =Approvers
+        MoreItemsButtonColor: =DataCardValue3_2.ChevronBackground
+        PaddingLeft: =If(DataCardValue3_2.DisplayMode = DisplayMode.Edit, 5, 0)
+        PressedBorderColor: =DataCardValue3_2.HoverBorderColor
+        PressedColor: =RGBA(255,255,255,1)
+        PressedFill: =RGBA(101,128,187,1)
+        Reset: =Defaults
+        SearchFields: =["Value"]
+        SearchItems: =[]
+        SelectionColor: =RGBA(255,255,255,1)
+        SelectionFill: =RGBA(62, 96, 170, 1)
+        SelectionTagColor: =DataCardValue3_2.HoverColor
+        SelectionTagFill: =DataCardValue3_2.HoverFill
+        SelectMultiple: =false
+        Size: =21
+        Template: =ListItemTemplate.Person
+        Width: =610 
+        X: =17
+        Y: =550
+        ZIndex: =17
+
+    Header_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =21
+
+        Rectangle1_2 As rectangle:
+            Fill: =RGBA(29,24,57,1)
+            Height: =85
+            Width: =1364
+            X: =2
+            ZIndex: =18
+
+        NewRequestLabel_2 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Text: ="New Request"
+            Width: =251
+            X: =518
+            Y: =15
+            ZIndex: =19
+
+        BackIcon_2 As icon.ArrowLeft:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =81
+            Icon: =Icon.ArrowLeft
+            OnSelect: =Navigate(MyLeaveRequests)
+            Width: =33
+            X: =12
+            ZIndex: =20
+
