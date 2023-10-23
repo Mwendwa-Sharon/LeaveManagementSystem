@@ -80,6 +80,7 @@ LoginScreen As screen:
                 PressedFill: =RGBA(29,24,57,1)
                 Size: =11
                 Text: ="Log in as an approver"
+                Visible: =If(User().Email = "Lillian.Warui@betahood.tech",true,false)
                 Width: =298
                 X: =135
                 Y: =60
