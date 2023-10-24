@@ -254,126 +254,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.DataCardValue3_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.DataCardValue3_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Approvers"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Screen1",
-                "type": "Screen1.DataCardValue3_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Approvers"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.DataCardValue8_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.DataCardValue8_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CostCenters"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Screen1",
-                "type": "Screen1.DataCardValue8_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CostCenters"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.DataCardValue3_2.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.DataCardValue3_2.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Approvers"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Screen1",
-                "type": "Screen1.DataCardValue3_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Approvers"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Screen1.NewExpenseCreateButton_2.OnSelect"
                 }
               ],
@@ -731,85 +611,8 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 16,
-                  "charOffset": 299,
-                  "snippet": {
-                    "text": "DataCardValue1_2"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen1",
-                "type": "Screen1.NewExpenseCreateButton_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataCardValue1_2"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.NewExpenseCreateButton_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.NewExpenseCreateButton_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 315,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen1",
-                "type": "Screen1.NewExpenseCreateButton_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.NewExpenseCreateButton_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.NewExpenseCreateButton_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
                   "charLength": 10,
-                  "charOffset": 570,
+                  "charOffset": 563,
                   "snippet": {
                     "text": "ViewReport"
                   }
@@ -825,6 +628,86 @@
           "message": {
             "arguments": [
               "ViewReport"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1.DataCardValue3_1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.DataCardValue3_1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Approvers"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen1",
+                "type": "Screen1.DataCardValue3_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Approvers"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen1.DataCardValue3_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.DataCardValue3_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Approvers"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen1",
+                "type": "Screen1.DataCardValue3_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Approvers"
             ],
             "id": "issue"
           },
@@ -1558,6 +1441,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen1.NewExpenseCreateButton_2.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen1.NewExpenseCreateButton_2.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Screen1",
+                "type": "Screen1.NewExpenseCreateButton_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Screen1.BackIcon_2.AccessibleLabel"
                 }
               ],
@@ -1738,19 +1651,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.DataCardValue8_1.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1.DataCardValue1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.DataCardValue8_1.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1.DataCardValue1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Screen1",
-                "type": "Screen1.DataCardValue8_1"
+                "type": "Screen1.DataCardValue1_2"
               }
             }
           ],
@@ -1768,19 +1681,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1.DataCardValue8_1.FocusedBorderThickness"
+                  "fullyQualifiedName": "Screen1.DataCardValue1_2.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1.DataCardValue8_1.FocusedBorderThickness",
+                  "fullyQualifiedName": "Screen1.DataCardValue1_2.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "Screen1",
-                "type": "Screen1.DataCardValue8_1"
+                "type": "Screen1.DataCardValue1_2"
               }
             }
           ],
@@ -1841,36 +1754,6 @@
                 "member": "FocusedBorderThickness",
                 "module": "Screen1",
                 "type": "Screen1.DataCardValue3_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.NewExpenseCreateButton_2.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.NewExpenseCreateButton_2.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Screen1",
-                "type": "Screen1.NewExpenseCreateButton_2"
               }
             }
           ],
@@ -4072,36 +3955,6 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen1.DefaultTextValue"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen1.DefaultTextValue",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DefaultTextValue",
-                "module": "Screen1",
-                "type": "Screen1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
         }
       ],
       "tool": {

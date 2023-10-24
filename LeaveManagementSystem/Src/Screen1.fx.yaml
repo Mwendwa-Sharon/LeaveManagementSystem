@@ -364,11 +364,11 @@ Screen1 As screen:
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
-            Height: =50
+            Height: =76
             Text: ="New Request"
             Width: =243
             X: =200
-            Y: =13
+            Y: =8
             ZIndex: =19
 
         BackIcon_2 As icon.ArrowLeft:
@@ -377,7 +377,7 @@ Screen1 As screen:
             Icon: =Icon.ArrowLeft
             OnSelect: =Navigate(MyLeaveRequests)
             Width: =32
-            X: =8
+            X: =21
             Y: =8
             ZIndex: =20
 
