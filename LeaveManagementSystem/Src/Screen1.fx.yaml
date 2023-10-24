@@ -1,5 +1,5 @@
 Screen1 As screen:
-    Fill: =RGBA(243,242,250,1)
+    Fill: =RGBA(212,230,242,1)
     Height: =768
     Width: =697
 
@@ -169,52 +169,6 @@ Screen1 As screen:
         X: =21
         Y: =216
         ZIndex: =10
-
-    DataCardValue3_1 As combobox:
-        BorderColor: =Color.White
-        BorderThickness: =0
-        ChevronBackground: =RGBA(255, 255, 255, 1)
-        ChevronDisabledBackground: =RGBA(159, 167, 165, 1)
-        ChevronDisabledFill: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-        ChevronFill: =Color.White
-        ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-        ChevronHoverFill: =ColorFade(RGBA(255,255,255,1), -5%)
-        Color: =RGBA(47, 41, 43, 1)
-        Default: =First(DefaultRecord)
-        DefaultSelectedItems: =
-        DisabledBorderColor: =RGBA(159, 167, 165, 1)
-        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
-        DisplayFields: =["Value"]
-        DisplayMode: =DisplayMode.Edit 
-        FocusedBorderColor: =DataCardValue3_1.BorderColor
-        FocusedBorderThickness: =0
-        Height: =70
-        HoverBorderColor: =ColorFade(DataCardValue3_1.BorderColor, 15%)
-        HoverColor: =RGBA(47, 41, 43, 1)
-        HoverFill: =RGBA(255, 255, 255, 1)
-        InputTextPlaceholder: =""
-        IsSearchable: =false
-        Items: =Approvers
-        MoreItemsButtonColor: =DataCardValue3_1.ChevronBackground
-        PaddingLeft: =If(DataCardValue3_1.DisplayMode = DisplayMode.Edit, 5, 0)
-        PressedBorderColor: =DataCardValue3_1.HoverBorderColor
-        PressedColor: =RGBA(255,255,255,1)
-        PressedFill: =RGBA(101,128,187,1)
-        Reset: =Defaults
-        SearchFields: =["Value"]
-        SearchItems: =[]
-        SelectionColor: =RGBA(255,255,255,1)
-        SelectionFill: =RGBA(62, 96, 170, 1)
-        SelectionTagColor: =DataCardValue3_1.HoverColor
-        SelectionTagFill: =DataCardValue3_1.HoverFill
-        SelectMultiple: =false
-        Size: =21
-        Template: =ListItemTemplate.Person
-        Width: =610 
-        X: =21
-        Y: =265
-        ZIndex: =13
 
     DataCardKey8_1 As label:
         Color: =RGBA(120, 144, 156, 1)
@@ -391,6 +345,7 @@ Screen1 As screen:
         DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
         DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
         DisplayMode: =DisplayMode.Edit 
+        Fill: =Color.White
         FocusedBorderColor: =DataCardValue1_2.BorderColor
         FocusedBorderThickness: =0
         Height: =70
@@ -414,4 +369,14 @@ Screen1 As screen:
         X: =22
         Y: =401
         ZIndex: =22
+
+    Dropdown1 As dropdown:
+        ChevronBackground: =RGBA(29,24,57,1)
+        ChevronFill: =Color.White
+        Height: =56
+        Items: =Choices([@LRequests].LeaveType)
+        Width: =589
+        X: =21
+        Y: =268
+        ZIndex: =23
 
