@@ -23,6 +23,8 @@
       "{TriggerWindowEndToken}": "Trigger Window End Token",
       "{TriggerWindowStartToken}": "Trigger Window Start Token",
       "{VersionNumber}": "Version number",
+      "Approver": "Approver",
+      "Approver#Claims": "Approver Claims",
       "ApproverComments": "ApproverComments",
       "AssignedTo": "AssignedTo",
       "Author": "Created By",

@@ -88,7 +88,7 @@ Screen1 As screen:
         BorderColor: =Color.White
         BorderThickness: =1
         CalendarHeaderFill: =RGBA(101,128,187,1)
-        DefaultDate: =DefaultDate
+        DefaultDate: =MyDate
         DisabledBorderColor: =RGBA(159, 167, 165, 1)
         DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
         DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
@@ -106,7 +106,6 @@ Screen1 As screen:
         PaddingRight: =0
         PressedBorderColor: =DataCardValue6_1.BorderColor
         PressedFill: =DataCardValue6_1.Fill
-        Reset: =Defaults
         SelectedDateFill: =RGBA(62,96,170,1)
         StartYear: =1899
         Width: =221
@@ -119,7 +118,7 @@ Screen1 As screen:
         BorderThickness: =1
         CalendarHeaderFill: =RGBA(101,128,187,1)
         Color: =RGBA(47, 41, 43, 1)
-        DefaultDate: =DefaultDate
+        DefaultDate: =MyDate
         DisabledBorderColor: =RGBA(159, 167, 165, 1)
         DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
         DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
@@ -139,7 +138,6 @@ Screen1 As screen:
         PaddingRight: =0
         PressedBorderColor: =DataCardValue5_1.BorderColor
         PressedFill: =DataCardValue5_1.Fill
-        Reset: =Defaults
         SelectedDateFill: =RGBA(62,96,170,1)
         StartYear: =1899
         Width: =213
@@ -215,52 +213,6 @@ Screen1 As screen:
         Y: =502
         ZIndex: =16
 
-    DataCardValue3_2 As combobox:
-        BorderColor: =Color.White
-        BorderThickness: =0
-        ChevronBackground: =RGBA(255, 255, 255, 1)
-        ChevronDisabledBackground: =RGBA(159, 167, 165, 1)
-        ChevronDisabledFill: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-        ChevronFill: =Color.White
-        ChevronHoverBackground: =RGBA(255, 255, 255, 1)
-        ChevronHoverFill: =ColorFade(RGBA(255,255,255,1), -5%)
-        Color: =RGBA(47, 41, 43, 1)
-        Default: =First(DefaultRecord)
-        DefaultSelectedItems: =
-        DisabledBorderColor: =RGBA(159, 167, 165, 1)
-        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
-        DisplayFields: =["Value"]
-        DisplayMode: =DisplayMode.Edit 
-        FocusedBorderColor: =DataCardValue3_2.BorderColor
-        FocusedBorderThickness: =0
-        Height: =70
-        HoverBorderColor: =ColorFade(DataCardValue3_2.BorderColor, 15%)
-        HoverColor: =RGBA(47, 41, 43, 1)
-        HoverFill: =RGBA(255, 255, 255, 1)
-        InputTextPlaceholder: =""
-        IsSearchable: =false
-        Items: =Approvers
-        MoreItemsButtonColor: =DataCardValue3_2.ChevronBackground
-        PaddingLeft: =If(DataCardValue3_2.DisplayMode = DisplayMode.Edit, 5, 0)
-        PressedBorderColor: =DataCardValue3_2.HoverBorderColor
-        PressedColor: =RGBA(255,255,255,1)
-        PressedFill: =RGBA(101,128,187,1)
-        Reset: =Defaults
-        SearchFields: =["Value"]
-        SearchItems: =[]
-        SelectionColor: =RGBA(255,255,255,1)
-        SelectionFill: =RGBA(62, 96, 170, 1)
-        SelectionTagColor: =DataCardValue3_2.HoverColor
-        SelectionTagFill: =DataCardValue3_2.HoverFill
-        SelectMultiple: =false
-        Size: =21
-        Template: =ListItemTemplate.Person
-        Width: =610 
-        X: =21
-        Y: =538
-        ZIndex: =17
-
     NewExpenseCreateButton_2 As button:
         BorderColor: =RGBA(4, 169, 244, 1)
         BorderThickness: =0
@@ -274,8 +226,8 @@ Screen1 As screen:
         HoverBorderColor: =ColorFade(NewExpenseCreateButton_2.BorderColor, 20%)
         HoverColor: =NewExpenseCreateButton_2.Color
         HoverFill: =ColorFade(NewExpenseCreateButton_2.Fill, 20%)
-        OnSelect: |-
-            =Collect(Expenses2, {ApproverName: First(DataCardValue3_2.SelectedItems).Value, CostCenter: First(DataCardValue8_2.SelectedItems).Value, DateSubmitted: Now(), EndDate: DataCardValue6_2.SelectedDate, ID: Text(CountRows(Expenses2) + 1), StartDate: DataCardValue5_2.SelectedDate, Status: "Open", Title: DataCardValue1_2.Text});
+        OnSelect: |+
+            =/*Collect(Expenses2, {ApproverName: First(DataCardValue3_2.SelectedItems).Value, CostCenter: First(DataCardValue8_2.SelectedItems).Value, DateSubmitted: Now(), EndDate: DataCardValue6_2.SelectedDate, ID: Text(CountRows(Expenses2) + 1), StartDate: DataCardValue5_2.SelectedDate, Status: "Open", Title: DataCardValue1_2.Text});
             Set(SelectedReport2, Last(Expenses2));
             
             UpdateContext({Defaults: false, DefaultDate: Today(), DefaultTextValue: "1"});
@@ -283,6 +235,11 @@ Screen1 As screen:
             ClearCollect(DefaultRecord, "");
             
             Navigate(ViewReport, BorderStyle.None)
+            */
+            
+            Patch(LeaveRequestsList, Defaults(LeaveRequestsList),{StartDate: DataCardValue5_1.SelectedDate, EndDate: DataCardValue6_1.SelectedDate, LeaveType: Dropdown1.SelectedText, LeaveDescription: DataCardValue1_2.Text})
+            
+            
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
@@ -338,7 +295,6 @@ Screen1 As screen:
     DataCardValue1_2 As text:
         BorderColor: =Color.White
         BorderThickness: =0
-        Clear: =Defaults
         Color: =RGBA(47, 41, 43, 1)
         Default: =DefaultTextValue
         DisabledBorderColor: =RGBA(159, 167, 165, 1)
@@ -379,4 +335,39 @@ Screen1 As screen:
         X: =21
         Y: =268
         ZIndex: =23
+
+    DataCardValue1_3 As text:
+        BorderColor: =Color.White
+        BorderThickness: =0
+        Clear: =Defaults
+        Color: =RGBA(47, 41, 43, 1)
+        Default: =DefaultTextValue
+        DisabledBorderColor: =RGBA(159, 167, 165, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledFill: =ColorFade(RGBA(159, 167, 165, 1), 50%)
+        DisplayMode: =DisplayMode.Edit 
+        Fill: =Color.White
+        FocusedBorderColor: =DataCardValue1_3.BorderColor
+        FocusedBorderThickness: =0
+        Height: =70
+        HoverBorderColor: =RGBA(101, 128, 187, 1)
+        HoverColor: =RGBA(47, 41, 43, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        MaxLength: =500 
+        PaddingBottom: =0
+        PaddingLeft: =20
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =DataCardValue1_3.HoverBorderColor
+        PressedColor: =DataCardValue1_3.Color
+        PressedFill: =DataCardValue1_3.Fill
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Size: =21
+        Width: =610
+        X: =22
+        Y: =538
+        ZIndex: =24
 

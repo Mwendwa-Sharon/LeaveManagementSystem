@@ -52,7 +52,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BackIcon_2",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -278,7 +278,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardKey1_1",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -564,7 +564,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardKey3_1",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -850,7 +850,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardKey5_1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1129,7 +1129,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardKey6_1",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1401,7 +1401,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardKey8_1",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2000,30 +2000,14 @@
       "StyleName": "defaultTextStyle",
       "Type": "ControlInfo"
     },
-    "DataCardValue3_2": {
+    "DataCardValue1_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Choices(Expenses_1.ApproverName)",
-          "InvariantPropertyName": "Items",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "Parent.Default",
-          "InvariantPropertyName": "DefaultSelectedItems",
-          "IsLockable": true,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "SelectMultiple",
+          "InvariantPropertyName": "Default",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
         },
@@ -2038,78 +2022,31 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Parent.MaxLength",
+          "InvariantPropertyName": "MaxLength",
+          "IsLockable": true,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "Parent.DisplayMode",
           "InvariantPropertyName": "DisplayMode",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
         },
-        "NavigateFields",
-        "Template",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "SearchItems",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        "MoreItemsButtonColor",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "[\"Value\",\"Email\",\"Picture\"]",
-          "InvariantPropertyName": "DisplayFields",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        "SearchFields",
-        "SelectionColor",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "ColorFade(RGBA(255,255,255,1), -5%)",
-          "InvariantPropertyName": "ChevronFill",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        "ChevronHoverFill",
-        "ChevronDisabledFill",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "ChevronBackground",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "ChevronHoverBackground",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        "ChevronDisabledBackground",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "SelectionFill",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        "SelectionTagFill",
-        "SelectionTagColor",
-        "Color",
-        "HoverColor",
-        "PressedColor",
-        "DisabledColor",
+        "Mode",
+        "Format",
+        "DelayOutput",
         "DisabledBorderColor",
-        "HoverBorderColor",
         "PressedBorderColor",
+        "HoverBorderColor",
         "BorderStyle",
         "FocusedBorderColor",
+        "Color",
+        "DisabledColor",
+        "PressedColor",
+        "HoverColor",
         "Fill",
         "DisabledFill",
         "PressedFill",
@@ -2123,6 +2060,7 @@
         },
         "Font",
         "FontWeight",
+        "Align",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -2134,7 +2072,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingString": "DataCardKey1_2.Y + DataCardKey1_2.Height + 5",
           "InvariantPropertyName": "Y",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -2166,15 +2104,11 @@
           "NameMapSourceSchema": "?"
         },
         "Size",
-        "PaddingTop",
-        "PaddingRight",
-        "PaddingBottom",
-        "PaddingLeft",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Find items\"",
-          "InvariantPropertyName": "InputTextPlaceholder",
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingTop",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
@@ -2182,15 +2116,7 @@
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
-          "InvariantPropertyName": "IsSearchable",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "Reset",
+          "InvariantPropertyName": "PaddingRight",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
@@ -2198,11 +2124,60 @@
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Default",
+          "InvariantPropertyName": "PaddingBottom",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "NoSelectionText",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "PaddingLeft",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "RadiusBottomLeft",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "RadiusBottomRight",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "RadiusTopLeft",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "RadiusTopRight",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Clear",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "VirtualKeyboardMode",
+        "EnableSpellCheck",
         "ContentLanguage"
       ],
       "HasDynamicProperties": false,
@@ -2214,58 +2189,13 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "DataCardValue3_2",
-      "ParentIndex": 13,
+      "Name": "DataCardValue1_3",
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "NavigateFields",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "DisplayFields",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "SearchFields",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "DefaultSelectedItems",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "SelectMultiple",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "SearchItems",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Items",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "InputTextPlaceholder",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "IsSearchable",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Reset",
+          "PropertyName": "DelayOutput",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2275,7 +2205,7 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "NoSelectionText",
+          "PropertyName": "MaxLength",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2295,82 +2225,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Template",
+          "PropertyName": "Mode",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "MoreItemsButtonColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "SelectionColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ChevronFill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ChevronHoverFill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ChevronDisabledFill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ChevronBackground",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ChevronHoverBackground",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ChevronDisabledBackground",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "SelectionFill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "SelectionTagFill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "SelectionTagColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Color",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "HoverColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PressedColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "DisabledColor",
+          "PropertyName": "Format",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2380,12 +2240,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "HoverBorderColor",
+          "PropertyName": "PressedBorderColor",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "PressedBorderColor",
+          "PropertyName": "HoverBorderColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2396,6 +2256,26 @@
         {
           "Category": "Design",
           "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Color",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisabledColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "PressedColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "HoverColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2426,6 +2306,11 @@
         {
           "Category": "Design",
           "PropertyName": "FontWeight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Align",
           "RuleProviderType": "Unknown"
         },
         {
@@ -2487,9 +2372,44 @@
           "Category": "Design",
           "PropertyName": "PaddingLeft",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "RadiusBottomLeft",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "RadiusBottomRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "RadiusTopLeft",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "RadiusTopRight",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Clear",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "VirtualKeyboardMode",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "EnableSpellCheck",
+          "RuleProviderType": "Unknown"
         }
       ],
-      "StyleName": "defaultComboBoxStyle",
+      "StyleName": "defaultTextStyle",
       "Type": "ControlInfo"
     },
     "DataCardValue5_1": {
@@ -2641,14 +2561,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "Reset",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Reset",
         "InputTextPlaceholder",
         "IconBackground",
         "StartOfWeek",
@@ -2664,7 +2577,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardValue5_1",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3043,14 +2956,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "Reset",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Reset",
         "InputTextPlaceholder",
         "IconBackground",
         "StartOfWeek",
@@ -3066,7 +2972,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCardValue6_1",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3842,7 +3748,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NewExpenseCancelButton_1",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4245,7 +4151,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NewExpenseCreateButton_2",
-      "ParentIndex": 0,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4523,7 +4429,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "NewRequestLabel_2",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4761,7 +4667,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1_2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

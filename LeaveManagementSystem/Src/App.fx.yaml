@@ -19,6 +19,7 @@ App As appinfo:
                     ID = Value(Param("ID"))
                 )
             );
+            
             Set(
                 varFormMode,
                 FormMode.Edit
