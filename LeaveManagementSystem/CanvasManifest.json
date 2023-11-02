@@ -133,6 +133,7 @@
   "ScreenOrder": [
     "LoginScreen",
     "MyLeaveRequests",
+    "MyLeaveRequests_2",
     "CompanyHolidaysManager",
     "MyLeaveBalance",
     "AboutScreen",
