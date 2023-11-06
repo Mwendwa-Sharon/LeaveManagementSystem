@@ -391,6 +391,8 @@ MyLeaveRequests_2 As screen:
     Icon1 As icon.Filter:
         Height: =46
         Icon: =Icon.Filter
+        OnSelect: |
+            =Set(DropdownVisible, true)
         Width: =48
         X: =1063
         Y: =234
@@ -399,7 +401,8 @@ MyLeaveRequests_2 As screen:
     Dropdown2 As dropdown:
         Items: |-
             =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Approved"}, {Filter: "Declined"})
-        Visible: =If(Icon1.sele
+        Visible: |
+            =DropdownVisible
         X: =681
         Y: =237
         ZIndex: =13
