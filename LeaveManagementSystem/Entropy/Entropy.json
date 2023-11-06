@@ -306,7 +306,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/06/2023 18:36:36",
+  "HeaderLastSavedDateTimeUTC": "11/06/2023 18:36:38",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0eaccec2-7e15-4a0c-beab-536112d3679b": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/3e40f634419046819320b9dc99286f12\"",
