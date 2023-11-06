@@ -1,5 +1,8 @@
 MyLeaveRequests_2 As screen:
     Fill: =RGBA(243,242,250,1)
+    OnVisible: |-
+        =//control visibility of dropdown
+        Set(EnableCombo,false)
 
     Container1_8 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(41,172,96,1)
@@ -391,6 +394,9 @@ MyLeaveRequests_2 As screen:
     Icon1 As icon.Filter:
         Height: =46
         Icon: =Icon.Filter
+        OnSelect: |-
+            =//contol the visibility of the dropdown 
+            Set(EnableCombo,true)
         Width: =48
         X: =1063
         Y: =234
@@ -399,7 +405,7 @@ MyLeaveRequests_2 As screen:
     Dropdown2 As dropdown:
         Items: |-
             =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Approved"}, {Filter: "Declined"})
-        Visible: =If(Icon1.sele
+        Visible: =EnableCombo
         X: =681
         Y: =237
         ZIndex: =13
