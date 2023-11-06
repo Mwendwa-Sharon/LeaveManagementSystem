@@ -1,5 +1,6 @@
 MyLeaveRequests_2 As screen:
     Fill: =RGBA(243,242,250,1)
+    OnVisible: =
 
     Container1_8 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(41,172,96,1)
@@ -136,56 +137,9 @@ MyLeaveRequests_2 As screen:
             Y: =30
             ZIndex: =4
 
-    Gallery1_4 As gallery.galleryHorizontal:
-        DelayItemLoading: =true
-        Height: =87
-        Items: |-
-            =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Approved"}, {Filter: "Declined"})
-        LoadingSpinner: =LoadingSpinner.Data
-        ShowScrollbar: =false
-        TemplateSize: =229
-        Width: =899
-        X: =295
-        Y: =330
-        ZIndex: =8
-
-        Button4_3 As button:
-            AutoDisableOnSelect: =false
-            BorderColor: =RGBA(29,24,57,1)
-            Color: =If(_requestTypeFilter=ThisItem.Filter,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
-            Fill: =If(_requestTypeFilter=ThisItem.Filter,RGBA(29,24,57,1),RGBA(255, 255, 255, 1))
-            FocusedBorderThickness: =1
-            FontWeight: =FontWeight.Bold
-            Height: =26
-            HoverBorderColor: =RGBA(29,24,57,1)
-            HoverColor: =Color.Black
-            HoverFill: =Color.White
-            OnSelect: |-
-                =If(
-                    ThisItem.Filter <> _requestTypeFilter,
-                    Set(
-                        _showDetails,
-                        false
-                    );
-                    Set(
-                        _requestTypeFilter,
-                        ThisItem.Filter
-                    )
-                )
-            PressedColor: =RGBA(29,24,57,1)
-            PressedFill: |
-                =//RGBA(29,24,57,1)
-                Color.White
-            Size: =12
-            Text: =ThisItem.Filter
-            Width: =88
-            X: =32
-            Y: =18
-            ZIndex: =1
-
     Gallery4_2 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Height: =310
+        Height: =458
         Items: |-
             =Sort(
                 If(
@@ -206,9 +160,9 @@ MyLeaveRequests_2 As screen:
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =118
         Transition: =Transition.Push
-        Width: =953
+        Width: =1058
         X: =308
-        Y: =436
+        Y: =288
         ZIndex: =9
 
         Label10_6 As label:
@@ -389,21 +343,25 @@ MyLeaveRequests_2 As screen:
             ZIndex: =4
 
     Icon1 As icon.Filter:
-        Height: =46
+        Color: =RGBA(29,24,57, 1)
+        Height: =30
         Icon: =Icon.Filter
-        OnSelect: |
-            =Set(DropdownVisible, true)
-        Width: =48
-        X: =1063
-        Y: =234
+        OnSelect: |-
+            =//contol the visibility of the dropdown 
+            If(Dropdown2.Visible = false, Set(EnableDropdown,true),Set(EnableDropdown,false))
+        Width: =30
+        X: =1241
+        Y: =209
         ZIndex: =12
 
     Dropdown2 As dropdown:
+        Height: =43
         Items: |-
             =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Approved"}, {Filter: "Declined"})
         Visible: |
-            =DropdownVisible
-        X: =681
-        Y: =237
+            =EnableDropdown
+        Width: =118
+        X: =1050
+        Y: =209
         ZIndex: =13
 
