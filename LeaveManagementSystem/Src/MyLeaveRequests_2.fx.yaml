@@ -189,14 +189,14 @@ MyLeaveRequests_2 As screen:
         Items: |-
             =Sort(
                 If(
-                    Gallery1_4.Selected.Filter = "All",
+                    Dropdown2.Selected.Filter = "All",
                     Filter(
                         LRequests,
                         User().FullName = 'Created By'.DisplayName
                     ),
                     Filter(
                         LRequests,
-                        LeaveStatus.Value = Gallery1_4.Selected.Filter And User().FullName = 'Created By'.DisplayName
+                        LeaveStatus.Value = Dropdown2.Selected.Filter And User().FullName = 'Created By'.DisplayName
                     )
                 ),
                 StartDate,
@@ -387,4 +387,20 @@ MyLeaveRequests_2 As screen:
             Width: =148
             Y: =40
             ZIndex: =4
+
+    Icon1 As icon.Filter:
+        Height: =46
+        Icon: =Icon.Filter
+        Width: =48
+        X: =1063
+        Y: =234
+        ZIndex: =12
+
+    Dropdown2 As dropdown:
+        Items: |-
+            =Table({Filter: "All"}, {Filter: "Pending"}, {Filter: "Approved"}, {Filter: "Declined"})
+        Visible: =If(Icon1.sele
+        X: =681
+        Y: =237
+        ZIndex: =13
 
