@@ -141,20 +141,16 @@ MyLeaveRequests_2 As screen:
         DelayItemLoading: =true
         Height: =458
         Items: |-
-            =Sort(
-                If(
-                    Dropdown2.Selected.Filter = "All",
-                    Filter(
-                        LRequests,
-                        User().FullName = 'Created By'.DisplayName
-                    ),
-                    Filter(
-                        LRequests,
-                        LeaveStatus.Value = Dropdown2.Selected.Filter And User().FullName = 'Created By'.DisplayName
-                    )
+            =If(
+                Dropdown2.Selected.Filter = "All",
+                Filter(
+                    LRequests,
+                    User().FullName = 'Created By'.DisplayName
                 ),
-                StartDate,
-                SortOrder.Descending
+                Filter(
+                    LRequests,
+                    LeaveStatus.Value = Dropdown2.Selected.Filter And User().FullName = 'Created By'.DisplayName
+                )
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
