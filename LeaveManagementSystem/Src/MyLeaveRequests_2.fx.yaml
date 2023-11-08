@@ -209,15 +209,6 @@ MyLeaveRequests_2 As screen:
             Y: =27
             ZIndex: =5
 
-        Label4_2 As label:
-            Height: =42
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.'Created By'.DisplayName
-            Width: =168
-            X: =474
-            Y: =27
-            ZIndex: =6
-
         Icon3_2 As icon.ChevronRight:
             Height: =20
             Icon: =Icon.ChevronRight
